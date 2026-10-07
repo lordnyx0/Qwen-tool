@@ -1,0 +1,25 @@
+# validate.yml — CI de push: gates do repo (stdlib, sem GPU/modelos).
+# Roda a cada push/PR em main: validate_sft.py (dataset) + validate_docs.py (docs).
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: validate_sft (dataset)
+        run: python scripts/pipeline/validate_sft.py data/cleaned/curriculum_3000_tool_sft_PURIFIED.jsonl
+      - name: validate_docs (docs)
+        run: python scripts/pipeline/validate_docs.py

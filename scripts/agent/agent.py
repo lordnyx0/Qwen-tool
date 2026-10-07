@@ -29,7 +29,7 @@ GITBASH_BIN = "C:\\Program Files\\Git\\bin\\bash.exe"
 GITBASH = GITBASH_USR if os.path.exists(GITBASH_USR) else GITBASH_BIN
 BASH_BLOCK = re.compile(
     r"(rm\s+-[a-z]*r|: *\( *\) *\{|mkfs|dd\s+.*of=|curl.+|\|\s*(ba)?sh\b|wget.+|\|\s*sh\b|"
-    r"\bread\b|\bdu\s+.*(/|[a-z]:)|\bfind\s+/)",
+    r"\bdu\s+.*(/|[a-z]:)|\bfind\s+/)",
     re.I,
 )
 

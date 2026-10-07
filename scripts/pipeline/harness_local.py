@@ -23,14 +23,17 @@ PS_BLOCK = re.compile(r"(invoke-webrequest|invoke-restmethod|\birw?\b|\bcurl\b|"
                        r"invoke-expression|\biex\b|start-process|remove-item|del\s+"
                        r"|format-|stop-computer|restart-computer|new-service|"
                        r"set-executionpolicy)", re.I)
-PY_BLOCK = re.compile(r"(os\.(remove|rmdir|renamed|replace|system|popen|exec[lv])|"
-                      r"shutil\.(rmtree|move|copy)|subprocess|socket|urllib|"
-                      r"requests|__import__|open\s*\([^)]*['\"]w|eval\s*\()", re.I)
+PY_BLOCK = re.compile(r"(os\.(remove|unlink|rename|renames|rmdir|mkdir|makedirs|"
+                       r"system|popen|exec[lv])|shutil\.(rmtree|move|copy|copytree)|"
+                       r"subprocess|socket|urllib|requests|importlib|__import__|"
+                       r"open\s*\([^)]*['\"][wa+]|pathlib[^)]*\.(write_text|rename|"
+                       r"unlink|mkdir|rmdir)|eval\s*\(|exec\s*\(|getattr\s*\()", re.I)
 
 
 def _resolve(root, p):
-    full = os.path.normpath(os.path.join(root, p or ""))
-    if full != os.path.normpath(root) and not full.startswith(os.path.normpath(root) + os.sep):
+    full = os.path.realpath(os.path.join(root, p or ""))
+    base = os.path.realpath(root)
+    if full != base and not full.startswith(base + os.sep):
         raise ValueError(f"fuga do jail: {p!r}")
     return full
 

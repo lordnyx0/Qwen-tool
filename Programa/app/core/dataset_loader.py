@@ -1,6 +1,7 @@
 """dataset_loader.py — Carregamento eficiente e indexado do manifesto e amostras."""
 import json
 import os
+import re
 from typing import Any, Dict, List, Optional
 
 from app.core import config, repo_state
@@ -69,12 +70,29 @@ MUTATING_VERBS = {
     'new', 'set', 'start', 'stop', 'restart', 'remove', 'delete',
     'create', 'write', 'add', 'clear', 'mkdir', 'touch', 'rm',
     'kill', 'execute', 'run', 'invoke', 'patch', 'post', 'put',
-    'install', 'apt', 'pip', 'node', 'python', 'sh', 'bash'
+    'install', 'apt', 'pip', 'node', 'python', 'sh', 'bash',
+    'edit', 'move', 'copy', 'rename', 'unlink', 'chmod', 'chown',
+    'cp', 'mv', 'sed', 'tee', 'curl', 'wget',
 }
+
+# Redirecionamento shell sem exigir espacos: >, >>, 2>, echo x>f
+REDIRECT_RE = re.compile(r"(?<!-)(?<![=>])>(?!=)|>>")
+SED_INPLACE_RE = re.compile(r"\bsed\b[^\n|;]*\s-i\b")
+# Operacoes com efeito colateral em codigo Python (modo conservador:
+# qualquer IO/egress suspeito => mutating; nunca usar como garantia de seguranca)
+PY_MUTATE_RE = re.compile(r"(open\s*\([^)]*['\"][wa+]|os\.(remove|unlink|rename|renames|"
+                          r"rmdir|mkdir|makedirs|system|popen|exec[lv]|replace)|"
+                          r"shutil\.(rmtree|move|copy|copytree)|subprocess|socket|"
+                          r"pathlib[^)]*\.(write_text|rename|unlink|mkdir|rmdir)|"
+                          r"(?<![\w.])eval\s*\(|(?<![\w.])exec\s*\()", re.I)
 
 
 def classify_effect(sample: Dict[str, Any]) -> str:
-    """Classifica a amostra em 'read_only', 'mutating' ou 'none' baseado no efeito colateral."""
+    """Classifica a amostra em 'read_only', 'mutating' ou 'none' baseado no efeito colateral.
+
+    Heuristica conservadora para FILTROS de analise (aba Splits), nunca como
+    garantia de seguranca: na duvida, retorna 'mutating'.
+    """
     calls = []
     for m in sample.get('messages', []):
         for tc in m.get('tool_calls', []):
@@ -85,23 +103,30 @@ def classify_effect(sample: Dict[str, Any]) -> str:
             except Exception:
                 args = {}
             cmd = (args.get('command', '') or args.get('cmd', '') or '').strip().lower()
-            calls.append((fn, cmd))
+            code = args.get('code', '') if isinstance(args.get('code'), str) else ''
+            calls.append((fn, cmd, code))
 
     if not calls:
         return 'none'
 
-    for fn, cmd in calls:
+    for fn, cmd, code in calls:
+        if code and PY_MUTATE_RE.search(code):
+            return 'mutating'
         if cmd:
             first_token = cmd.split()[0] if cmd.split() else ''
             first_verb = first_token.split('-')[0] if '-' in first_token else first_token
-            first_clean = first_verb.strip(';|\"\'')
+            first_clean = first_verb.strip(';|"\'')
             if first_clean in MUTATING_VERBS or any(cmd.startswith(x) for x in ['mkdir', 'touch', 'rm ', 'python ', 'node ', 'git commit', 'git push']):
                 return 'mutating'
-            if any(x in cmd for x in [' > ', ' >> ', ' | out-file', 'set-content', 'new-itemproperty', 'new-item']):
+            if REDIRECT_RE.search(cmd) or SED_INPLACE_RE.search(cmd):
+                return 'mutating'
+            if any(x in cmd for x in [' | out-file', 'set-content', 'new-itemproperty', 'new-item']):
                 return 'mutating'
         else:
             first_part = fn.split('_')[0]
             if first_part in MUTATING_VERBS or fn in ('execute_python', 'python_interpreter'):
+                if fn in ('execute_python', 'python_interpreter') and code and not PY_MUTATE_RE.search(code):
+                    continue
                 return 'mutating'
 
     return 'read_only'

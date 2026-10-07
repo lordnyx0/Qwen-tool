@@ -269,7 +269,7 @@ def main():
     probe_path = os.path.join(MODEL_DIR, "latent_halting_probe.pt")
     if os.path.exists(probe_path):
         try:
-            probe.load_state_dict(torch.load(probe_path, map_location=DEVICE))
+            probe.load_state_dict(torch.load(probe_path, map_location=DEVICE, weights_only=True))
             print("Latent Halting Probe carregada com sucesso!", flush=True)
         except Exception as e:
             print(f"Aviso ao carregar probe: {e}. Inicializando nova sonda.", flush=True)

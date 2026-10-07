@@ -83,7 +83,7 @@ def main():
     if os.path.exists(probe_path):
         print("Carregando Latent Halting Probe calibrado...")
         probe_head = LatentHaltingProbe(hidden_size=config.hidden_size, num_classes=3).to(device).to(dtype)
-        probe_head.load_state_dict(torch.load(probe_path, map_location=device))
+        probe_head.load_state_dict(torch.load(probe_path, map_location=device, weights_only=True))
         probe_head.eval()
     else:
         print("Aviso: latent_halting_probe.pt não encontrado.")

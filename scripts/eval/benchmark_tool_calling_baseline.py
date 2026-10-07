@@ -57,7 +57,7 @@ if os.path.exists(probe_path):
                 return self.net(x)
         hidden_dim = config.hidden_size
         probe = HaltingProbeMLP(hidden_dim).to(DEVICE).to(dtype)
-        probe.load_state_dict(torch.load(probe_path, map_location=DEVICE))
+        probe.load_state_dict(torch.load(probe_path, map_location=DEVICE, weights_only=True))
         probe.eval()
         print("Halting Probe carregada com sucesso!")
     except Exception as e:

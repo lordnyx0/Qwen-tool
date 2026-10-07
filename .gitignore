@@ -16,6 +16,7 @@ ENV/
 
 # Large checkpoints, archive bundles & weights (keep repo lightweight)
 *.zip
+*.tar
 *.tar.gz
 *.bin
 *.safetensors
@@ -24,6 +25,10 @@ checkpoints/**/model.safetensors
 checkpoints/**/model-*.safetensors
 models/gguf/*.gguf
 Kaggle/kaggle_kernel_output/
+
+# PyInstaller build output
+Programa/build/
+Programa/dist/
 
 # Dataset backups numerados (AGENTS.md: nunca commitar .bak/caches)
 *.bak*

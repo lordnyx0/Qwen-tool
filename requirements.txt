@@ -12,6 +12,16 @@ tqdm>=4.66.0
 
 # Inference & Quantization
 llama-cpp-python>=0.3.0
+gguf>=0.10.0
 
 # Kaggle Cloud Sync
 kaggle>=1.6.0
+
+# App desktop (Programa/)
+PySide6>=6.7.0
+
+# Treino / eval auxiliares
+peft>=0.12.0
+huggingface_hub>=0.24.0
+pandas>=2.2.0
+polars>=1.0.0
