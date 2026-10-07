@@ -1,0 +1,19 @@
+{
+  "id": "b8a8a5a82",
+  "name": "verify",
+  "command": "cat .pi/AGENTS.md | head -n 1000",
+  "status": "failed",
+  "outputPath": ".pi\\tasks\\session-7036-7036\\b8a8a5a82.output",
+  "cwd": "C:\\Users\\Nyx\\Downloads\\Diversos\\qwen",
+  "startTime": 1790597855063,
+  "endTime": 1790597855136,
+  "exitCode": 255,
+  "signal": null,
+  "pid": 18012,
+  "bytesWritten": 107,
+  "isAgent": true,
+  "error": "Exited with code 255",
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true
+}

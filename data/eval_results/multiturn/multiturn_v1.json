@@ -1,0 +1,554 @@
+{
+ "tool_sft_v1": {
+  "model": "models/gguf/unrolled_modelo_qwen3loop_tool_sft_q8_0.gguf",
+  "passed": 8,
+  "total": 12,
+  "elapsed_s": 66.21277284622192,
+  "categories": {
+   "arg_correction": {
+    "total": 4,
+    "pass": 3,
+    "format": 4,
+    "select": 4
+   },
+   "tool_switch": {
+    "total": 3,
+    "pass": 1,
+    "format": 2,
+    "select": 2
+   },
+   "format_recovery": {
+    "total": 2,
+    "pass": 1,
+    "format": 2,
+    "select": 2
+   },
+   "retry_discipline": {
+    "total": 2,
+    "pass": 2,
+    "format": 2,
+    "select": 2
+   },
+   "query_broadening": {
+    "total": 1,
+    "pass": 1,
+    "format": 1,
+    "select": 1
+   }
+  },
+  "details": [
+   {
+    "id": "mt_001",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": false,
+    "python_ok": true,
+    "diag": "command: 'du -N /var/log' != 'du --max-depth=1 /var/log'",
+    "raw_output": "The tool `du` requires an argument `N`. Let me adjust the command to include `N` and try again.\n</think>\n\n<tool_call>\n{\"name\": \"run_shell_command\", \"arguments\": {\"command\": \"du -N /var/log\"}}\n</tool_c"
+   },
+   {
+    "id": "mt_002",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "The tool requires a parameter called `duration_minutes`. The current tool definition shows `duration_minutes` as a required parameter. Let me adjust the function call to include that parameter.\n</thin"
+   },
+   {
+    "id": "mt_003",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "I see the issue. The parameter 'value' needs to be a number, but the user provided a string \"42\". Let me fix that and try again.\n</think>\n\n<tool_call>\n{\"name\": \"convert_measurement_units\", \"arguments\""
+   },
+   {
+    "id": "mt_004",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "The PowerShell operation has been blocked due to an access violation. The reason is that the 'spooler' service is currently running, and the PowerShell operation cannot proceed. To resolve this, you c"
+   },
+   {
+    "id": "mt_005",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'get_company_financials', gerou []",
+    "raw_output": "The tool `get_stock_quote` retrieves the real-time price of a stock, but it does not provide financial statements or income figures. To obtain the latest income statement figures for PETR4.SA, you wou"
+   },
+   {
+    "id": "mt_006",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": false,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": false,
+    "python_ok": true,
+    "diag": "path: '/var/' != '/var/backups'",
+    "raw_output": "Attempting to list /var/backups directly as a file is incorrect. The correct approach is to first list the parent directory /var/ and then navigate to /var/backups. Let's first list /var/ to find the "
+   },
+   {
+    "id": "mt_007",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Attempting to convert 42 km to miles using the currency tool, but the tool only supports currency conversion. Since length units are not supported, I'll use the physical quantity conversion tool inste"
+   },
+   {
+    "id": "mt_008",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": false,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": false,
+    "python_ok": true,
+    "diag": "unit: 'C' != 'celsius'",
+    "raw_output": "<tool_call>\n{\"name\": \"get_weather\", \"arguments\": {\"city\": \"Curitiba\", \"unit\": \"C\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_009",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "The tool requires a parameter called `to` which is not provided in the request. Let me add the recipient email address to the draft.\n</think>\n\n<tool_call>\n{\"name\": \"create_email_draft\", \"arguments\": {"
+   },
+   {
+    "id": "mt_010",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Attempting to check the health of the specified endpoint.\n</think>\n\n<tool_call>\n{\"name\": \"check_endpoint_health\", \"arguments\": {\"url\": \"https://checkout.loja.com\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_011",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Attempting to fetch the current time in America/New_York again.\n</think>\n\n<tool_call>\n{\"name\": \"get_timezone_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_012",
+    "level": "multiturn_correction",
+    "category": "query_broadening",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Attempting to search for 'Q4 revenue' in archival memory. No results were returned. Since no memory was found, I'll proceed to search for 'quarterly revenue report' instead.\n</think>\n\n<tool_call>\n{\"na"
+   }
+  ]
+ },
+ "qwen3_base": {
+  "model": "models/gguf/Qwen3-0.6B-Q8_0.gguf",
+  "passed": 5,
+  "total": 12,
+  "elapsed_s": 93.8405864238739,
+  "categories": {
+   "arg_correction": {
+    "total": 4,
+    "pass": 2,
+    "format": 2,
+    "select": 2
+   },
+   "tool_switch": {
+    "total": 3,
+    "pass": 2,
+    "format": 2,
+    "select": 2
+   },
+   "format_recovery": {
+    "total": 2,
+    "pass": 1,
+    "format": 1,
+    "select": 1
+   },
+   "retry_discipline": {
+    "total": 2,
+    "pass": 0,
+    "format": 0,
+    "select": 0
+   },
+   "query_broadening": {
+    "total": 1,
+    "pass": 0,
+    "format": 0,
+    "select": 0
+   }
+  },
+  "details": [
+   {
+    "id": "mt_001",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'run_shell_command', gerou []",
+    "raw_output": "Okay, the user wants to check disk usage in the /var/log directory. I tried using the 'du' command, but there was an error. The error message says '--max-depth' requires an argument. Hmm, maybe I shou"
+   },
+   {
+    "id": "mt_002",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user tried to schedule a meeting, but there's an error. Let me check the function parameters again. The required fields are attendees, duration_minutes, start, and title. The user provided t"
+   },
+   {
+    "id": "mt_003",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'convert_measurement_units', gerou []",
+    "raw_output": "Okay, the user asked to convert 42 km to miles. I used the convert_measurement_units function, but there was a type error. The function requires a number for 'value', but the user provided '42' which "
+   },
+   {
+    "id": "mt_004",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user tried to stop the Windows print spooler service, but there was an error. The error message says Access denied, and the hint suggests using the -Force flag. So, I need to check if the us"
+   },
+   {
+    "id": "mt_005",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'get_company_financials', gerou []",
+    "raw_output": "Okay, the user asked for the latest income statement figures for PETR4.SA. I need to check which tool to use. The available tools are get_stock_quote and get_company_financials. The user is asking abo"
+   },
+   {
+    "id": "mt_006",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user asked to list the contents of /var/backups, but I tried using read_file, which failed because it's a directory. The error message says it's a directory, so I need to use the list_dir fu"
+   },
+   {
+    "id": "mt_007",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user asked to convert 42 km to miles. I tried using the currency tool, but that didn't work because the currency tool is for converting between different currencies, not physical quantities."
+   },
+   {
+    "id": "mt_008",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'get_weather', gerou []",
+    "raw_output": "Okay, the user is asking for the current temperature in Curitiba in Celsius. I need to use the get_weather function. Let me check the parameters. The function requires both city and unit. The user spe"
+   },
+   {
+    "id": "mt_009",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user asked to draft an email to cliente@acme.com with the subject 'Commercial Proposal' and the body 'Sending the proposal as requested.' I called the create_email_draft function with the pr"
+   },
+   {
+    "id": "mt_010",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'check_endpoint_health', gerou []",
+    "raw_output": "Okay, the user asked to check if https://checkout.loja.com is online. I used the check_endpoint_health function with that URL. The response came back with an error saying the request timed out after 1"
+   },
+   {
+    "id": "mt_011",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'get_timezone_time', gerou []",
+    "raw_output": "Okay, the user asked for the time in America/New_York, and I called the get_timezone_time function with that timezone. But there was an error saying the response was empty. Maybe the function isn't wo"
+   },
+   {
+    "id": "mt_012",
+    "level": "multiturn_correction",
+    "category": "query_broadening",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'archival_memory_search', gerou []",
+    "raw_output": "Okay, the user asked to search for 'Q4 revenue' and if there were no results, to broaden to 'quarterly revenue report'. I called the archival memory search with 'Q4 revenue' and got no results. Now I "
+   }
+  ]
+ },
+ "base_sft": {
+  "model": "models/gguf/unrolled_modelo_qwen3loop_sft_q8_0.gguf",
+  "passed": 3,
+  "total": 12,
+  "elapsed_s": 198.69824051856995,
+  "categories": {
+   "arg_correction": {
+    "total": 4,
+    "pass": 0,
+    "format": 0,
+    "select": 0
+   },
+   "tool_switch": {
+    "total": 3,
+    "pass": 1,
+    "format": 1,
+    "select": 1
+   },
+   "format_recovery": {
+    "total": 2,
+    "pass": 1,
+    "format": 1,
+    "select": 1
+   },
+   "retry_discipline": {
+    "total": 2,
+    "pass": 0,
+    "format": 0,
+    "select": 0
+   },
+   "query_broadening": {
+    "total": 1,
+    "pass": 1,
+    "format": 1,
+    "select": 1
+   }
+  },
+  "details": [
+   {
+    "id": "mt_001",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'run_shell_command', gerou []",
+    "raw_output": "Okay, the user is asking to show disk usage for the /var/log directory. I need to figure out the right command to use. The default command for disk usage is du, but the option '--max-depth' is needed."
+   },
+   {
+    "id": "mt_002",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'schedule_meeting', gerou []",
+    "raw_output": "Okay, let's see. The user wants to schedule a meeting called 'Q4 Alignment' for 2026-11-03T10:00:00, with one attendee, ana@acme.com, and it should last for 45 minutes. But the tool provided requires "
+   },
+   {
+    "id": "mt_003",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'convert_measurement_units', gerou []",
+    "raw_output": "Okay, let's see. The user wants to convert 42 kilometers to miles. Hmm, I remember there's a unit conversion tool here. The function is called convert_measurement_units, and it takes from_unit, to_uni"
+   },
+   {
+    "id": "mt_004",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'run_powershell', gerou []",
+    "raw_output": "Okay, the user tried to stop the Windows print spooler service but got an error saying \"Access denied stopping 'spooler' while dependents are running.\" Hmm, that's a problem. How do I handle this?\n\nFi"
+   },
+   {
+    "id": "mt_005",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'get_company_financials', gerou []",
+    "raw_output": "Okay, let's see. The user asked for the latest income statement figures for PETR4.SA. I need to use the get_company_financials function because that's the one that retrieves fundamental financial stat"
+   },
+   {
+    "id": "mt_006",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user wants to list the contents of the directory /var/backups. But I remember that the function list_dir is designed for listing directories, not files. So I should use that function instead"
+   },
+   {
+    "id": "mt_007",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'convert_measurement_units', gerou []",
+    "raw_output": "Okay, the user wants to convert 42 kilometers to miles. Hmm, I remember that the currency tool isn't the right one here because it's about units, not exchange rates. Let me think about the right tool."
+   },
+   {
+    "id": "mt_008",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Okay, the user is asking for the current temperature in Curitiba in Celsius. I need to use the get_weather function. Let me check the parameters required: city and unit. The city is Curitiba, and the "
+   },
+   {
+    "id": "mt_009",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'create_email_draft', gerou []",
+    "raw_output": "Okay, let's see. The user asked me to draft an email to cliente@acme.com with a subject 'Commercial Proposal' and the body 'Sending the proposal as requested.' But the tool I used, create_email_draft,"
+   },
+   {
+    "id": "mt_010",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'check_endpoint_health', gerou []",
+    "raw_output": "Okay, the user asked me to check if https://checkout.loja.com is online. I used the check_endpoint_health function with that URL. But the response had a request timed out error after 10 seconds. Hmm, "
+   },
+   {
+    "id": "mt_011",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": false,
+    "format_ok": false,
+    "selection_ok": false,
+    "args_ok": false,
+    "python_ok": false,
+    "diag": "Tool errada: esperado 'get_timezone_time', gerou []",
+    "raw_output": "Okay, the user is asking for the current time in America/New_York. I need to use the get_timezone_time function to get the time. But the error says the response is empty. Hmm, maybe the function isn't"
+   },
+   {
+    "id": "mt_012",
+    "level": "multiturn_correction",
+    "category": "query_broadening",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "I need to search for 'Q4 revenue' and then broaden it to 'quarterly revenue report' if there are no results. Since I didn't find any results for 'Q4 revenue', I'll proceed to search for 'quarterly rev"
+   }
+  ]
+ }
+}

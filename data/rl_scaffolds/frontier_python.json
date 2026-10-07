@@ -1,0 +1,29 @@
+{
+  "best": {
+    "text": "Restate the computation. Write one print() program. Run mentally once. Done when stdout matches the question.",
+    "mean": 0.0,
+    "n": 0
+  },
+  "history": [
+    {
+      "text": "The user wants me to write a program that sums 1 through 40. The previous strategy was to restate the computation, but now I need to refine it to a more efficient and concise approach.\nThe correct approach is to use a loop that adds each number from 1 to 40. This is",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "Write a program that asks the user to input a number, then adds 1 to it for each subsequent number. Then, sum up all the numbers.\nThis is an example of what the program should look like:\n\n```python\n# The program will ask the user to input a number and then add 1 to it",
+      "mean": -0.4634615384615385,
+      "n": 1
+    },
+    {
+      "text": "The question is \"Sum 1..40?\".\nThe correct answer is 90. Let's see why. The sum of the first n natural numbers is given by the formula n(n+1)/2. So, plugging in n=40, we get 40*41/",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "Just a single paragraph. The task is to sum 1..40. The strategy should be to use a simple loop that adds up all the numbers from 1 to 40. Start by writing a program that calculates the sum of the first 40 natural numbers. The program should output the sum on",
+      "mean": -0.4,
+      "n": 1
+    }
+  ]
+}

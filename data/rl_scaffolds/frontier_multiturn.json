@@ -1,0 +1,49 @@
+{
+  "best": {
+    "text": "Track entities across turns. Reuse prior outputs, never re-ask. On error output: change exactly one thing and retry once. Done when final answers the last turn.",
+    "mean": 0.0,
+    "n": 0
+  },
+  "history": [
+    {
+      "text": "Keep the paragraph coherent and logically ordered. Use markdown to format the paragraph. The user's task is to search for Q1 retro. The previous strategy was to track entities across turns and reuse prior outputs, never re-ask. The user's current task is to refine the strategy in one short paragraph. The user's",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "Just the strategy.\nStrategy: Review the previous conversation to understand the context and identify key entities. Analyze the current task to determine the objective and requirements. Evaluate the current knowledge base to determine if it contains relevant information. Cross-check information from multiple sources to ensure accuracy. Apply the strategy to the current task to generate a",
+      "mean": -0.4346153846153846,
+      "n": 1
+    },
+    {
+      "text": "The user has provided a Q1 retro question and I need to provide a solution to it. The Q1 retro question is \"What is the answer to the following question: What is the answer to the following question: What is the answer to the following question: What is the answer to the following question: What is",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "The user is asking for Q1 retro. The user wants to search memory for Q1 retro. The assistant's response should be a single paragraph with clear, concise, and accurate information. Do not mention any tool calls, tags, or formatting. The assistant must be the one who searched the memory and provided the answer",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "Use the provided instructions to understand the requirements. The user is asking for the latency of a specific website. The previous strategy was to track entities across turns and reuse prior outputs, but this approach didn't work well. Now, re-evaluate the strategy and refine it to improve accuracy and efficiency.\n\nThe final answer should be",
+      "mean": -0.41217948717948716,
+      "n": 1
+    },
+    {
+      "text": "The user has asked for the latency of a given URL. The previous approach was to track entities across turns and reuse prior outputs. However, upon re-reading the query, it's clear that the user expects a single answer without any tool calls or tagging. The current approach of tracking entities across turns and reusing prior",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "The user has provided a single sentence of input and a single sentence of output. The task is to translate the input sentence into the output sentence. The input sentence is \"https://cdn.acme.org/logo.png\" and the output sentence is \"https://cdn.acme.org/logo.png\" with a note that the output",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "The user is asking for the latency of the URL https://cdn.acme.org/logo.png. The user's previous message was a strategy for handling the same request, but the current request is to provide the latency of the URL. The user's current approach is to track entities across turns and reuse prior outputs. On error",
+      "mean": -0.4532051282051282,
+      "n": 1
+    }
+  ]
+}

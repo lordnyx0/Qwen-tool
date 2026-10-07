@@ -1,0 +1,362 @@
+[
+ {
+  "uuid": "t_nav2_0039",
+  "source": "manual_v35",
+  "pillar": "workspace_code",
+  "is_retrajectory": false,
+  "token_length": 893,
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "video_related_contents",
+     "description": "Fetches related video contents from YouTube using the RapidAPI service.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "video_videoid",
+     "description": "Fetches video information and status from the video-builder API using the provided video ID and RapidAPI key.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "view_wishlist",
+     "description": "Retrieve the list of products in the user's wishlist.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "user_id": {
+        "type": "string",
+        "description": "The unique identifier of the user whose wishlist is to be retrieved."
+       }
+      },
+      "required": [
+       "user_id"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "vin_decoder",
+     "description": "Decodes a given VIN (Vehicle Identification Number) for a vehicle manufactured in Europe to retrieve information such as car model, maker, year, engine, and other relevant details.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "bash",
+     "description": "Execute bash shell commands in Linux terminal and view stdout/stderr output.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "command": {
+        "type": "string",
+        "description": "Linha de comando bash"
+       }
+      },
+      "required": [
+       "command"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "vivanews_detail",
+     "description": "Fetches and returns the detailed news information from Vivanews by the given ID using the provided RapidAPI key.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "web_exchanges",
+     "description": "Retrieve and sort exchanges based on specified criteria.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "webcams_list_continent_continent_continent",
+     "description": "Fetches a list of webcams for a specified continent.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "webcams_list_property_property_property",
+     "description": "Retrieves a list of webcams based on the specified property.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "whois_history_v1",
+     "description": "Fetches the WHOIS history for a specified domain.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "world_coordinate_to_income",
+     "description": "Fetches per capita income data for a given set of geographic coordinates (longitude and latitude) using the provided API key.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   }
+  ],
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an AI programming and workspace automation assistant. Use tools via structured tool_calls format. Be concise, accurate, and direct."
+   },
+   {
+    "role": "user",
+    "content": "PLACEHOLDER_E39"
+   },
+   {
+    "role": "assistant",
+    "content": "<think>\nDirectory. Finding versioned handlers with the shell.\n</think>",
+    "tool_calls": [
+     {
+      "id": "call_001",
+      "type": "function",
+      "function": {
+       "name": "bash",
+       "arguments": "{\"command\": \"find api -type f\"}"
+      }
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "name": "bash",
+    "tool_call_id": "call_001",
+    "content": "api/middleware/auth.js\napi/openapi.yaml\napi/README.md\napi/routes/orders.js\napi/routes/users.js\napi/routes/v1/auth.js\napi/routes/v1/orders.js\napi/routes/v1/users.js\n"
+   },
+   {
+    "role": "assistant",
+    "content": "Versioned handlers live under api/routes/v1/ (auth, orders, users)."
+   }
+  ]
+ },
+ {
+  "uuid": "t_navb_0039",
+  "source": "manual_v37_alias",
+  "pillar": "workspace_code",
+  "is_retrajectory": false,
+  "token_length": 893,
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "video_related_contents",
+     "description": "Fetches related video contents from YouTube using the RapidAPI service.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "video_videoid",
+     "description": "Fetches video information and status from the video-builder API using the provided video ID and RapidAPI key.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "view_wishlist",
+     "description": "Retrieve the list of products in the user's wishlist.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "user_id": {
+        "type": "string",
+        "description": "The unique identifier of the user whose wishlist is to be retrieved."
+       }
+      },
+      "required": [
+       "user_id"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "vin_decoder",
+     "description": "Decodes a given VIN (Vehicle Identification Number) for a vehicle manufactured in Europe to retrieve information such as car model, maker, year, engine, and other relevant details.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "shell",
+     "description": "Execute shell shell commands in Linux terminal and view stdout/stderr output.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "command": {
+        "type": "string",
+        "description": "Linha de comando shell"
+       }
+      },
+      "required": [
+       "command"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "vivanews_detail",
+     "description": "Fetches and returns the detailed news information from Vivanews by the given ID using the provided RapidAPI key.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "web_exchanges",
+     "description": "Retrieve and sort exchanges based on specified criteria.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "webcams_list_continent_continent_continent",
+     "description": "Fetches a list of webcams for a specified continent.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "webcams_list_property_property_property",
+     "description": "Retrieves a list of webcams based on the specified property.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "whois_history_v1",
+     "description": "Fetches the WHOIS history for a specified domain.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "world_coordinate_to_income",
+     "description": "Fetches per capita income data for a given set of geographic coordinates (longitude and latitude) using the provided API key.",
+     "parameters": {
+      "type": "object",
+      "properties": {}
+     }
+    }
+   }
+  ],
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an AI programming and workspace automation assistant. Use tools via structured tool_calls format. Be concise, accurate, and direct."
+   },
+   {
+    "role": "user",
+    "content": "PLACEHOLDER_E39"
+   },
+   {
+    "role": "assistant",
+    "content": "<think>\nDirectory. Finding versioned handlers with the shell.\n</think>",
+    "tool_calls": [
+     {
+      "id": "call_001",
+      "type": "function",
+      "function": {
+       "name": "shell",
+       "arguments": "{\"command\": \"find api -type f\"}"
+      }
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "name": "shell",
+    "tool_call_id": "call_001",
+    "content": "api/middleware/auth.js\napi/openapi.yaml\napi/README.md\napi/routes/orders.js\napi/routes/users.js\napi/routes/v1/auth.js\napi/routes/v1/orders.js\napi/routes/v1/users.js\n"
+   },
+   {
+    "role": "assistant",
+    "content": "Versioned handlers live under api/routes/v1/ (auth, orders, users)."
+   }
+  ]
+ }
+]

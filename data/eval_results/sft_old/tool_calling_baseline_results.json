@@ -1,0 +1,68 @@
+{
+  "metrics": {
+    "total_cases": 6,
+    "trigger_accuracy": 66.7,
+    "name_accuracy": 66.7,
+    "json_syntax_accuracy": 83.3,
+    "args_accuracy": 66.7,
+    "overall_pass": 66.7
+  },
+  "cases": [
+    {
+      "id": "TC-01",
+      "title": "Chamada Simples / Clima",
+      "trigger": true,
+      "name": true,
+      "json": true,
+      "args": true,
+      "status": "PASS"
+    },
+    {
+      "id": "TC-02",
+      "title": "Execucao Python / Matematica",
+      "trigger": false,
+      "name": false,
+      "json": false,
+      "args": false,
+      "status": "FAIL",
+      "failure_reason": "Raciocinou mentalmente no CoT e esgotou tokens em vez de despachar execute_python."
+    },
+    {
+      "id": "TC-03",
+      "title": "Discriminacao Multiplas Ferramentas",
+      "trigger": true,
+      "name": true,
+      "json": true,
+      "args": true,
+      "status": "PASS"
+    },
+    {
+      "id": "TC-04",
+      "title": "Teste Negativo (Pergunta Conversacional)",
+      "trigger": false,
+      "name": false,
+      "json": true,
+      "args": false,
+      "status": "FAIL",
+      "failure_reason": "Over-triggering: Disparou search_web desnecessariamente para pergunta de conhecimento geral."
+    },
+    {
+      "id": "TC-05",
+      "title": "Parametros Estruturados Aninhados",
+      "trigger": true,
+      "name": true,
+      "json": true,
+      "args": true,
+      "status": "PASS"
+    },
+    {
+      "id": "TC-06",
+      "title": "Sintese Multi-turn pos-Tool",
+      "trigger": true,
+      "name": true,
+      "json": true,
+      "args": true,
+      "status": "PASS"
+    }
+  ]
+}

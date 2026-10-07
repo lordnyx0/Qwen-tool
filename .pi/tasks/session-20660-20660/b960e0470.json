@@ -1,0 +1,20 @@
+{
+  "id": "b960e0470",
+  "name": "roadmap",
+  "command": "cd docs/ && ls -la",
+  "status": "failed",
+  "outputPath": ".pi\\tasks\\session-20660-20660\\b960e0470.output",
+  "cwd": "C:\\Users\\Nyx\\Downloads\\Diversos\\qwen",
+  "startTime": 1790694889892,
+  "endTime": 1790694889954,
+  "exitCode": 1,
+  "signal": null,
+  "pid": 23876,
+  "bytesWritten": 106,
+  "isAgent": true,
+  "error": "Exited with code 1",
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true,
+  "timeoutSeconds": 100
+}

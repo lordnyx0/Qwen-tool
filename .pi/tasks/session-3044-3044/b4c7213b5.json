@@ -1,0 +1,19 @@
+{
+  "id": "b4c7213b5",
+  "name": "tasklist",
+  "command": "ls -la logs/ | tail -n 2",
+  "status": "failed",
+  "outputPath": ".pi\\tasks\\session-3044-3044\\b4c7213b5.output",
+  "cwd": "C:\\Users\\Nyx\\Downloads\\Diversos\\qwen",
+  "startTime": 1790762038577,
+  "endTime": 1790762038645,
+  "exitCode": 255,
+  "signal": null,
+  "pid": 6828,
+  "bytesWritten": 106,
+  "isAgent": true,
+  "error": "Exited with code 255",
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true
+}

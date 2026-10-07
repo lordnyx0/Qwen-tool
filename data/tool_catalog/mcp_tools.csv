@@ -1,0 +1,14 @@
+mcp_tool,readOnlyHint,ours,output_contract,collector,calls_mcp_name,calls_ours_name,decls_ours_name,status
+read_text_file,True,read_text_file,verbatim content (optional head/tail slicing),collect: cat/head/tail,318,318,470,covered
+read_media_file,True,read_media_file,TYPE N bytes: path (TYPE=PNG/SVG/BIN by magic),collect: magic sniff,50,50,50,covered
+read_multiple_files,True,read_multiple_files,concat of '--- path ---\n' + content per file,collect: sequential cat,50,50,587,covered
+list_directory,True,list_directory,"[FILE] x / [DIR] y per entry, sorted",collect: readdir+filetype,116,116,664,covered
+list_directory_with_sizes,True,list_directory_with_sizes,"name: N bytes per entry, sorted",collect: stat,50,50,87,covered
+directory_tree,True,directory_tree,"indented tree, sorted",collect: walk,50,50,287,covered
+search_files,True,search_files,file:line:match (grep -rn),collect: grep -rn,50,50,287,covered
+get_file_info,True,get_file_info,"path: file|dir, N bytes (no mtime)",collect: stat,50,50,287,covered
+list_allowed_directories,True,list_allowed_directories,allowed roots (harness-defined),declared only,0,0,550,nominal
+create_directory,False,create_directory,created {path},collect: mkdir -p,50,50,400,covered
+write_file,False,write_file,wrote N bytes to {path},collect: write,50,50,511,covered
+edit_file,False,edit_file,replaced 1 occurrence in {path},collect: replace-first,50,50,400,covered
+move_file,False,move_file,moved {src} -> {dst},collect: mv,50,50,400,covered

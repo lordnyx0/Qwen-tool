@@ -1,0 +1,1502 @@
+[
+ {
+  "uuid": "t_nav2_0020",
+  "request": "Find the v9 handler",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0003",
+  "request": "Describe the site",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0011",
+  "request": "Overview the Store API",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0001",
+  "request": "Describe the shop project structure",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0047",
+  "request": "What is the blog about?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0009",
+  "request": "Open the dev Dockerfile",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0013",
+  "request": "What is in the shop public folder?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0033",
+  "request": "Last spec change?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0039",
+  "request": "PLACEHOLDER_E39",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0050",
+  "request": "Deep file text?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0038",
+  "request": "Open the jobs home",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0009",
+  "request": "Read the logo image",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0008",
+  "request": "Trace the deep file",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0018",
+  "request": "Reach the deep file",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0032",
+  "request": "First auth failure time?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0012",
+  "request": "Inspect the shop server file",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0014",
+  "request": "Inspect the v1 folder",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0038",
+  "request": "Show part_00 contents",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0035",
+  "request": "List all TODOs",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0041",
+  "request": "What's hidden in lib?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0026",
+  "request": "East region performance?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0036",
+  "request": "Anything hidden in lib?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0035",
+  "request": "Anything ignored in srv?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0024",
+  "request": "Show the orders code",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0002",
+  "request": "Show the lib tests",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0023",
+  "request": "Body styling?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0043",
+  "request": "Open the missing staging config",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0040",
+  "request": "Is the cache dir readable?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0021",
+  "request": "Library version?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0020",
+  "request": "Open the holiday job",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0050",
+  "request": "Which port does the shop listen on?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0018",
+  "request": "What's in void?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0040",
+  "request": "Where is queued set?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0009",
+  "request": "Read the shop helper module",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0029",
+  "request": "OpenAPI version?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0011",
+  "request": "Tour the library",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0008",
+  "request": "Summarize regional sales",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0037",
+  "request": "Peek inside empty3",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0030",
+  "request": "CSS font?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0014",
+  "request": "List the cron jobs",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0021",
+  "request": "App host and port?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0023",
+  "request": "How are blog posts rendered?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0028",
+  "request": "What's at the bottom of deep?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0003",
+  "request": "Describe the shop frontend",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0041",
+  "request": "Anything hidden in srv?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0037",
+  "request": "Measure the first two parts",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0036",
+  "request": "Any dotfiles in srv?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0019",
+  "request": "Find the shop config",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0004",
+  "request": "What jobs run nightly?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0048",
+  "request": "Where did v9 go?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0049",
+  "request": "Open the staging config",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0028",
+  "request": "Install deps command?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0042",
+  "request": "Is yard3 really empty?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0003",
+  "request": "Show the app config and database config",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0030",
+  "request": "Token length rule?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0014",
+  "request": "Check cache limits",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0031",
+  "request": "Workdir of the image?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0017",
+  "request": "Summarize February notes",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0023",
+  "request": "Cache TTL?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0046",
+  "request": "Spanish hello?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0045",
+  "request": "Which region is east?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0047",
+  "request": "Find versioned route handlers",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0044",
+  "request": "Count ERROR lines",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0029",
+  "request": "Which command launches shopcart?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0044",
+  "request": "Confirm the token rule",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0049",
+  "request": "What guards requests?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0043",
+  "request": "Open the missing test helper",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0001",
+  "request": "Describe the acme lib",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0026",
+  "request": "What did February change?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0044",
+  "request": "Is the nest checkout empty?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0045",
+  "request": "Describe banner.svg",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0001",
+  "request": "Describe the Store API project",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0046",
+  "request": "Summarize shop README",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0012",
+  "request": "Check the test suite",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0042",
+  "request": "Count the data parts",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0002",
+  "request": "How do I install from the wiki?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0024",
+  "request": "Base image?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0028",
+  "request": "What does the shop README say?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0022",
+  "request": "What data does the frontend fetch?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0003",
+  "request": "How are orders created?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0017",
+  "request": "Triage the error logs",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0034",
+  "request": "How many regions tracked?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0040",
+  "request": "Search posts for version mentions",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0005",
+  "request": "How does auth middleware work?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0032",
+  "request": "Spanish bye?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0050",
+  "request": "List service files",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0031",
+  "request": "Users endpoint code?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0039",
+  "request": "Find test files",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0048",
+  "request": "Read the q3 data file",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0010",
+  "request": "Open the v9 routes file",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0001",
+  "request": "Describe the Acme docs project",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0007",
+  "request": "Find errors across the logs",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0019",
+  "request": "Open the staging library",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0023",
+  "request": "Show the users list code",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0005",
+  "request": "Show me the blog posts",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0048",
+  "request": "Open the dev requirements",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0035",
+  "request": "Health endpoint?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0020",
+  "request": "Read the final log",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0015",
+  "request": "Show Spanish strings",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0036",
+  "request": "Show hidden files in api",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0007",
+  "request": "Find all Python files in the blog",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0025",
+  "request": "Peek at the first data rows",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0011",
+  "request": "Walk through the docs",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0002",
+  "request": "What does the shop server do?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0006",
+  "request": "Survey the bigdata folder",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0020",
+  "request": "Locate the blog runbook",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0050",
+  "request": "Show the v1 orders shim",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0041",
+  "request": "How many data parts exist?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0017",
+  "request": "Is the nest folder really empty?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0047",
+  "request": "Open the dev requirements",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0034",
+  "request": "Scratch refresh rate?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0046",
+  "request": "Z region sales?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0006",
+  "request": "What media assets exist?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0034",
+  "request": "Show homepage source",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0007",
+  "request": "Summarize the January notes",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0016",
+  "request": "Show English strings",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0016",
+  "request": "Inventory the media assets",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0039",
+  "request": "Tail the newest log",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0041",
+  "request": "How deep is deep?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0043",
+  "request": "Peek into part_00",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0029",
+  "request": "Debug flag state?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0016",
+  "request": "Audit the service image",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0036",
+  "request": "Sample the bigdata parts without reading all forty",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0033",
+  "request": "Dump the first data part",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0025",
+  "request": "Backup target?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0032",
+  "request": "Middleware behavior?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0032",
+  "request": "Enumerate blog contents",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0026",
+  "request": "How large is part_00?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0045",
+  "request": "Portuguese bye?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0048",
+  "request": "What cleans tmp?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0038",
+  "request": "Which files mention a version?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0038",
+  "request": "Open the wiki root",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0011",
+  "request": "Summarize the shop project",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0029",
+  "request": "Lib version check",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0043",
+  "request": "Check the v1 token rule",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0010",
+  "request": "What's in void?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0024",
+  "request": "JS on load?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0028",
+  "request": "Latest changelog entry?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0004",
+  "request": "What do the v1 shims do?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0026",
+  "request": "Cleanup policy?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0013",
+  "request": "Compare app and db configs",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0034",
+  "request": "January TODO?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0025",
+  "request": "What failed at 00:09?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0012",
+  "request": "Show install prerequisites",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0046",
+  "request": "Total TODO count?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav3_0033",
+  "request": "West region Q2?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0022",
+  "request": "What does the token check do?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav2_0019",
+  "request": "Show the logo",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav4_0049",
+  "request": "Report schedule?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_nav_0008",
+  "request": "Where is rendering implemented?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_irr_0143",
+  "request": "What vinyl record did I buy last week?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0004",
+  "request": "How big is the bigdata folder?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0021",
+  "request": "I'm curious about the details of a basketball game that happened last week. The match ID was '369121518'. Could you retrieve the statistics for that game?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0039",
+  "request": "Get the awards summary for the actress with IMDb ID nm0001794.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0054",
+  "request": "Start a security scan on 'https://api.example.com' without setting a callback URL.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0005",
+  "request": "Pending file renames on reboot?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0098",
+  "request": "What is the average of the numbers 12, 23, 34, 45, and 56?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0077",
+  "request": "Smallest positive integer divisible by all numbers from 1 to 12?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0045",
+  "request": "Can you remind me of my full name, location?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0001",
+  "request": "Execute a local PowerShell script",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0153",
+  "request": "Shadow setting for support sessions?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0144",
+  "request": "Command Aliasing, Creates an alias for a PowerShell command to disguise its true purpose, which can be useful in evading script analysis.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0104",
+  "request": "In a list of fruits ['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry'], how many times does each fruit appear?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0024",
+  "request": "What previous incident might be linked to this one?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0060",
+  "request": "How many files are in logs/? Read it and count",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0142",
+  "request": "Square root of 2 rounded to 3 decimals?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0032",
+  "request": "Where do I currently live and train?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0096",
+  "request": "Can you remind me of my meltdown tracking, self care activity?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0157",
+  "request": "Could you tell me the distance between Chicago O'Hare Airport (ORD) and London Heathrow Airport (LHR)? I need this for trip logistics.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0107",
+  "request": "What project am I currently working on?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0155",
+  "request": "Run a PowerShell script block on a remote computer to download and execute a script.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0056",
+  "request": "What is my upcoming review session?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0015",
+  "request": "Please update my nationality \u2014 it's now Polish (effective October 2028).",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0089",
+  "request": "What is the name and breed of my pet cat?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0041",
+  "request": "Hey, what's my least favorite dumpling again?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0130",
+  "request": "How big is the bigdata folder?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0067",
+  "request": "What's Matt's favorite Springsteen album?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0102",
+  "request": "Could you tell me my children?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0042",
+  "request": "Remainder of 2000 divided by 17?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0038",
+  "request": "Can you remind me of my favorite movement, part time job, monthly goal?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0122",
+  "request": "Can you remind me of my book club, recent trip site, full name?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0016",
+  "request": "Execute a VBScript using cscript.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0025",
+  "request": "Can you get me the latest sports news from the US?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0044",
+  "request": "Could you help me get the Mumbai Indians' current roster and leadership structure to plan the workshop effectively?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0031",
+  "request": "PRICE payment for a 30000 loan, 12 months, 2.0% monthly?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0040",
+  "request": "Hexadecimal of 1987 in uppercase?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0101",
+  "request": "What is my favorite feature of the online system?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0138",
+  "request": "Do you remember my commercial work?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0125",
+  "request": "Convert 1 Bitcoin to Ethereum.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0047",
+  "request": "What is the favicon URL for https://www.wikipedia.org?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0151",
+  "request": "What is my favorite historical firearms era?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0152",
+  "request": "How many digits does 15 factorial have?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0113",
+  "request": "Read project configuration settings",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0078",
+  "request": "Can you remind me of my live coding tool, thesis title?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0084",
+  "request": "Make a directory named prismoq",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0088",
+  "request": "What are the trending tracks on Spotify's home page for Australia?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0011",
+  "request": "Fetch recommendations for experiments 123, 456, and 789.",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0064",
+  "request": "Which port does the shop listen on?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0080",
+  "request": "Hey, I need the recipe for cocktail ID 12345\u2014can you help?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0062",
+  "request": "Can you remind me of my ongoing petition, occupation, key opponent?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0071",
+  "request": "In California, if the payor spouse earns $5000 per month and the recipient earns $2000 per month, how much alimony will be paid over 5 years?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0036",
+  "request": "Which research group am I part of at [COLLEGE2]?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0118",
+  "request": "Which sectors do I focus on for investments?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0158",
+  "request": "I'm checking out the TV stand (ID: 4201989) and want to see the latest six customer questions and answers. Could you get those for me, sorted by when they were asked, and include the answer submission times and user locations?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0081",
+  "request": "Hey, I need to find the TTS audio I made earlier. Do you know where it's saved?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0055",
+  "request": "What country hosts the flagship theme park that opened in 1968 in the headquarters city of the world's best-selling construction toy brand?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0063",
+  "request": "Average of [11, 23, 37, 41, 53]?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0085",
+  "request": "Can you remind me of my location, family relationship, artistic past?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0137",
+  "request": "Dot product of u=[3,-2,5,4] and v=[7,6,-1,3]?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_irr_0069",
+  "request": "Do you remember my son school?",
+  "expect_nocall": true
+ },
+ {
+  "uuid": "t_run_0001",
+  "request": "Run this code and tell me the exact output:\nprint(13**7)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0002",
+  "request": "Run this code and tell me the exact output:\nprint('hello gate')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0003",
+  "request": "Run this code and tell me the exact output:\nprint(1/0)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0004",
+  "request": "Run this code and tell me the exact output:\nundefined_name_xyz",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0005",
+  "request": "Run this code and tell me the exact output:\nfor i in range(3):\n    print(f'n={i}')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0006",
+  "request": "Run this code and tell me the exact output:\na = 41\na += 1\nprint(a)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0007",
+  "request": "Run this code and tell me the exact output:\nprint('tab\\there')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0008",
+  "request": "Run this code and tell me the exact output:\nprint(\"it's ok\")",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0009",
+  "request": "Run this code and tell me the exact output:\nimport json; print(json.dumps({'a': 1, 'b': [1,2]}))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0010",
+  "request": "Run this code and tell me the exact output:\nimport json; d = json.loads('{\"x\": 9}'); print(d['x'] * 2)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0011",
+  "request": "Run this code and tell me the exact output:\nprint(\"she said \\\"hi\\\"\")",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0012",
+  "request": "Run this code and tell me the exact output:\nprint('it\\'s')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0013",
+  "request": "Run this code and tell me the exact output:\nprint(2 + 2 * 2)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0014",
+  "request": "Run this code and tell me the exact output:\nprint(len('asfkap'))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0015",
+  "request": "Run this code and tell me the exact output:\nimport math; print(math.gcd(48, 18))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0016",
+  "request": "Run this code and tell me the exact output:\nprint('a,b,c'.split(','))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0017",
+  "request": "Run this code and tell me the exact output:\nprint(list({'k': 'v'}.keys()))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0018",
+  "request": "Run this code and tell me the exact output:\nint('abc')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0019",
+  "request": "Run this code and tell me the exact output:\nprint(7 // 3, 7 % 3)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0020",
+  "request": "Run this code and tell me the exact output:\ns = 0\nfor i in [5, 15, 25]:\n    s += i\nprint(s)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0021",
+  "request": "Run this code and tell me the exact output:\nprint('a' * 5)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0022",
+  "request": "Run this code and tell me the exact output:\nimport json; print(json.dumps([1, 'a', None]))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0023",
+  "request": "Run this code and tell me the exact output:\nprint(abs(-42))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0024",
+  "request": "Run this code and tell me the exact output:\nd = {'a': 1}; print(d['zzz'])",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0025",
+  "request": "Run this code and tell me the exact output:\n[1,2][5]",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0026",
+  "request": "Run this code and tell me the exact output:\nimport json; print(json.dumps({'user': {'id': 7, 'tags': ['x','y']}}))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0027",
+  "request": "Run this code and tell me the exact output:\nfor i, ch in enumerate('abc'):\n    print(i, ch)",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0028",
+  "request": "Run this code and tell me the exact output:\nprint('  padded  '.strip())",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0029",
+  "request": "Run this code and tell me the exact output:\nprint(f\"{'a'} and {'b'}\")",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0030",
+  "request": "Run this code and tell me the exact output:\nprint(*[1, 2, 3], sep='-')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0031",
+  "request": "Run this code and tell me the exact output:\nd = {k: k*k for k in range(4)}\nprint(sorted(d.items()))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0032",
+  "request": "Run this code and tell me the exact output:\nimport json; print(json.dumps({'ok': True, 'n': None}))",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_run_0033",
+  "request": "Run this code and tell me the exact output:\nraise ValueError('demo error')",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0008",
+  "request": "What is the incident restart order?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0012",
+  "request": "Use list_dir on docs.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0026",
+  "request": "Make a directory named quenfar",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0017",
+  "request": "List the logs directory",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0006",
+  "request": "Check the backups folder contents",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0016",
+  "request": "Make a directory named quimbek",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0030",
+  "request": "Create folder drexal under work",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0010",
+  "request": "Use the fusion scanner to find the newest backup.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0009",
+  "request": "Run tasklist to show background jobs, then list incoming.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0005",
+  "request": "Look inside the backups folder",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0024",
+  "request": "List every file in the archive folder",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0003",
+  "request": "Open the reports folder",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0001",
+  "request": "Show me the latest application error log",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0021",
+  "request": "Which config files exist?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0013",
+  "request": "Use the directory tool for configs.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0018",
+  "request": "What is in the logs folder?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0007",
+  "request": "Use the list_dir tool on the logs folder and show me what is inside.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0019",
+  "request": "Show the latest vendor feed",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0022",
+  "request": "Show the configs directory",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0006",
+  "request": "Show the newest database dump header",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0019",
+  "request": "Make a directory named ygrald",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0014",
+  "request": "When was the last backup verified?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0012",
+  "request": "Read the Q3 sales draft notes",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0029",
+  "request": "Make a directory named prismoq",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0025",
+  "request": "create a folder called ziblok",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0023",
+  "request": "What invoice bundles are archived?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0020",
+  "request": "Create folder xofrut under work",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0014",
+  "request": "Use list_dir to enumerate the archive.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt2_0015",
+  "request": "create a folder called zelvok",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_alt_0027",
+  "request": "Create folder moptil under work",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_08a",
+  "request": "Convert 175 GBP to USD.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_11a",
+  "request": "Invest 8000 at 7% for 6 years. Total?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_10a",
+  "request": "TSLA income statement revenue?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_14a",
+  "request": "Set the bedroom to 21 degrees in cool mode.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_29a",
+  "request": "Search memory for vpn setup guide.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_26a",
+  "request": "List the contents of C:/Logs.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_12a",
+  "request": "SAC schedule for 40000 over 24 months at 1.0%?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_07a",
+  "request": "Price of MSFT right now?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_06a",
+  "request": "Which process uses the most memory?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_24a",
+  "request": "Which process uses the most CPU?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_01a",
+  "request": "List the contents of /srv/backups.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_30a",
+  "request": "List /opt/releases.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_16a",
+  "request": "Set varanda lights to 50% warm.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_02a",
+  "request": "Show disk usage of /srv/www with du.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_05a",
+  "request": "MX records for example-mail.org?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_22a",
+  "request": "Count threads mentioning project mercury.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_17a",
+  "request": "Snapshot the entrance camera with detection on.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_03a",
+  "request": "Read /etc/hostname.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_18a",
+  "request": "kWh used by the cafeteira circuit this month?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_27a",
+  "request": "Price of NVDA right now?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_09a",
+  "request": "What is 1 CHF worth in USD?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_19a",
+  "request": "Search memory for the travel reimbursement policy.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_04a",
+  "request": "Checksum of /opt/app/release.tar.gz with md5?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_20a",
+  "request": "Find onboarding checklists in memory.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_25a",
+  "request": "Recent errors in the System log?",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_15a",
+  "request": "Turn off the ventilador plug.",
+  "expect_nocall": false
+ },
+ {
+  "uuid": "t_cal_21a",
+  "request": "Any memory about the Q3 budget approval?",
+  "expect_nocall": false
+ }
+]

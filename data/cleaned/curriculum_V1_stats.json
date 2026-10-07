@@ -1,0 +1,15 @@
+{
+  "n": 1983,
+  "pillars": {
+    "technical_api": 1012,
+    "terminal_linux": 394,
+    "memory_retrieval": 369,
+    "windows_powershell": 158,
+    "workspace_code": 50
+  },
+  "retr": 315,
+  "tok_med": 943,
+  "b_short": 829,
+  "b_med": 788,
+  "b_long": 366
+}

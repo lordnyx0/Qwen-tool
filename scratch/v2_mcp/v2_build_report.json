@@ -1,0 +1,50 @@
+{
+  "n": 2163,
+  "read_text_file": {
+    "calls": 302,
+    "decls": 221
+  },
+  "list_directory": {
+    "calls": 94,
+    "decls": 92
+  },
+  "search_files": {
+    "calls": 0,
+    "decls": 0
+  },
+  "old_names_residual": {
+    "show_file": [
+      27,
+      24
+    ],
+    "fetch_file": [
+      27,
+      23
+    ],
+    "load_file": [
+      10,
+      10
+    ],
+    "view_file": [
+      18,
+      15
+    ],
+    "get_file_text": [
+      11,
+      11
+    ],
+    "print_file": [
+      18,
+      15
+    ],
+    "dump_file": [
+      16,
+      12
+    ],
+    "open_file": [
+      13,
+      11
+    ]
+  },
+  "kept_distinct_called": 1210
+}

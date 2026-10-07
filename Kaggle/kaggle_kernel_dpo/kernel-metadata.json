@@ -1,0 +1,17 @@
+{
+  "id": "lordnyx0/qwen3loop-tool-dpo",
+  "title": "qwen3loop-tool-dpo",
+  "code_file": "qwen3loop_tool_dpo.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "lordnyx0/qwen3loop-tool-sft-data"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

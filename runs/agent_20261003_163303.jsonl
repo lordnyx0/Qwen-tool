@@ -1,0 +1,1 @@
+{"ts": "20261003_163303", "model": "models/gguf/unrolled_modelo_qwen3loop_tool_sft_v38mix2_ep1_q8_0.gguf", "temp": 0.8, "seed": 42, "prompt": "hi! how are you today?", "turns": [{"call": "bash", "args": {"command": "echo hi! today!"}, "ok": true, "out": "hi! today!\n"}], "final": "Read confirmed.\n</think>\n\nhi! today is good."}

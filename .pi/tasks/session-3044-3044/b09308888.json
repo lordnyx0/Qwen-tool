@@ -1,0 +1,19 @@
+{
+  "id": "b09308888",
+  "name": "list_dir",
+  "command": "ls -la logs/",
+  "status": "failed",
+  "outputPath": ".pi\\tasks\\session-3044-3044\\b09308888.output",
+  "cwd": "C:\\Users\\Nyx\\Downloads\\Diversos\\qwen",
+  "startTime": 1790761996567,
+  "endTime": 1790761996626,
+  "exitCode": 1,
+  "signal": null,
+  "pid": 24180,
+  "bytesWritten": 106,
+  "isAgent": true,
+  "error": "Exited with code 1",
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true
+}

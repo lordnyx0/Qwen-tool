@@ -1,0 +1,19 @@
+{
+  "id": "b64b19297",
+  "name": "start",
+  "command": "python -c \"print('start'); print('done'); print('done')\"",
+  "status": "completed",
+  "outputPath": ".pi\\tasks\\session-25752-25752\\b64b19297.output",
+  "cwd": "C:\\Users\\Nyx\\Downloads\\Diversos\\qwen",
+  "startTime": 1790768324246,
+  "endTime": 1790768324415,
+  "exitCode": 0,
+  "signal": null,
+  "pid": 27300,
+  "bytesWritten": 19,
+  "isAgent": true,
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true,
+  "timeoutSeconds": 1200
+}

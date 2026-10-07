@@ -1,0 +1,2286 @@
+{
+  "model_key": "tool_sft_q8",
+  "model_name": "Qwen3Loop-Tool-SFT Q8 (2 Épocas - Final)",
+  "model_path": "C:\\Users\\Nyx\\Downloads\\Diversos\\qwen\\models\\gguf\\unrolled_modelo_qwen3loop_tool_sft_q8_0.gguf",
+  "total_cases": 90,
+  "total_pass": 32,
+  "overall_accuracy_pct": 35.56,
+  "total_time_min": 7.9,
+  "difficulty_breakdown": {
+    "1": {
+      "total": 60,
+      "pass": 27
+    },
+    "3": {
+      "total": 30,
+      "pass": 5
+    }
+  },
+  "category_breakdown": {
+    "single_tool_simple": {
+      "total": 30,
+      "pass": 20,
+      "format": 28,
+      "selection": 21,
+      "args": 20,
+      "python": 30
+    },
+    "python_math_execution": {
+      "total": 30,
+      "pass": 5,
+      "format": 28,
+      "selection": 28,
+      "args": 27,
+      "python": 5
+    },
+    "negative_abstention": {
+      "total": 30,
+      "pass": 7,
+      "format": 7,
+      "selection": 7,
+      "args": 30,
+      "python": 30
+    }
+  },
+  "detailed_results": [
+    {
+      "idx": 1,
+      "id": "glaive_l1_0323",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm feeling a bit down today. Can you share something inspiring?",
+      "expected_call": {
+        "name": "generate_random_quote",
+        "arguments": {}
+      },
+      "model_output": "The user's message \"I'm feeling a bit down today. Can you share something inspiring?\" asks for a\ninspirational quote. I will invoke the 'generate_random_quote' function with the appropriate arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 60,
+      "gen_time": 3.69,
+      "tps": 16.2
+    },
+    {
+      "idx": 2,
+      "id": "glaive_l1_0332",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm bored. Can you tell me something interesting?",
+      "expected_call": {
+        "name": "get_random_fact",
+        "arguments": {}
+      },
+      "model_output": "I will use the function get_random_fact to fetch a random fact for the user.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 35,
+      "gen_time": 2.08,
+      "tps": 16.9
+    },
+    {
+      "idx": 3,
+      "id": "glaive_l1_0057",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I would like to calculate my BMI. I weigh 70 kilograms and my height is 1.75 meters.",
+      "expected_call": {
+        "name": "calculate_bmi",
+        "arguments": {
+          "weight": 70,
+          "height": 1.75
+        }
+      },
+      "model_output": "(Call get_random_joke without arguments. This function will get a random joke for the user.)",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 20,
+      "gen_time": 1.47,
+      "tps": 13.6
+    },
+    {
+      "idx": 4,
+      "id": "py_math_0624",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o 32-ésimo termo da sequência de Fibonacci usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "a, b = 0, 1\nfor _ in range(32): a, b = b, a + b\nprint(a)"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a tarefa de calcular o 32-ésimo termo da sequência de Fibonacci, utilizando a função execute_python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"def fibonacci(n):\\n    return fibonacci(1, 2, n)\\nprint(fibonacci(32)))\".JSON.\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 79,
+      "gen_time": 4.51,
+      "tps": 17.5
+    },
+    {
+      "idx": 5,
+      "id": "glaive_l1_0410",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need a new UUID for my project.",
+      "expected_call": {
+        "name": "generate_uuid",
+        "arguments": {}
+      },
+      "model_output": "<tool_call>\n{\"name\": \"generate_uuid\", \"arguments\": {}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 15,
+      "gen_time": 1.17,
+      "tps": 12.8
+    },
+    {
+      "idx": 6,
+      "id": "py_math_0613",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule exatamente o valor de 8^145 mod 17 executando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "print(pow(8, 145, 17))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a operação exatamente 8^145 mod 17 utilizando a função\npython.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"print(8**145 % 17))\".enser}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 62,
+      "gen_time": 3.75,
+      "tps": 16.5
+    },
+    {
+      "idx": 7,
+      "id": "py_math_0604",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC) entre 2294 e 5231 via script Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\ng = math.gcd(2294, 5231)\nl = abs(2294 * 5231) // g\nprint(f'MDC={g}, MMC={l}')"
+        }
+      },
+      "model_output": "PInficr, cado 2294 e 5231. Em Python 3, a tida mcm com mdc. MDiv 5231 2294. C\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nimport math\\nm = math.gcd(2294, 5231)\\nmmc = math.gcm(2294, 5231)\\nprint(f'MDC={m}\\, MMC={mmc})\".\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 126,
+      "gen_time": 6.37,
+      "tps": 19.8
+    },
+    {
+      "idx": 8,
+      "id": "py_math_0616",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC) entre 9191 e 2833 via script Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\ng = math.gcd(9191, 2833)\nl = abs(9191 * 2833) // g\nprint(f'MDC={g}, MMC={l}')"
+        }
+      },
+      "model_output": "Penascribi a tavela quilado qinico 9191 e 2833. Em python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nimport math\\ndef mdc(m,n):\\n    pass\\nprint(math.mnc(9191, 2833))\".\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 81,
+      "gen_time": 4.06,
+      "tps": 20.0
+    },
+    {
+      "idx": 9,
+      "id": "py_math_0620",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Encontre a soma de todos os números primos menores que 200 usando código Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "def is_p(n): return n > 1 and all(n % d != 0 for d in range(2, int(n**0.5) + 1))\nprint(sum(n for n in range(200) if is_p(n)))"
+        }
+      },
+      "model_output": "Sim, podemos realizar a tarefa passado a: encontrar a soma de todos os números primos menores que 200.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import symp\" # Importe sympy para encontrar primos\\nfrom sympy import prime\\nsoma = 0\\nfor i in range(1, 200):\\n  if i in prime:\\n    soma += i\\nprint(soma)\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 103,
+      "gen_time": 5.17,
+      "tps": 19.9
+    },
+    {
+      "idx": 10,
+      "id": "py_math_0619",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule exatamente o valor de 4^211 mod 29 executando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "print(pow(4, 211, 29))"
+        }
+      },
+      "model_output": "Implementa a tivada exatamente 4^211 mod 29 através em Python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"print(4**211 % 29))\".\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 56,
+      "gen_time": 2.84,
+      "tps": 19.7
+    },
+    {
+      "idx": 11,
+      "id": "glaive_neg_0019",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you please order a pizza for me? \" requires the tool call function. The appropriate arguments are sent to the get_random_fact function.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 50,
+      "gen_time": 2.74,
+      "tps": 18.3
+    },
+    {
+      "idx": 12,
+      "id": "glaive_l1_0216",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need a new password. Can you generate a random one for me?",
+      "expected_call": {
+        "name": "generate_random_password",
+        "arguments": {
+          "length": 12
+        }
+      },
+      "model_output": "The user requested to generate a random password, and the appropriate tool is the call for the\n<function name generate_random_quote. Generate a random inspirational quote. The\nparameters are empty. The function call should be made with the arguments as a json\nobject with the arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 73,
+      "gen_time": 3.86,
+      "tps": 18.9
+    },
+    {
+      "idx": 13,
+      "id": "glaive_neg_0523",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the tool call function. I will make a call to generate_random_joke with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_joke\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 53,
+      "gen_time": 2.87,
+      "tps": 18.5
+    },
+    {
+      "idx": 14,
+      "id": "glaive_l1_0511",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need a new username. Can you help me generate one?",
+      "expected_call": {
+        "name": "generate_username",
+        "arguments": {}
+      },
+      "model_output": "The user requested I can generate a new username for them. I will invoke the generate_username function.\n</think>\n\n<tool_call>\n{\"name\": \"generate_username\", \"arguments\": {\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 37,
+      "gen_time": 2.18,
+      "tps": 17.0
+    },
+    {
+      "idx": 15,
+      "id": "glaive_neg_0386",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request was to order a pizza for me. I can assist with that.\n</think>\n\nI can order a pizza for you for you.",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 30,
+      "gen_time": 2.09,
+      "tps": 14.4
+    },
+    {
+      "idx": 16,
+      "id": "py_math_0615",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o fatorial de 26 e informe o número total de dígitos usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nf = math.factorial(26)\nprint(len(str(f)))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará o cqc 26 * 25 * 24 * 23 * 22 * 21 * 20 * 19 * 18 * 17 * 16 * 15 * 14 * 13 * 12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1. C\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"def fatorial(*f: int, f1=1):\\n    pass\\nprint(fatorial(26, f1=1)))\\n\".}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 158,
+      "gen_time": 8.45,
+      "tps": 18.7
+    },
+    {
+      "idx": 17,
+      "id": "py_math_0629",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Quantas combinações simples de 26 elementos tomados 6 a 6 existem? Use Python para calcular C(26, 6).",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nprint(math.comb(26, 6))"
+        }
+      },
+      "model_output": "O usuário solicita, com base em uma combinação matricial, a realizar uma combinação simples de 26 elementos tomados 6 a 6. A tarefa correspondência a calcular C(26, 6) usando a comb.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"from comb import comb\\nquantas = comb(26, 6)\\nquantosas\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 95,
+      "gen_time": 4.81,
+      "tps": 19.8
+    },
+    {
+      "idx": 18,
+      "id": "glaive_l1_0274",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need a new password. Can you generate one for me?",
+      "expected_call": {
+        "name": "generate_password",
+        "arguments": {
+          "length": 12
+        }
+      },
+      "model_output": "The user requested to generate a new password, and the tool available for the request is get_random_quote. I will invoke the get_random_quote function with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 50,
+      "gen_time": 2.9,
+      "tps": 17.3
+    },
+    {
+      "idx": 19,
+      "id": "py_math_0602",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Encontre a soma de todos os números primos menores que 150 usando código Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "def is_p(n): return n > 1 and all(n % d != 0 for d in range(2, int(n**0.5) + 1))\nprint(sum(n for n in range(150) if is_p(n)))"
+        }
+      },
+      "model_output": "Sim, podemos realizar a tarefa passado a criar uma função de 150, passa a 150, e a soma de todos os primos menores que 150.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nimport encontrar\\n\\nsoma = 0\\nfor i in range(2, 149, 8):\\n  s += i\\nprint(soma)\\n\"}}",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 102,
+      "gen_time": 5.67,
+      "tps": 18.0
+    },
+    {
+      "idx": 20,
+      "id": "glaive_l1_0577",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm feeling a bit down. Can you tell me a joke to cheer me up?",
+      "expected_call": {
+        "name": "get_random_joke",
+        "arguments": {}
+      },
+      "model_output": "<tool_call>\n{\"name\": \"get_random_joke\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 17,
+      "gen_time": 1.3,
+      "tps": 13.0
+    },
+    {
+      "idx": 21,
+      "id": "py_math_0609",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o fatorial de 47 e informe o número total de dígitos usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nf = math.factorial(47)\nprint(len(str(f)))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a tarefa: \"Calcule o fatorial de 47 e informe o número total de dígitos usando Python. CPython.\".\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nimport nani\\ndef fatorial(n):\\n    return n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n\\n   , n",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 26.48,
+      "tps": 19.3
+    },
+    {
+      "idx": 22,
+      "id": "glaive_neg_0548",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the use of the function 'get_random_joke'. I will invoke that function.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_joke\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 50,
+      "gen_time": 2.75,
+      "tps": 18.2
+    },
+    {
+      "idx": 23,
+      "id": "glaive_neg_0035",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Hi, can you please book a flight for me?",
+      "expected_call": null,
+      "model_output": "The user's request is to book a flight for the user. I am a tool that can perform tasks based on the provided functions. In this case, the function \"book_flight\" should be called.\n</think>\n\n<tool_call>\n{\"name\": \"book_flight\", \"arguments\": {\"user\": \"Hi, can you please book a flight for me?\".toString()}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 74,
+      "gen_time": 3.88,
+      "tps": 19.1
+    },
+    {
+      "idx": 24,
+      "id": "glaive_neg_0490",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user requested ordering a pizza for me, and I is programmed to perform the order function.",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 19,
+      "gen_time": 1.54,
+      "tps": 12.3
+    },
+    {
+      "idx": 25,
+      "id": "py_math_0610",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC) entre 6464 e 6952 via script Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\ng = math.gcd(6464, 6952)\nl = abs(6464 * 6952) // g\nprint(f'MDC={g}, MMC={l}')"
+        }
+      },
+      "model_output": "Penascripiar a função mdc comum e mnc comum em 6464 e 6952.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nfrom math import gcd\\nprint(math.gcd(6464, 6952))\".}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 74,
+      "gen_time": 4.5,
+      "tps": 16.4
+    },
+    {
+      "idx": 26,
+      "id": "glaive_l1_0234",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Can you get me the latest sports news from the US?",
+      "expected_call": {
+        "name": "get_news",
+        "arguments": {
+          "category": "sports",
+          "country": "US"
+        }
+      },
+      "model_output": "The user asked, \"Can you get me the latest sports news from the US?\" Based on the provided tools, I will invoke the 'generate_random_quote' function with the appropriate arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 55,
+      "gen_time": 3.04,
+      "tps": 18.1
+    },
+    {
+      "idx": 27,
+      "id": "glaive_neg_0010",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you book a flight for me from New York to London?",
+      "expected_call": null,
+      "model_output": "The user requested booking a flight for me from New York to London. I am a text assistant and do not have a function to book flights.\n</think>\n\nYou can use the flight booking service, airline, or third-party platform to book a flight for you.",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 52,
+      "gen_time": 3.09,
+      "tps": 16.8
+    },
+    {
+      "idx": 28,
+      "id": "glaive_l1_0146",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hey, I'm feeling a bit bored. Can you tell me something interesting?",
+      "expected_call": {
+        "name": "get_random_fact",
+        "arguments": {}
+      },
+      "model_output": "The user asked, \"Hey, I'm feeling a bit bored. Can you tell me something interesting?.\" I will use the get_random_fact function to fetch a random fact.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 53,
+      "gen_time": 2.98,
+      "tps": 17.8
+    },
+    {
+      "idx": 29,
+      "id": "py_math_0621",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o fatorial de 18 e informe o número total de dígitos usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nf = math.factorial(18)\nprint(len(str(f)))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará o cálculo de dois fatorais (fatorial de 18 e fatorial de 18) com\ncância da linda. O código Python correspondente realizará a tarefa.\n</think>\n\n.Realização do código em Python.\n\n.Realizado o código.",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 63,
+      "gen_time": 3.75,
+      "tps": 16.8
+    },
+    {
+      "idx": 30,
+      "id": "glaive_neg_0284",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please book a flight for me from New York to London?",
+      "expected_call": null,
+      "model_output": "The user requested to book a flight for me from New York to London. I am a text assistant and do not have a booking function.\n</think>\n\nYou can use the booking function with the following arguments: {\"name\": \"bookflight\", \"email\": \"newus...\".",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 56,
+      "gen_time": 3.28,
+      "tps": 17.1
+    },
+    {
+      "idx": 31,
+      "id": "glaive_l1_0405",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hey, I'm feeling a bit bored. Can you tell me something interesting?",
+      "expected_call": {
+        "name": "get_random_fact",
+        "arguments": {}
+      },
+      "model_output": "The user asked, \"Hey, I'm feeling a bit bored. Can you tell me something interesting?.\" I will use the get_random_fact function to fetch a random fact.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 53,
+      "gen_time": 2.96,
+      "tps": 17.9
+    },
+    {
+      "idx": 32,
+      "id": "glaive_neg_0126",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request was to \"Can you please order a pizza for me?\". I will use the get_current_time\ntool to get the current time. The appropriate tool call is generated.\n</think>\n\n<tool_call>\n{\"name\": \"get_current_time\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 56,
+      "gen_time": 3.03,
+      "tps": 18.5
+    },
+    {
+      "idx": 33,
+      "id": "glaive_neg_0114",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user asked, \"Can you order a pizza for me?\" I am programmed to perform one of the following actions. In this case, the task is to call the function with the appropriate arguments.\n</think>\n\n<tool_call>\n{\"name\": \"order_a_pizz\", \"arguments\": {\"email\": \"pizz@us\", \"phone_number\": \"0123456789\" }}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 83,
+      "gen_time": 4.51,
+      "tps": 18.4
+    },
+    {
+      "idx": 34,
+      "id": "glaive_l1_0382",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I need to get in touch with John Doe. Can you help me find his contact information?",
+      "expected_call": {
+        "name": "get_contact_info",
+        "arguments": {
+          "name": "John Doe"
+        }
+      },
+      "model_output": "<tool_call>\n{\"name\": \"the name of the person\", \"arguments\": {\"person\": \"John Doe\".split(\"...\")[0]]}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 30,
+      "gen_time": 1.8,
+      "tps": 16.7
+    },
+    {
+      "idx": 35,
+      "id": "glaive_l1_0469",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm feeling a bit down. Can you tell me a joke to cheer me up?",
+      "expected_call": {
+        "name": "generate_random_joke",
+        "arguments": {}
+      },
+      "model_output": "<tool_call>\n{\"name\": \"generate_random_joke\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 17,
+      "gen_time": 1.3,
+      "tps": 13.1
+    },
+    {
+      "idx": 36,
+      "id": "py_math_0626",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Encontre a soma de todos os números primos menores que 200 usando código Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "def is_p(n): return n > 1 and all(n % d != 0 for d in range(2, int(n**0.5) + 1))\nprint(sum(n for n in range(200) if is_p(n)))"
+        }
+      },
+      "model_output": "Sim, podemos realizar a tarefa passado a: encontrar a soma de todos os números primos menores que 200.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import symp\" # Importe sympy para encontrar primos\\nfrom sympy import prime\\nsoma = 0\\nfor i in range(1, 200):\\n  if i in prime:\\n    soma += i\\nprint(soma)\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 103,
+      "gen_time": 5.65,
+      "tps": 18.2
+    },
+    {
+      "idx": 37,
+      "id": "glaive_neg_0083",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please book a flight for me from New York to London?",
+      "expected_call": null,
+      "model_output": "(You can use the 'book_a_flight' function with the appropriate arguments.)",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 16,
+      "gen_time": 1.43,
+      "tps": 11.2
+    },
+    {
+      "idx": 38,
+      "id": "glaive_neg_0334",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the call to the generate_random_quote\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 40,
+      "gen_time": 2.33,
+      "tps": 17.1
+    },
+    {
+      "idx": 39,
+      "id": "py_math_0605",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Quantas combinações simples de 15 elementos tomados 4 a 4 existem? Use Python para calcular C(15, 4).",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nprint(math.comb(15, 4))"
+        }
+      },
+      "model_output": "O usuário solicita, com base em uma combinação matricial, a realizar uma tarefa de 15 elementos tomados 4 a 4. A tarefa realizar com a função comb, da biblitoira collections, é a mais adequada.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"from comb import comb\\nquantas = comb(15, 4)\\nquantapas = comb(15, -4)\\nprint(quantapas, quantadas, comb(15, -4), comb(15, 4, 4, 15, -4)\\n)\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 140,
+      "gen_time": 7.55,
+      "tps": 18.5
+    },
+    {
+      "idx": 40,
+      "id": "glaive_neg_0345",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the use of the function 'get_random_quote'. I will call that function.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 48,
+      "gen_time": 2.65,
+      "tps": 18.1
+    },
+    {
+      "idx": 41,
+      "id": "glaive_l1_0134",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm feeling a bit down. Can you tell me a joke to cheer me up?",
+      "expected_call": {
+        "name": "get_random_joke",
+        "arguments": {}
+      },
+      "model_output": "<tool_call>\n{\"name\": \"get_random_joke\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 17,
+      "gen_time": 1.3,
+      "tps": 13.1
+    },
+    {
+      "idx": 42,
+      "id": "py_math_0601",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule exatamente o valor de 4^466 mod 23 executando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "print(pow(4, 466, 23))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a realizar a operação exatamente 4^466 mod 23 utilizando a função execute_python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"print(4**466 % 23))\".enser}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 64,
+      "gen_time": 3.83,
+      "tps": 16.7
+    },
+    {
+      "idx": 43,
+      "id": "glaive_neg_0179",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user requested ordering a pizza for me, and I is programmed to perform the necessary tool call.\n</think>\n\n<tool_call>\n{\"name\": \"the name of the user\", \"arguments\": {\"email\": \"can_12@a...@it\", \"password\": \"123456789\" }}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 66,
+      "gen_time": 3.72,
+      "tps": 17.8
+    },
+    {
+      "idx": 44,
+      "id": "py_math_0606",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o 39-ésimo termo da sequência de Fibonacci usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "a, b = 0, 1\nfor _ in range(39): a, b = b, a + b\nprint(a)"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a tarefa de realizar a sequência de Fibonacci de 39-ésimo termo (39 39-ésimo termo) usando a técnica de calcular fibonacci(39) com a biblibase math.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 26.21,
+      "tps": 19.5
+    },
+    {
+      "idx": 45,
+      "id": "glaive_l1_0219",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, can you tell me what's in the news today?",
+      "expected_call": {
+        "name": "get_news_headlines",
+        "arguments": {}
+      },
+      "model_output": "<tool_call>\n{\"name\": \"get_news_headlines\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 17,
+      "gen_time": 1.3,
+      "tps": 13.1
+    },
+    {
+      "idx": 46,
+      "id": "glaive_l1_0381",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm feeling a bit down today. Can you share something inspiring?",
+      "expected_call": {
+        "name": "generate_random_quote",
+        "arguments": {}
+      },
+      "model_output": "The user's message \"I'm feeling a bit down today. Can you share something inspiring?\" asks for a\ninspirational quote. I will invoke the 'generate_random_quote' function with the appropriate arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 60,
+      "gen_time": 3.25,
+      "tps": 18.4
+    },
+    {
+      "idx": 47,
+      "id": "glaive_l1_0298",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need some motivation. Can you help?",
+      "expected_call": {
+        "name": "generate_random_quote",
+        "arguments": {}
+      },
+      "model_output": "The user asked, \"Hi, I need some motivation. Can you help?.\" I will call the function generate_random_quote.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 43,
+      "gen_time": 2.08,
+      "tps": 20.6
+    },
+    {
+      "idx": 48,
+      "id": "py_math_0628",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC) entre 8156 e 6909 via script Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\ng = math.gcd(8156, 6909)\nl = abs(8156 * 6909) // g\nprint(f'MDC={g}, MMC={l}')"
+        }
+      },
+      "model_output": "PInficr, cO mCd 8156 e 6909 via mCd Python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nimport mncmp\\nmncmp.mncmp(8156, 6909)\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 75,
+      "gen_time": 4.46,
+      "tps": 16.8
+    },
+    {
+      "idx": 49,
+      "id": "glaive_l1_0271",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I need some inspiration. Can you share a quote?",
+      "expected_call": {
+        "name": "generate_random_quote",
+        "arguments": {}
+      },
+      "model_output": "The user asked, \"I need some inspiration. Can you share a quote?",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 16,
+      "gen_time": 1.24,
+      "tps": 12.9
+    },
+    {
+      "idx": 50,
+      "id": "py_math_0618",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o 28-ésimo termo da sequência de Fibonacci usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "a, b = 0, 1\nfor _ in range(28): a, b = b, a + b\nprint(a)"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a tarefa de calcular o 28-ésimo termo da sequência de Fibonacci, utilizando a fóracão de Fibonacci. A tarefa utilizaria a fóra cuso de Fibonacci.\n</think>\n\nRealização do cálar, utilizando a fóra combinao de Fibonacci.\tO\n<O\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"def fib(n):\\n    return f{fib(n-1)\\n    + fib(n-2))\\nprint(f(28)))\".}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 125,
+      "gen_time": 6.79,
+      "tps": 18.4
+    },
+    {
+      "idx": 51,
+      "id": "py_math_0603",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o fatorial de 20 e informe o número total de dígitos usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nf = math.factorial(20)\nprint(len(str(f)))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará o cálculo de dois fatorais (fatorial de 20 e fatorial de 10) através uma única chamada a uma função. O qual deve realizar.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nf1 = math.factorial(20)\\nprint(f1)\\nprint(math.factorial(10)))\".}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 92,
+      "gen_time": 4.59,
+      "tps": 20.0
+    },
+    {
+      "idx": 52,
+      "id": "glaive_neg_0332",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request was to \"Can you please order a pizza for me?\". I will use the get_time\ntool to get the current time. The appropriate tool call is:\n</think>\n\n<tool_call>\n{\"name\": \"get_time\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 53,
+      "gen_time": 2.87,
+      "tps": 18.5
+    },
+    {
+      "idx": 53,
+      "id": "glaive_l1_0217",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need a new UUID for my project. Can you generate one for me?",
+      "expected_call": {
+        "name": "generate_uuid",
+        "arguments": {}
+      },
+      "model_output": "You may call one or more functions using the JSON objects in the tool_call\n</think>\n\n<tool_call>\n{\"name\": \"generate_uuid\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 34,
+      "gen_time": 2.12,
+      "tps": 16.0
+    },
+    {
+      "idx": 54,
+      "id": "py_math_0614",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Encontre a soma de todos os números primos menores que 300 usando código Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "def is_p(n): return n > 1 and all(n % d != 0 for d in range(2, int(n**0.5) + 1))\nprint(sum(n for n in range(300) if is_p(n)))"
+        }
+      },
+      "model_output": "Sim, podemos realizar a tarefa passado a você a função execute_python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"def soma(primos):\\n    return sum(primos)\\n\\n# Lista de primos menores que 300:\\nprimos = [i for i in range(1, 299, 2)]\\nprint(soma(primos)))\\n\".}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 99,
+      "gen_time": 5.51,
+      "tps": 18.0
+    },
+    {
+      "idx": 55,
+      "id": "glaive_neg_0554",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Hey, can you order a pizza for me from the local pizzeria?",
+      "expected_call": null,
+      "model_output": "The user's request \"Hey, can you order a pizza for me from the local pizzeria? \" requires the tool call function. I will invoke generate_random_quote with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 55,
+      "gen_time": 3.08,
+      "tps": 17.9
+    },
+    {
+      "idx": 56,
+      "id": "py_math_0627",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o fatorial de 41 e informe o número total de dígitos usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nf = math.factorial(41)\nprint(len(str(f)))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará o cálculo do fatorial de 41 e retorna o número total de dígitos. \n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nf = math.factorial(41)\\nprint(len(str(f)).)\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 69,
+      "gen_time": 4.11,
+      "tps": 16.8
+    },
+    {
+      "idx": 57,
+      "id": "glaive_neg_0333",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you book a flight for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you book a flight for me? \" requires the tool call function. The appropriate arguments are sent to the generate_random_color function.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_color\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 49,
+      "gen_time": 2.74,
+      "tps": 17.9
+    },
+    {
+      "idx": 58,
+      "id": "glaive_l1_0275",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, can you help me with something?",
+      "expected_call": {
+        "name": "get_random_quote",
+        "arguments": {}
+      },
+      "model_output": "The user's request is to assist with something, and I can execute the appropriate function.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 35,
+      "gen_time": 2.05,
+      "tps": 17.1
+    },
+    {
+      "idx": 59,
+      "id": "glaive_l1_0322",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I need to send an email to my boss about the meeting tomorrow.",
+      "expected_call": {
+        "name": "send_email",
+        "arguments": {}
+      },
+      "model_output": "The user requested to send an email to my boss about the meeting tomorrow. I will use the function to perform the sending operation.\n</think>\n\n<tool_call>\n{\"name\": \"send-mail\", \"arguments\": {\"subject\": \"Meeting Tomorrow\", \"body\": \"I need to send an email to my boss about the meeting tomorrow.\", \"to\": [\"myboss@gmail.com\"], \"from\": \"myboss@gmail.com\" }}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 85,
+      "gen_time": 4.66,
+      "tps": 18.2
+    },
+    {
+      "idx": 60,
+      "id": "glaive_l1_0287",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I need some inspiration. Can you share a quote with me?",
+      "expected_call": {
+        "name": "generate_random_quote",
+        "arguments": {}
+      },
+      "model_output": "In this scenario, I will use the function 'generate_random_quote' to generate a random quote for the user.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 40,
+      "gen_time": 2.31,
+      "tps": 17.3
+    },
+    {
+      "idx": 61,
+      "id": "glaive_l1_0594",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I need some inspiration. Can you share a quote with me?",
+      "expected_call": {
+        "name": "get_random_quote",
+        "arguments": {}
+      },
+      "model_output": "In this scenario, the user asks, \"I need some inspiration. Can you share a quote with me?.\" I will use the get_random_quote function to fetch a random quote for the user.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 57,
+      "gen_time": 3.12,
+      "tps": 18.3
+    },
+    {
+      "idx": 62,
+      "id": "glaive_l1_0299",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I'm bored. Can you tell me something interesting?",
+      "expected_call": {
+        "name": "generate_random_fact",
+        "arguments": {}
+      },
+      "model_output": "I will call the function generate_random_fact with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_fact\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 30,
+      "gen_time": 1.87,
+      "tps": 16.0
+    },
+    {
+      "idx": 63,
+      "id": "py_math_0625",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule exatamente o valor de 8^337 mod 19 executando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "print(pow(8, 337, 19))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a realizar a operação exatamente 8^337 mod 19 utilizando a operação pow, uma função matemática em python, que já implementa base e módulo com 16 (maxa 15) base, mediante, uma operação exatamente expe\n\nO usuário solicitado realizará realiza a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar a realizar",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 26.34,
+      "tps": 19.4
+    },
+    {
+      "idx": 64,
+      "id": "py_math_0623",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Quantas combinações simples de 27 elementos tomados 4 a 4 existem? Use Python para calcular C(27, 4).",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nprint(math.comb(27, 4))"
+        }
+      },
+      "model_output": "O usuário solicita, com base em uma combinação matricial, a realizar uma tarefa. As ferras já implementadas Python, com a tarefa específica, são executativas.\n</think>\n\n<tool_call>\n{\"name\":\"execute_python\",\"arguments\":{\"code\":\\\"import math\\nprint(math.combin.%4, 27, 4)\\.\\\\N\\\\C\\\\M\\\\S\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\A\\\\",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": false,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 25.92,
+      "tps": 19.8
+    },
+    {
+      "idx": 65,
+      "id": "py_math_0622",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC) entre 5982 e 257 via script Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\ng = math.gcd(5982, 257)\nl = abs(5982 * 257) // g\nprint(f'MDC={g}, MMC={l}')"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a realizar a função mdc com a combinação 5982 com 257.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nm = math.gcd(5982, 257)\\nprint(f'MMPC={m}\\nMMC={math.gcm(5982, 257))}\".caller\\n\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 96,
+      "gen_time": 4.95,
+      "tps": 19.4
+    },
+    {
+      "idx": 66,
+      "id": "py_math_0608",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Encontre a soma de todos os números primos menores que 100 usando código Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "def is_p(n): return n > 1 and all(n % d != 0 for d in range(2, int(n**0.5) + 1))\nprint(sum(n for n in range(100) if is_p(n)))"
+        }
+      },
+      "model_output": "Sim, podemos realizar o mesmo cálculo.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"import math\\nimport math\\n# Defina a limitação\\nmaximo = 100\\n# Defina a base de cál\\nbase = 2\\n# Caceral a soma de todos os primos menores que\\nsoma = 0\\nwhile base * base <= maximo:\\n  soma += base\\n  base += 2\\nprint(soma)\\n\".\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 112,
+      "gen_time": 5.65,
+      "tps": 19.8
+    },
+    {
+      "idx": 67,
+      "id": "glaive_neg_0589",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the call to the generate_random_quote\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 40,
+      "gen_time": 2.32,
+      "tps": 17.2
+    },
+    {
+      "idx": 68,
+      "id": "glaive_neg_0102",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the use of the function 'get_random_joke'. I will invoke that function.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_joke\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 50,
+      "gen_time": 2.75,
+      "tps": 18.2
+    },
+    {
+      "idx": 69,
+      "id": "py_math_0607",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule exatamente o valor de 3^143 mod 13 executando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "print(pow(3, 143, 13))"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a operação exatamente 3^143 mod 13 utilizando a função\npython.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"print(3**143 % 13))\".\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 61,
+      "gen_time": 3.65,
+      "tps": 16.7
+    },
+    {
+      "idx": 70,
+      "id": "glaive_neg_0078",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request was to \"Can you order a pizza for me?.\" I was instructed to perform a contact\nthe available functions. Since the request is of a type that requires calling the function\nthe available functions. The appropriate function to call with the user's request is the\nthe contact. The appropriate arguments to call the function with the user's request is a\nthe contact. The appropriate arguments to call the function with the user's request is a\nthe contact. The appropriate arguments to call the function with the user's request is a\nthe contact.\n</think>\n\n<tool_call>\n{\"name\": \"the contact\", \"arguments\": {\"email\": \"can_orderpizza?/pizza?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?/user?",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 25.97,
+      "tps": 19.7
+    },
+    {
+      "idx": 71,
+      "id": "glaive_neg_0258",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request was to \"Can you please order a pizza for me?\". I will use the get_current_time\ntool to get the current time. The appropriate tool call is generated.\n</think>\n\n<tool_call>\n{\"name\": \"get_current_time\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 56,
+      "gen_time": 3.04,
+      "tps": 18.4
+    },
+    {
+      "idx": 72,
+      "id": "glaive_l1_0126",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I need help with calculating a tip. My bill amount is $50 and I want to leave a 15% tip.",
+      "expected_call": {
+        "name": "calculate_tip",
+        "arguments": {
+          "bill_amount": 50,
+          "tip_percentage": 15
+        }
+      },
+      "model_output": "<tool_call>\n{\"name\": \"calculate_tip\", \"arguments\": {\"bill_amount\": 50, \"tip_percent\": 15}. \"the\n</tool_call>\nThe user requested a tip calculation with the bill amount of $50 and a 15% tip. I will call the calculate_tip function with the appropriate arguments.\n</think>\n\n<tool_call>\n{\"name\": \"calculate_tip\", \"arguments\": {\"bill_amount\": 50, \"tip_percent\": 15}. \"the\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 2,
+        "errors": []
+      },
+      "tokens": 101,
+      "gen_time": 5.23,
+      "tps": 19.3
+    },
+    {
+      "idx": 73,
+      "id": "glaive_neg_0547",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Hey, can you order a pizza for me from the nearby pizzeria?",
+      "expected_call": null,
+      "model_output": "The user's request was to order a pizza for me from the nearby pizzeria. I was instructed to use the get_random_fact function to retrieve a random interesting fact. I will invoke the get_random_fact function with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 64,
+      "gen_time": 3.52,
+      "tps": 18.2
+    },
+    {
+      "idx": 74,
+      "id": "glaive_l1_0224",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "What is the current time?",
+      "expected_call": {
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      "model_output": "<tool_call>\n{\"name\": \"get_current_time\", \"arguments\": {}}\n</tool_call>\n</think>\n\n<tool_call>\n{\"name\": \"get_current_time\", \"arguments\": {}}",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 34,
+      "gen_time": 2.03,
+      "tps": 16.7
+    },
+    {
+      "idx": 75,
+      "id": "glaive_neg_0026",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Hi, can you please book a flight for me from New York to London?",
+      "expected_call": null,
+      "model_output": "The user's request requires functionality that is not pre-defined in the set of functions available to the assistant. The user can book a flight for me from New York to London. I may be programmed to perform this action, but given the nature of the operation, it is not a function that can be invoke from the user query.\n</think>\n\nYou can use the booking function with the following arguments: [\"book_flight\", [\"destination\", \"new york\", \"destination\"], [\"origin\"], [\"destination\"].",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 99,
+      "gen_time": 5.45,
+      "tps": 18.2
+    },
+    {
+      "idx": 76,
+      "id": "glaive_neg_0276",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Hey, can you order a pizza for me from the nearby pizzeria?",
+      "expected_call": null,
+      "model_output": "The user's request was to order a pizza for me from the nearby pizzeria. I was instructed to use the get_random_fact function to retrieve a random interesting fact. I will invoke the get_random_fact function with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 64,
+      "gen_time": 3.58,
+      "tps": 17.9
+    },
+    {
+      "idx": 77,
+      "id": "glaive_l1_0067",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, can you help me with something?",
+      "expected_call": {
+        "name": "get_random_fact",
+        "parameters": {}
+      },
+      "model_output": "The user's request is to assist with something, and I is the tool that can perform a task.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 38,
+      "gen_time": 2.32,
+      "tps": 16.4
+    },
+    {
+      "idx": 78,
+      "id": "glaive_neg_0318",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Hey, can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Hey, can you order a pizza for me? \" requires invoking the 'get_random_joke' function with no arguments, as the task is of a joke-giving type.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_joke\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 59,
+      "gen_time": 3.28,
+      "tps": 18.0
+    },
+    {
+      "idx": 79,
+      "id": "glaive_neg_0383",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user requested ordering a pizza for me, and I is programmed to perform the necessary tool call.\n</think>\n\n<tool_call>\n{\"name\": \"the name of the user\", \"arguments\": {\"email\": \"can_12@a...@it\", \"password\": \"123456789\" }}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 66,
+      "gen_time": 3.7,
+      "tps": 17.9
+    },
+    {
+      "idx": 80,
+      "id": "py_math_0630",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o 30-ésimo termo da sequência de Fibonacci usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "a, b = 0, 1\nfor _ in range(30): a, b = b, a + b\nprint(a)"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a tarefa de calcular o 30-ésimo termo da sequência de Fibonacci, utilizando a função execute_python.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"def fibonacci(n):\\n    return fibonacci(1, 2, n)\\nprint(fibonacci(30)))\".JSON.\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 79,
+      "gen_time": 4.54,
+      "tps": 17.4
+    },
+    {
+      "idx": 81,
+      "id": "py_math_0612",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Calcule o 44-ésimo termo da sequência de Fibonacci usando Python.",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "a, b = 0, 1\nfor _ in range(44): a, b = b, a + b\nprint(a)"
+        }
+      },
+      "model_output": "O usuário solicitado realizará a tarefa de realizar a sequência de Fibonacci de módulo 43, de 43 dígitas, de 44 43-ésimo termo. Crio uma função Python que utilize a função calcular-fib(44, 43) com ação solicitada.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"def calcular_fib(44, 43): pass\\nprint(f'({44} - {43} 44 - 43 44 - 43}'))\".\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 135,
+      "gen_time": 6.62,
+      "tps": 20.4
+    },
+    {
+      "idx": 82,
+      "id": "glaive_neg_0481",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user's request \"Can you order a pizza for me? \" requires the tool call function. The appropriate arguments are sent to the generate_riddle function.\n</think>\n\n<tool_call>\n{\"name\": \"generate_riddle\", \"arguments\": {\"\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 50,
+      "gen_time": 2.77,
+      "tps": 18.1
+    },
+    {
+      "idx": 83,
+      "id": "glaive_l1_0589",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "I need a random name for my new character in the novel I'm writing. Can you help?",
+      "expected_call": {
+        "name": "generate_random_name",
+        "arguments": {}
+      },
+      "model_output": "You may use the function to generate a random name. The appropriate tool call is:\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_name\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 35,
+      "gen_time": 2.12,
+      "tps": 16.5
+    },
+    {
+      "idx": 84,
+      "id": "glaive_neg_0487",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you order a pizza for me?",
+      "expected_call": null,
+      "model_output": "The user requested ordering a pizza for me, and I is programmed to perform the order function.\n</think>\n\n<tool_call>\n{\"name\": \"the name of the user\", \"arguments\": {\"email\": \"can_12@aoshi.gov\", \"password\": \"can_12oye`{`{can_12oye`{`can_12oye`{can_12oye`can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_12can_",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 26.08,
+      "tps": 19.6
+    },
+    {
+      "idx": 85,
+      "id": "py_math_0611",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Quantas combinações simples de 16 elementos tomados 7 a 7 existem? Use Python para calcular C(16, 7).",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nprint(math.comb(16, 7))"
+        }
+      },
+      "model_output": "O usuário solicita, com base em uma combinação matricial, a realizar uma combinação simples de 16 elementos tomados 7 a 7. A tarefa é realizar a combinação comb(n1, n2)), com n1 = 16, n2 = 7.\n</think>\n\n<tool_call>\n{\"name\": \"execute_python\", \"arguments\": {\"code\": \"from comb import comb\\nprint(comb(16, 7)))\".",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": false,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 99,
+      "gen_time": 5.58,
+      "tps": 17.7
+    },
+    {
+      "idx": 86,
+      "id": "glaive_l1_0204",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Hi, I have a string that I need to reverse. Can you help me with that?",
+      "expected_call": {
+        "name": "reverse_string",
+        "arguments": {
+          "input_string": "Hello, World!"
+        }
+      },
+      "model_output": "The user asked, \"Hi, I have a string that I need to reverse. Can you help me with that?.\" I will call the function generate_random_quote.\n</think>\n\n<tool_call>\n{\"name\": \"generate_random_quote\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 51,
+      "gen_time": 2.94,
+      "tps": 17.3
+    },
+    {
+      "idx": 87,
+      "id": "glaive_l1_0276",
+      "difficulty": 1,
+      "category": "single_tool_simple",
+      "prompt_user": "Can you find a movie for me?",
+      "expected_call": {
+        "name": "search_movie",
+        "arguments": {
+          "title": "Inception"
+        }
+      },
+      "model_output": "The user's request was to \"Can you find a movie for me?\". I is a command to call the function\nthe function get_random_fact is called with no arguments.\n</think>\n\n<tool_call>\n{\"name\": \"get_random_fact\", \"arguments\": {}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": false,
+        "arguments_ok": false,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 53,
+      "gen_time": 2.91,
+      "tps": 18.2
+    },
+    {
+      "idx": 88,
+      "id": "py_math_0617",
+      "difficulty": 3,
+      "category": "python_math_execution",
+      "prompt_user": "Quantas combinações simples de 27 elementos tomados 5 a 5 existem? Use Python para calcular C(27, 5).",
+      "expected_call": {
+        "name": "execute_python",
+        "arguments": {
+          "code": "import math\nprint(math.comb(27, 5))"
+        }
+      },
+      "model_output": "O usuário solicita, com base em uma combinação matricial, a realizar uma tarefa. As ferras já implementadas correspondem a utilização de uma função do python.\n</think>\n\n<tool_call>\n{\"name\":\"execute_python\",\"arguments\":{\"code\":\"import math\\nprint(math.comb(27, 5)))\"}}\n</tool_call>",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 70,
+      "gen_time": 4.13,
+      "tps": 17.0
+    },
+    {
+      "idx": 89,
+      "id": "glaive_neg_0015",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you please book a flight for me from New York to London?",
+      "expected_call": null,
+      "model_output": "The user requested to book a flight for me from New York to London, and the available tool cannot perform the task.\n</think>\n\nYou can use the booking function with the appropriate arguments to book a flight for you.",
+      "eval": {
+        "format_ok": true,
+        "selection_ok": true,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": true,
+        "has_xml": false,
+        "calls_found": 0,
+        "errors": []
+      },
+      "tokens": 43,
+      "gen_time": 2.47,
+      "tps": 17.4
+    },
+    {
+      "idx": 90,
+      "id": "glaive_neg_0431",
+      "difficulty": 1,
+      "category": "negative_abstention",
+      "prompt_user": "Can you help me order a pizza from my favorite restaurant?",
+      "expected_call": null,
+      "model_output": "The user requested assistance in ordering a pizza from their favorite restaurant. I will use the function to perform the request.\n</think>\n\n<tool_call>\n{\"name\": \"the name of the user\", \"arguments\": {\"email\": \"my@example.com\", \"password\": \"1234567777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777",
+      "eval": {
+        "format_ok": false,
+        "selection_ok": false,
+        "arguments_ok": true,
+        "python_ok": true,
+        "overall_pass": false,
+        "has_xml": true,
+        "calls_found": 1,
+        "errors": []
+      },
+      "tokens": 512,
+      "gen_time": 26.02,
+      "tps": 19.7
+    }
+  ]
+}

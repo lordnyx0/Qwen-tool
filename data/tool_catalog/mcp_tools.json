@@ -1,0 +1,145 @@
+[
+  {
+    "mcp_tool": "read_text_file",
+    "readOnlyHint": true,
+    "ours": "read_text_file",
+    "output_contract": "verbatim content (optional head/tail slicing)",
+    "collector": "collect: cat/head/tail",
+    "calls_mcp_name": 318,
+    "calls_ours_name": 318,
+    "decls_ours_name": 470,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "read_media_file",
+    "readOnlyHint": true,
+    "ours": "read_media_file",
+    "output_contract": "TYPE N bytes: path (TYPE=PNG/SVG/BIN by magic)",
+    "collector": "collect: magic sniff",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 50,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "read_multiple_files",
+    "readOnlyHint": true,
+    "ours": "read_multiple_files",
+    "output_contract": "concat of '--- path ---\\n' + content per file",
+    "collector": "collect: sequential cat",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 587,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "list_directory",
+    "readOnlyHint": true,
+    "ours": "list_directory",
+    "output_contract": "[FILE] x / [DIR] y per entry, sorted",
+    "collector": "collect: readdir+filetype",
+    "calls_mcp_name": 116,
+    "calls_ours_name": 116,
+    "decls_ours_name": 664,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "list_directory_with_sizes",
+    "readOnlyHint": true,
+    "ours": "list_directory_with_sizes",
+    "output_contract": "name: N bytes per entry, sorted",
+    "collector": "collect: stat",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 87,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "directory_tree",
+    "readOnlyHint": true,
+    "ours": "directory_tree",
+    "output_contract": "indented tree, sorted",
+    "collector": "collect: walk",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 287,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "search_files",
+    "readOnlyHint": true,
+    "ours": "search_files",
+    "output_contract": "file:line:match (grep -rn)",
+    "collector": "collect: grep -rn",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 287,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "get_file_info",
+    "readOnlyHint": true,
+    "ours": "get_file_info",
+    "output_contract": "path: file|dir, N bytes (no mtime)",
+    "collector": "collect: stat",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 287,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "list_allowed_directories",
+    "readOnlyHint": true,
+    "ours": "list_allowed_directories",
+    "output_contract": "allowed roots (harness-defined)",
+    "collector": "declared only",
+    "calls_mcp_name": 0,
+    "calls_ours_name": 0,
+    "decls_ours_name": 550,
+    "status": "nominal"
+  },
+  {
+    "mcp_tool": "create_directory",
+    "readOnlyHint": false,
+    "ours": "create_directory",
+    "output_contract": "created {path}",
+    "collector": "collect: mkdir -p",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 400,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "write_file",
+    "readOnlyHint": false,
+    "ours": "write_file",
+    "output_contract": "wrote N bytes to {path}",
+    "collector": "collect: write",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 511,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "edit_file",
+    "readOnlyHint": false,
+    "ours": "edit_file",
+    "output_contract": "replaced 1 occurrence in {path}",
+    "collector": "collect: replace-first",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 400,
+    "status": "covered"
+  },
+  {
+    "mcp_tool": "move_file",
+    "readOnlyHint": false,
+    "ours": "move_file",
+    "output_contract": "moved {src} -> {dst}",
+    "collector": "collect: mv",
+    "calls_mcp_name": 50,
+    "calls_ours_name": 50,
+    "decls_ours_name": 400,
+    "status": "covered"
+  }
+]

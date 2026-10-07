@@ -1,0 +1,186 @@
+{
+ "v34_ep2": {
+  "model": "models\\gguf\\unrolled_modelo_qwen3loop_tool_sft_v34_ep2_q8_0.gguf",
+  "passed": 12,
+  "total": 12,
+  "elapsed_s": 44.37019443511963,
+  "categories": {
+   "arg_correction": {
+    "total": 4,
+    "pass": 4,
+    "format": 4,
+    "select": 4
+   },
+   "tool_switch": {
+    "total": 3,
+    "pass": 3,
+    "format": 3,
+    "select": 3
+   },
+   "format_recovery": {
+    "total": 2,
+    "pass": 2,
+    "format": 2,
+    "select": 2
+   },
+   "retry_discipline": {
+    "total": 2,
+    "pass": 2,
+    "format": 2,
+    "select": 2
+   },
+   "query_broadening": {
+    "total": 1,
+    "pass": 1,
+    "format": 1,
+    "select": 1
+   }
+  },
+  "details": [
+   {
+    "id": "mt_001",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "du with max-depth needs a number argument. Let's adjust the command.\n<tool_call>\n{\"name\": \"run_shell_command\", \"arguments\": {\"command\": \"du --max-depth=1 /var/log\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_002",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Meeting title is missing; adding the duration parameter.\n</think>\n\n<tool_call>\n{\"name\": \"schedule_meeting\", \"arguments\": {\"title\": \"Q4 Alignment\", \"start\": \"2026-11-03T10:00:00\", \"duration_minutes\": 4"
+   },
+   {
+    "id": "mt_003",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Conversion failed; the tool requires a numeric value. Let's try with the correct units.\n</think>\n\n<tool_call>\n{\"name\": \"convert_measurement_units\", \"arguments\": {\"from_unit\": \"km\", \"to_unit\": \"miles\","
+   },
+   {
+    "id": "mt_004",
+    "level": "multiturn_correction",
+    "category": "arg_correction",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Service stop denied; retry with the -Force flag.\n</think>\n\n<tool_call>\n{\"name\": \"run_powershell\", \"arguments\": {\"command\": \"Stop-Service -Name 'spooler' -Force\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_005",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Statement lookup failed; fundamentals are needed.\n</think>\n\n<tool_call>\n{\"name\": \"get_company_financials\", \"arguments\": {\"statement\": \"income_statement\", \"symbol\": \"PETR4.SA\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_006",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Directory lookup failed; listing with the correct tool.\n</think>\n\n<tool_call>\n{\"name\": \"list_dir\", \"arguments\": {\"path\": \"/var/backups\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_007",
+    "level": "multiturn_correction",
+    "category": "tool_switch",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Unit conversion tool is not available; using the measurement unit tool.\n</think>\n\n<tool_call>\n{\"name\": \"convert_measurement_units\", \"arguments\": {\"from_unit\": \"KM\", \"to_unit\": \"MILES\", \"value\": 42}}\n<"
+   },
+   {
+    "id": "mt_008",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Temperature unit missing; using Celsius.\n</think>\n\n<tool_call>{\"name\": \"get_weather\", \"arguments\": {\"city\": \"Curitiba\", \"unit\": \"C\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_009",
+    "level": "multiturn_correction",
+    "category": "format_recovery",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Subject is missing; adding recipient.\n</think>\n\n<tool_call>\n{\"name\": \"create_email_draft\", \"arguments\": {\"subject\": \"Commercial Proposal\", \"body\": \"Sending the proposal as requested.\", \"to\": \"cliente@"
+   },
+   {
+    "id": "mt_010",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Request timed out; retrying identical call.\n<tool_call>\n{\"name\": \"check_endpoint_health\", \"arguments\": {\"url\": \"https://checkout.loja.com\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_011",
+    "level": "multiturn_correction",
+    "category": "retry_discipline",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Timezone lookup failed. Let's retry with the same parameters.\n<tool_call>\n{\"name\": \"get_timezone_time\", \"arguments\": {\"timezone\": \"America/New_York\"}}\n</tool_call>"
+   },
+   {
+    "id": "mt_012",
+    "level": "multiturn_correction",
+    "category": "query_broadening",
+    "overall_pass": true,
+    "format_ok": true,
+    "selection_ok": true,
+    "args_ok": true,
+    "python_ok": true,
+    "diag": "Argumentos OK",
+    "raw_output": "Two searches returned nothing; the first was too vague. The second used the correct term 'quarterly revenue report' and returned 10 documents.\n</think>\n\n<tool_call>\n{\"name\": \"archival_memory_search\", "
+   }
+  ]
+ }
+}

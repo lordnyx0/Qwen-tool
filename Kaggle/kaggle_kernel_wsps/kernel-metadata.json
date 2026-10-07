@@ -1,0 +1,18 @@
+{
+  "id": "lordnyx0/qwen3loop-wsps-grpo",
+  "title": "qwen3loop-wsps-grpo",
+  "code_file": "qwen3loop_wsps_grpo.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "lordnyx0/qwen3loop-grpo-wsps-data",
+    "lordnyx0/qwen3loop-tool-grpo-bundle"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

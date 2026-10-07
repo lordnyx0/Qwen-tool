@@ -1,0 +1,4 @@
+{
+  "state": "failed",
+  "error": "fusion candidate-1 route llama.cpp/unrolled_modelo_qwen3loop_tool_sft_v33_ep2_q8_0 has a 16384-token context window, but Fusion requires at least 45056 tokens: 32768 reserved for the route's configured maximum output + 0 framing + 4096 safety + 8192 usable input. Choose a larger-context or lower-max-output subscription model for this slot with /fusion-models.\nRun progress from durable attempts: candidates=not_started (0 created, 0 completed, 0 failed, 0 cancelled, 3 slot(s) not started); evaluation=not_started (0 created, 0 completed, 0 failed, 0 cancelled); merge=not_started (0 created, 0 completed, 0 failed, 0 cancelled). Usage so far: input=0, output=0, cacheRead=0, cacheWrite=0, totalTokens=0, cost.input=0, cost.output=0, cost.cacheRead=0, cost.cacheWrite=0, cost.total=0."
+}

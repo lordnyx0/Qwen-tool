@@ -1,0 +1,38 @@
+{
+  "single_tool_precise": {
+    "avg_cosine_similarity": 0.97216796875,
+    "avg_residual_norm_ratio": 0.335693359375,
+    "avg_token_agreement_pct": 51.44197791814804,
+    "avg_entropy_reduction": 0.7404551953077316,
+    "probe_decisions": {
+      "1": 8
+    }
+  },
+  "multi_tool_discrimination": {
+    "avg_cosine_similarity": 0.9716796875,
+    "avg_residual_norm_ratio": 0.347412109375,
+    "avg_token_agreement_pct": 49.28816258907318,
+    "avg_entropy_reduction": 0.6912526041269302,
+    "probe_decisions": {
+      "1": 8
+    }
+  },
+  "python_algorithmic_reasoning": {
+    "avg_cosine_similarity": 0.97265625,
+    "avg_residual_norm_ratio": 0.33056640625,
+    "avg_token_agreement_pct": 51.22000277042389,
+    "avg_entropy_reduction": 0.737876296043396,
+    "probe_decisions": {
+      "1": 8
+    }
+  },
+  "negative_abstention": {
+    "avg_cosine_similarity": 0.97265625,
+    "avg_residual_norm_ratio": 0.346923828125,
+    "avg_token_agreement_pct": 49.98864568769932,
+    "avg_entropy_reduction": 0.699615865945816,
+    "probe_decisions": {
+      "1": 8
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{"uuid": "purified_0010", "tool": "calculate_correlations", "props": ["data_file", "variables"]}
+{"uuid": "purified_0015", "tool": "initiate_vulnerability_scan", "props": ["network_segments", "scan_type", "priority"]}
+{"uuid": "purified_0016", "tool": "analyze_sales_by_category", "props": ["sales_data", "time_period", "metrics"]}
+{"uuid": "purified_0068", "tool": "get_personalized_places", "props": ["destination", "interests", "budget", "hotel_area", "hotel_view_preference"]}
+{"uuid": "purified_0086", "tool": "analyze_risk_factors", "props": ["policy_ids", "risk_factors"]}
+{"uuid": "purified_0153", "tool": "share_presentation", "props": ["file_path", "recipients", "permission"]}
+{"uuid": "purified_0205", "tool": "search_online_store", "props": ["product_name", "category", "price_range"]}
+{"uuid": "purified_0232", "tool": "calculate_average", "props": ["numbers"]}
+{"uuid": "purified_0234", "tool": "updateClientProfile", "props": ["client_id", "profile_updates"]}
+{"uuid": "purified_0249", "tool": "calculate_probable_maximum_loss", "props": ["property_ids", "catastrophic_event", "confidence_level"]}
+{"uuid": "purified_0251", "tool": "generate_python_code", "props": ["prompt", "temperature", "max_tokens", "stop"]}
+{"uuid": "purified_0253", "tool": "generate_itemized_bill", "props": ["patient_id", "services_rendered", "billing_date"]}
+{"uuid": "purified_0268", "tool": "schedule_meeting", "props": ["meeting_title", "date", "participants"]}
+{"uuid": "purified_0308", "tool": "open_multiple_windows", "props": ["urls", "arrange"]}
+{"uuid": "purified_0338", "tool": "analyze_media_for_accessibility", "props": ["media_url", "features_to_analyze"]}
+{"uuid": "purified_0348", "tool": "analyze_historical_data", "props": ["data_type", "time_frame", "data_sources"]}
+{"uuid": "purified_0357", "tool": "create_roadmap", "props": ["project_name", "tasks"]}
+{"uuid": "purified_0359", "tool": "get_traffic_metrics", "props": ["time_range", "metrics"]}
+{"uuid": "purified_0360", "tool": "search_hotels", "props": ["location", "amenities"]}
+{"uuid": "purified_0373", "tool": "get_quantum_ai_integration_info", "props": ["task_categories"]}
+{"uuid": "purified_0379", "tool": "preprocess_financial_data", "props": ["data_file", "indicators", "frequency"]}
+{"uuid": "purified_0380", "tool": "analyze_sales_data", "props": ["time_period", "metrics"]}
+{"uuid": "purified_0398", "tool": "generate_invoices", "props": ["client_data", "send_invoices"]}
+{"uuid": "purified_0409", "tool": "get_mars_rover_data", "props": ["mission_name", "data_fields"]}
+{"uuid": "purified_0427", "tool": "initiate_document_processing", "props": ["document_url", "document_types", "regulations"]}
+{"uuid": "purified_0445", "tool": "getFinancialAdvice", "props": ["portfolio", "risk_tolerance", "investment_horizon"]}
+{"uuid": "purified_0450", "tool": "fetch_compliance_data", "props": ["metrics", "time_range"]}
+{"uuid": "purified_0479", "tool": "analyze_portfolio_performance", "props": ["portfolio_ids", "metrics", "comparison_benchmarks"]}
+{"uuid": "purified_0499", "tool": "calculate_route_distance", "props": ["waypoints"]}
+{"uuid": "purified_0513", "tool": "optimize_healthcare_routes", "props": ["healthcare_facilities", "vehicles", "constraints"]}
+{"uuid": "purified_0520", "tool": "find_language_learning_app", "props": ["language", "skill", "features", "level"]}
+{"uuid": "purified_0561", "tool": "search_hotel", "props": ["location", "amenities"]}
+{"uuid": "purified_0571", "tool": "calculate_financial_metrics", "props": ["deal_id", "metrics"]}
+{"uuid": "purified_0577", "tool": "assignSeats", "props": ["flight_number", "passenger_requests"]}
+{"uuid": "purified_0594", "tool": "test_release_version", "props": ["app_path", "test_devices", "test_service"]}
+{"uuid": "purified_0607", "tool": "optimize_transportation_routes", "props": ["trucks", "cargo", "delivery_locations"]}
+{"uuid": "purified_0612", "tool": "fetchUserProfiles", "props": ["count", "includeFields"]}
+{"uuid": "purified_0617", "tool": "analyze_social_media", "props": ["platform", "hashtags", "start_date", "end_date"]}
+{"uuid": "purified_0630", "tool": "monitor_ec2_instances", "props": ["instance_ids", "metrics", "period"]}
+{"uuid": "purified_0642", "tool": "analyze_price_trends", "props": ["symbols", "time_period", "data_points"]}
+{"uuid": "purified_0719", "tool": "analyze_market_sentiment", "props": ["exchange", "symbols", "sources"]}
+{"uuid": "purified_0726", "tool": "gather_social_media_data", "props": ["platforms", "metrics", "time_period"]}
+{"uuid": "purified_0747", "tool": "get_sudoku_solution", "props": ["puzzle"]}
+{"uuid": "purified_0760", "tool": "update_customer_profile", "props": ["customer_id", "profile_updates"]}
+{"uuid": "purified_0776", "tool": "configure_notifications", "props": ["notification_type", "recipients"]}
+{"uuid": "purified_0827", "tool": "create_job", "props": ["name", "tasks", "max_retries", "timeout_seconds", "libraries", "email_notifications"]}
+{"uuid": "purified_0840", "tool": "getEnvironmentalData", "props": ["data_center_id", "sensors"]}
+{"uuid": "purified_0841", "tool": "synchronizeRoomAvailability", "props": ["hotel_id", "booking_platforms", "date_range"]}
+{"uuid": "purified_0872", "tool": "subscribe_market_events", "props": ["events", "trader_id"]}
+{"uuid": "purified_0897", "tool": "sort_array", "props": ["array", "order"]}
+{"uuid": "purified_0967", "tool": "getCurrentWeatherData", "props": ["location", "date", "parameters"]}
+{"uuid": "purified_1043", "tool": "optimize_rail_routes", "props": ["train_specs", "rail_network_map", "cargo_details", "maintenance_times"]}
+{"uuid": "purified_1046", "tool": "analyze_ev_market_trends", "props": ["segment", "date_range"]}
+{"uuid": "purified_1053", "tool": "track_customer_inquiries", "props": ["customer_id", "inquiry_details"]}
+{"uuid": "purified_1082", "tool": "scale_continuous_features", "props": ["features_to_scale", "scaling_method"]}
+{"uuid": "purified_1085", "tool": "get_crypto_transactions", "props": ["cryptocurrencies", "data_points"]}
+{"uuid": "purified_1108", "tool": "update_firewall_rules", "props": ["locations", "whitelist_updates"]}
+{"uuid": "purified_1129", "tool": "list_available_smartphones", "props": ["category", "filters"]}
+{"uuid": "purified_1131", "tool": "calculate_optimal_routes", "props": ["delivery_data", "cost_constraints"]}
+{"uuid": "purified_1156", "tool": "collect_software_usage_data", "props": ["department_ids", "time_range"]}
+{"uuid": "purified_1165", "tool": "create_todo_list", "props": ["title", "tasks"]}
+{"uuid": "purified_1177", "tool": "calculate_investment_performance_metrics", "props": ["portfolio_id", "metrics", "time_period"]}
+{"uuid": "purified_1199", "tool": "record_inspection_outcome", "props": ["asset_id", "inspection_date", "outcome_details"]}
+{"uuid": "purified_1209", "tool": "retrieve_NFT_market_data", "props": ["blockchain", "collections"]}
+{"uuid": "purified_1229", "tool": "establish_secure_connection", "props": ["asset_id", "credentials"]}
+{"uuid": "purified_1235", "tool": "find_nearby_parks", "props": ["location", "amenities"]}
+{"uuid": "purified_1269", "tool": "generate_report", "props": ["data"]}
+{"uuid": "purified_1288", "tool": "post_to_social_media", "props": ["video_path", "caption", "hashtags", "accounts"]}
+{"uuid": "purified_1292", "tool": "calculate_efficient_routes", "props": ["delivery_locations", "vehicle_specs", "time_windows"]}
+{"uuid": "purified_1306", "tool": "analyze_consumption_patterns", "props": ["utility_types", "time_period"]}
+{"uuid": "purified_1315", "tool": "distance", "props": ["args"]}
+{"uuid": "purified_1328", "tool": "extract_tableau_data", "props": ["workbook_path", "sheet_name", "filters", "columns"]}
+{"uuid": "purified_1335", "tool": "recommend_content_based_on_viewing_habits", "props": ["user_id", "viewing_history", "genre_preferences"]}
+{"uuid": "purified_1349", "tool": "schedule_training_program", "props": ["title", "description", "modules", "quizzes", "track_completion"]}
+{"uuid": "purified_1362", "tool": "retrieve_manufacturing_data", "props": ["product_lines", "metrics", "date"]}
+{"uuid": "purified_1363", "tool": "extract_invoice_data", "props": ["invoice_files"]}
+{"uuid": "purified_1379", "tool": "getEnvironmentalData", "props": ["data_center_id", "sensors"]}
+{"uuid": "purified_1384", "tool": "update_contact_list", "props": ["platform", "contact_list_id", "customers"]}
+{"uuid": "purified_1387", "tool": "create_invoice", "props": ["customer_name", "billing_address", "items"]}
+{"uuid": "purified_1413", "tool": "extractLegalDocumentInfo", "props": ["document_paths", "information_types"]}
+{"uuid": "purified_1419", "tool": "classify_financial_reviews", "props": ["reviews_json_path", "categories", "output_format"]}
+{"uuid": "purified_1422", "tool": "book_artist", "props": ["artist_id", "event_id", "booking_details"]}
+{"uuid": "purified_1425", "tool": "search_recipes", "props": ["ingredients", "cuisine", "diet"]}
+{"uuid": "purified_1431", "tool": "retrieve_paypal_transaction_history", "props": ["account_id", "start_date", "end_date", "fields"]}
+{"uuid": "purified_1435", "tool": "register_device", "props": ["deviceTypeId", "deviceId", "authToken", "deviceInfo"]}
+{"uuid": "purified_1439", "tool": "analyze_customer_data", "props": ["customer_data_source", "data_fields"]}
+{"uuid": "purified_1468", "tool": "find_nearby_parks", "props": ["location", "amenities"]}
+{"uuid": "purified_1483", "tool": "analyze_market_data", "props": ["symbols", "data_points", "time_range"]}
+{"uuid": "purified_1534", "tool": "calculate_tariffs", "props": ["origin_country", "destination_country", "product_categories", "trade_agreements"]}
+{"uuid": "purified_1541", "tool": "monitor_compliance", "props": ["regulations", "customer_profiles", "transaction_records"]}
+{"uuid": "purified_1560", "tool": "search_activities", "props": ["destination", "activity_types", "date_range"]}
+{"uuid": "purified_1574", "tool": "analyze_audio", "props": ["audio_url", "features"]}
+{"uuid": "purified_1612", "tool": "evaluate_current_vs_target_allocation", "props": ["portfolio_ids", "target_allocation"]}
+{"uuid": "purified_1652", "tool": "scrape_user_agents", "props": ["urls", "parser", "element", "attribute"]}
+{"uuid": "purified_1665", "tool": "getMovieRecommendations", "props": ["genres"]}
+{"uuid": "purified_1688", "tool": "random_crop", "props": ["image_dataset", "crop_size"]}
+{"uuid": "purified_1758", "tool": "assess_s3_bucket_security", "props": ["bucket_names"]}
+{"uuid": "purified_1761", "tool": "search_vehicles", "props": ["query", "brand", "price_range", "features"]}
+{"uuid": "purified_1780", "tool": "plan_project", "props": ["project_scope", "stakeholders", "deadlines"]}
+{"uuid": "purified_1783", "tool": "find_nearby_parks", "props": ["location", "amenities"]}
+{"uuid": "purified_1789", "tool": "fetch_personalized_news", "props": ["interests", "time_range", "limit"]}
+{"uuid": "purified_1795", "tool": "get_travel_insurance_plans", "props": ["provider", "coverage_options", "destination"]}
+{"uuid": "purified_1806", "tool": "search_job", "props": ["keywords", "location", "job_type"]}
+{"uuid": "purified_1807", "tool": "get_vm_metrics", "props": ["vm_name", "subscription_id", "resource_group", "metrics"]}
+{"uuid": "purified_1817", "tool": "initialize_service_desk", "props": ["modules", "communication_channels"]}
+{"uuid": "purified_1832", "tool": "categorize_parties", "props": ["case_id", "parties"]}
+{"uuid": "purified_1842", "tool": "update_shipping_info", "props": ["order_id", "shipping_updates"]}
+{"uuid": "purified_1850", "tool": "audit_model_for_bias", "props": ["model_id", "bias_types"]}
+{"uuid": "purified_1871", "tool": "get_field_sensor_data", "props": ["field_ids"]}
+{"uuid": "purified_1892", "tool": "consolidate_debts", "props": ["debts"]}
+{"uuid": "purified_1898", "tool": "generate_financial_terms_schema", "props": ["categories"]}
+{"uuid": "purified_1906", "tool": "compare_stock_movements", "props": ["sector", "exchange", "metrics", "time_period"]}
+{"uuid": "purified_1916", "tool": "add_patient_record", "props": ["patient_data"]}

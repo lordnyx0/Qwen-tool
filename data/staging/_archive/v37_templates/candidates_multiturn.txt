@@ -1,0 +1,80 @@
+smart_door_lock | 11 amostras | ex: t_sem_001, t_sem_002, t_sem_003, t_sem_004
+execute_command | 11 amostras | ex: t_err_0031, t_err_0032, t_err_0033, t_err_0034
+compute_checksum | 9 amostras | ex: t_sem_014, t_cal_04a, s5_b06_ws_02, s5_b06_ws_04
+find_user_id_by_email | 8 amostras | ex: purified_0051, purified_0076, purified_0332, purified_0632
+get_stock_quote | 8 amostras | ex: t_dec_005, t_dec_007, t_dec_021, t_dec_023
+calculate_compound_interest | 8 amostras | ex: t_dec_009, t_dec_011, t_dec_027, t_dec_029
+simulate_loan_amortization | 8 amostras | ex: t_dec_010, t_dec_012, t_dec_028, t_dec_030
+search_engine_query | 7 amostras | ex: purified_0314, purified_0441, purified_0514, purified_0994
+find_user_id_by_name_zip | 7 amostras | ex: purified_0632, purified_0832, purified_0864, purified_1059
+get_user_details | 7 amostras | ex: purified_0832, purified_0864, purified_0970, purified_1059
+get_exchange_rate | 7 amostras | ex: t_dec_001, t_dec_003, t_dec_025, t_dec_039
+get_company_financials | 7 amostras | ex: t_dec_006, t_dec_008, t_dec_022, t_dec_024
+verify_crypto_gas_price | 6 amostras | ex: t_dec_013, t_dec_015, t_dec_031, t_dec_033
+calculate_crypto_swap_rate | 6 amostras | ex: t_dec_014, t_dec_016, t_dec_032, t_dec_034
+channel_playlists | 5 amostras | ex: purified_0141, purified_0954, purified_1336, purified_1663
+drink_by_id | 5 amostras | ex: purified_0157, purified_0396, purified_0462, purified_1359
+breweries | 5 amostras | ex: purified_0248, purified_1248, purified_1526, purified_1532
+convert_measurement_units | 5 amostras | ex: t_dec_017, t_dec_019, t_dec_035, t_dec2_017
+companies_id_data | 4 amostras | ex: purified_0001, purified_0766, purified_1246, purified_1727
+search_tweet | 4 amostras | ex: purified_0003, purified_0258, purified_0830, purified_1867
+core_memory_append | 4 amostras | ex: purified_0212, purified_0321, purified_0609, purified_1354
+check | 4 amostras | ex: purified_0347, purified_0376, purified_0546, purified_1766
+video_comments | 4 amostras | ex: purified_0417, purified_0503, purified_1253, purified_1909
+products_search | 4 amostras | ex: purified_0907, purified_1031, purified_1153, purified_1658
+count_vowels | 3 amostras | ex: purified_0041, purified_0366, purified_0817
+schedule_meeting | 3 amostras | ex: purified_0050, purified_0268, purified_0303
+analyze_sentiment | 3 amostras | ex: purified_0075, purified_0388, purified_1241
+market_trends | 3 amostras | ex: purified_0101, purified_1190, purified_1411
+game_odds_by_site_schedule | 3 amostras | ex: purified_0129, purified_1733, purified_1852
+download_video_or_reel | 3 amostras | ex: purified_0210, purified_0618, purified_0912
+v1_whois | 3 amostras | ex: purified_0218, purified_1350, purified_1614
+get_4d_results | 3 amostras | ex: purified_0297, purified_1787, purified_1800
+retrieve_audio_file | 3 amostras | ex: purified_0317, purified_1418, purified_1476
+hijos | 3 amostras | ex: purified_0406, purified_0962, purified_1262
+email_endpoint | 3 amostras | ex: purified_0435, purified_1034, purified_1201
+menudetails | 3 amostras | ex: purified_0462, purified_1359, purified_1698
+keyword | 3 amostras | ex: purified_0534, purified_0637, purified_0768
+get_product_detail | 3 amostras | ex: purified_0539, purified_1764, purified_1887
+dns_lookup | 3 amostras | ex: purified_0597, purified_1475, t_cal_05a
+trip_details | 3 amostras | ex: purified_0762, purified_0914, purified_1104
+search | 3 amostras | ex: purified_0826, purified_1277, purified_1828
+fibonacci | 3 amostras | ex: purified_0837, purified_1051, purified_1440
+gettraderpositions | 3 amostras | ex: purified_1187, purified_1224, purified_1278
+find_nearby_parks | 3 amostras | ex: purified_1235, purified_1468, purified_1783
+qr_code | 3 amostras | ex: purified_1360, purified_1457, purified_1615
+get_user_tagged_media_by_user_id | 2 amostras | ex: purified_0002, purified_0523
+merge_dictionaries | 2 amostras | ex: purified_0035, purified_0041
+validate_email | 2 amostras | ex: purified_0040, purified_1604
+find_max_subarray_sum | 2 amostras | ex: purified_0041, purified_0933
+sendsms | 2 amostras | ex: purified_0042, purified_1680
+set_thermostat | 2 amostras | ex: purified_0044, t_cal_14a
+find_nearest_coffee_shop | 2 amostras | ex: purified_0049, purified_0202
+order_by_descending | 2 amostras | ex: purified_0053, purified_1234
+search_places | 2 amostras | ex: purified_0057, purified_0965
+get_artist_s_albums | 2 amostras | ex: purified_0061, purified_1578
+top_posts_by_subreddit | 2 amostras | ex: purified_0065, purified_0938
+gender_from_name | 2 amostras | ex: purified_0070, purified_1770
+kanji_stroke_number | 2 amostras | ex: purified_0071, purified_0158
+extract_key_phrases | 2 amostras | ex: purified_0075, purified_0279
+translate_text | 2 amostras | ex: purified_0075, purified_1366
+get_user_playlists | 2 amostras | ex: purified_0078, purified_1591
+translate | 2 amostras | ex: purified_0090, purified_0852
+extract_relations_from_historical_texts | 2 amostras | ex: purified_0098, purified_0871
+stock_get_daily_dividend_data | 2 amostras | ex: purified_0101, purified_1411
+gas_price | 2 amostras | ex: purified_0101, purified_1411
+update_inventory_stock | 2 amostras | ex: purified_0111, purified_0717
+get_new_hashtags | 2 amostras | ex: purified_0130, purified_1617
+channel_details | 2 amostras | ex: purified_0136, purified_0372
+greatest_common_divisor | 2 amostras | ex: purified_0149, purified_1058
+v1_exercises | 2 amostras | ex: purified_0154, purified_0692
+generate_recipe | 2 amostras | ex: purified_0157, purified_1698
+calculate_investment_return | 2 amostras | ex: purified_0160, purified_0522
+calculate_portfolio_var | 2 amostras | ex: purified_0163, purified_0275
+set_thermostat_temperature | 2 amostras | ex: purified_0176, purified_0188
+set_blinds_schedule | 2 amostras | ex: purified_0176, purified_0188
+specifications_by_group | 2 amostras | ex: purified_0198, purified_0885
+user_by_rest_id | 2 amostras | ex: purified_0200, purified_0523
+numbers_translator | 2 amostras | ex: purified_0230, purified_1536
+search_all_players | 2 amostras | ex: purified_0240, purified_0252
+timezone_by_id | 2 amostras | ex: purified_0247, purified_0995

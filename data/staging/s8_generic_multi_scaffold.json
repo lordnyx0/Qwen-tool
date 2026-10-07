@@ -1,0 +1,2380 @@
+{
+ "name": "s8_generic_multi_scaffold",
+ "role": "slots mecanicos p/ redacao humana S8 (70 multis generic, cat 8-15). user/assistant_draft=None = a redigir. + 24 slots S8b mutating (sequencias genuinas mesma-sessao).",
+ "grounding_rule": "observations copiadas VERBATIM das chaves golden; proibido setup->read-do-setup.",
+ "slots": [
+  {
+   "slot_id": "s8_001",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service"
+    },
+    {
+     "golden_key": "powershell\u0000get-service | where-object {$_.status -eq \"running\"} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "top_grossing_games",
+    "powershell",
+    "validate_email",
+    "track_service_usage",
+    "execute_command",
+    "terminal",
+    "estimates",
+    "read_file"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_002",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\""
+    },
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\" | select-object status"
+    }
+   ],
+   "catalog": [
+    "bodies",
+    "run_cmd",
+    "trackServiceRequests",
+    "run_shell_command",
+    "get_airport_details",
+    "issue_refund",
+    "cancel_pending_order",
+    "ayah_recitations",
+    "mediterranean_ingredient",
+    "convert_measurement_units",
+    "powershell",
+    "circle_area"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_003",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\" | select-object -expandproperty starttype"
+    },
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\" | select-object status"
+    }
+   ],
+   "catalog": [
+    "show_image",
+    "extractCourseInformation",
+    "generate_financial_terms_schema",
+    "banks_by_country",
+    "run_cmd",
+    "short_ticker",
+    "powershell",
+    "find_by_postcode",
+    "ln",
+    "stock_balance_sheet_stock",
+    "execute_python",
+    "analyze_emissions_data",
+    "song_download",
+    "addLeaseInformation",
+    "monitor_power_output"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_004",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service | where-object {$_.starttype -eq \"automatic\" -and $_.status -ne \"running\"} | select-object name"
+    },
+    {
+     "golden_key": "powershell\u0000get-service | where-object {$_.starttype -eq \"automatic\" -and $_.status -ne \"running\"} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "update_product_inventory",
+    "v1_exchangerate",
+    "powershell",
+    "execute_command",
+    "execute_python",
+    "menudetails",
+    "get_data_and_story",
+    "schedule_event",
+    "get_total_sales",
+    "camelizer_get_price_chart"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_005",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-eventlog -logname system -newest 10"
+    },
+    {
+     "golden_key": "powershell\u0000get-eventlog -logname system -newest 50 | where-object {$_.entrytype -eq \"error\"}"
+    }
+   ],
+   "catalog": [
+    "python_interpreter",
+    "order_by_descending",
+    "lines_line_abs",
+    "terminal",
+    "initializeServiceScheduleManager",
+    "get_item_by_id",
+    "powershell",
+    "cancel_pending_order"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_006",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-childitem c:/windows/temp | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-childitem c:/windows/temp | sort-object length -descending | select-object -first 3 name, length"
+    }
+   ],
+   "catalog": [
+    "add_contact_to_outlook",
+    "notify_purchasing_department",
+    "estimate_market_value",
+    "shell",
+    "sort_array",
+    "run_cmd",
+    "fetchUserProfiles",
+    "get_company_financials",
+    "calculate_car_emissions",
+    "draw_cards",
+    "powershell",
+    "bullish_engulfing"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_007",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-childitem cert:/localmachine/my | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-childitem cert:/localmachine/my | sort-object notafter | select-object -first 1 -expandproperty notafter"
+    }
+   ],
+   "catalog": [
+    "timezone_by_id",
+    "get_user_tagged_media_by_user_id",
+    "video_comments",
+    "search_code",
+    "generate_access_report",
+    "run_shell",
+    "show_image",
+    "predict_price_movements",
+    "spac_price_targets",
+    "python_interpreter",
+    "execute_command",
+    "get_country_details",
+    "powershell",
+    "notify_customer_status",
+    "get_amazon_product_details"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_008",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-ciminstance win32_bios | select-object serialnumber, manufacturer"
+    },
+    {
+     "golden_key": "powershell\u0000get-ciminstance win32_processor | select-object name"
+    }
+   ],
+   "catalog": [
+    "execute_command",
+    "verify_batch_concentration",
+    "predict_price_movements",
+    "calculate_car_emissions",
+    "powershell",
+    "shell",
+    "serie_a_standings",
+    "market_capitalization",
+    "align_production_schedules",
+    "balance"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_009",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-ciminstance win32_computersystem | select-object model"
+    },
+    {
+     "golden_key": "powershell\u0000get-ciminstance win32_computersystem | select-object -expandproperty totalphysicalmemory"
+    }
+   ],
+   "catalog": [
+    "search_book",
+    "category",
+    "get_9gag",
+    "powershell",
+    "analyze_customer_interactions",
+    "create_targeted_ad_campaign",
+    "execute_python",
+    "shell"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_010",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-ciminstance win32_operatingsystem | select-object caption, version"
+    },
+    {
+     "golden_key": "powershell\u0000get-ciminstance win32_operatingsystem | select-object freephysicalmemory"
+    }
+   ],
+   "catalog": [
+    "alerts_and_jams",
+    "get_realtime_rates",
+    "count_words",
+    "execute_command",
+    "check_inventory",
+    "time_series",
+    "business_reviews",
+    "least_common_multiple",
+    "place_safeway_order",
+    "powershell",
+    "run_cmd",
+    "v1_profanityfilter"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_011",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-hotfix"
+    },
+    {
+     "golden_key": "powershell\u0000get-hotfix | sort-object installedon -descending | select-object -first 1"
+    }
+   ],
+   "catalog": [
+    "verify_ec2_instance_amis",
+    "powershell",
+    "shell",
+    "count_vowels",
+    "time_series_endpoint",
+    "cash_flow_statement",
+    "schedule_by_date",
+    "financial_cash_statement",
+    "keyword",
+    "youtube_topviews_year",
+    "display_top_performing_products",
+    "get_horoscope",
+    "fights",
+    "findbypincode",
+    "execute_command"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_012",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-hotfix | sort-object installedon -descending | select-object -first 2"
+    },
+    {
+     "golden_key": "powershell\u0000get-hotfix | sort-object installedon -descending | select-object -first 1 -expandproperty installedon"
+    }
+   ],
+   "catalog": [
+    "get_a_specific_movie_by_id",
+    "powershell",
+    "get_genetic_markers",
+    "run_shell_command",
+    "analyze_resource_consumption",
+    "track_service_usage",
+    "terminal",
+    "update_customer_profile",
+    "get_anime_detail",
+    "video_videoid"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_013",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-process | sort-object cpu -descending | select-object -first 1"
+    },
+    {
+     "golden_key": "powershell\u0000get-process | sort-object ws -descending | select-object -first 1"
+    }
+   ],
+   "catalog": [
+    "get_scrabble_score",
+    "powershell",
+    "getdirectdebitinitiationinstruction",
+    "create_task",
+    "autocomplete_search",
+    "execute_python",
+    "terminal",
+    "fetch_latest"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_014",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-vm | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-vm | where-object {$_.state -eq \"running\"} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "check_road_conditions",
+    "schedule_smart_plug",
+    "get_champions",
+    "findAvailableFlights",
+    "python_interpreter",
+    "asset_markets_by_id",
+    "powershell",
+    "get_exchange_rate",
+    "shell",
+    "getpopulationbycountrycode",
+    "navigations_get_tabs",
+    "get_new_hashtags"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_015",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000winget --version"
+    },
+    {
+     "golden_key": "powershell\u0000winget upgrade | measure-object -line | select-object -expandproperty lines"
+    }
+   ],
+   "catalog": [
+    "archival_memory_search",
+    "potential_energy",
+    "get_traffic_conditions",
+    "evaluate_current_vs_target_allocation",
+    "shotmap",
+    "generate_order_history_report",
+    "extractLegalDocumentInfo",
+    "analyze_portfolio_performance",
+    "find_restaurants",
+    "run_cmd",
+    "title_get_technical",
+    "terminal",
+    "athlete_trophy_stats",
+    "powershell",
+    "get_manga"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_016",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000w32tm /query /status"
+    },
+    {
+     "golden_key": "powershell\u0000w32tm /query /status | select-string -pattern \"stratum\" | select-object -first 1"
+    }
+   ],
+   "catalog": [
+    "powershell",
+    "asset_markets_by_id",
+    "execute_command",
+    "player_data",
+    "execute_python",
+    "assess_liquidity_risk",
+    "get_personalized_places",
+    "setup_realtime_monitoring",
+    "chat",
+    "calculate_loan_payments"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_017",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-localuser"
+    },
+    {
+     "golden_key": "powershell\u0000get-localuser | where-object {$_.enabled -eq $true} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "fetch_vehicle_reviews",
+    "identify_peak_load_times",
+    "execute_python",
+    "execute_command",
+    "tournament_results_by_id_and_year_wta",
+    "powershell",
+    "conversion",
+    "post_to_social_media"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_018",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-mpcomputerstatus | select-object amserviceversion"
+    },
+    {
+     "golden_key": "powershell\u0000get-mpcomputerstatus | select-object -expandproperty realtimeprotectionenabled"
+    }
+   ],
+   "catalog": [
+    "transfer_funds",
+    "availability",
+    "run_shell_command",
+    "scheduleHousekeeping",
+    "get_quantum_ai_integration_info",
+    "powershell",
+    "summary_details",
+    "list_directory_contents",
+    "simple_qr_code",
+    "totd_tracks_by_page",
+    "download_video_or_reel",
+    "run_cmd"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_019",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-pnpdevice | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-pnpdevice | where-object {$_.status -ne \"ok\"} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "dns_lookup",
+    "author_author",
+    "get_current_market_rate",
+    "optimize_healthcare_routes",
+    "calculator",
+    "check_order_status",
+    "icecream_ingredient",
+    "powershell",
+    "tmall_search_by_keyword",
+    "run_cmd",
+    "shell",
+    "stores_list",
+    "get_product_s_reviews",
+    "gas_price",
+    "stock_get_stock_earnings_data"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_020",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-content c:/windows/system32/drivers/etc/hosts -totalcount 5"
+    },
+    {
+     "golden_key": "powershell\u0000get-content c:/windows/system32/drivers/etc/hosts | measure-object -line | select-object -expandproperty lines"
+    }
+   ],
+   "catalog": [
+    "get_data_and_story",
+    "powershell",
+    "artist_featuring",
+    "execute_command",
+    "run_shell_command",
+    "athlete_trophy_stats",
+    "get_airports",
+    "get_a_specific_game",
+    "tweet_favoriters",
+    "hungary_songs"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_021",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000select-string -path c:/windows/system32/drivers/etc/hosts -pattern \"localhost\""
+    },
+    {
+     "golden_key": "powershell\u0000select-string -path c:/windows/system32/drivers/etc/hosts -pattern \"localhost\" | measure-object -line | select-object -expandproperty lines"
+    }
+   ],
+   "catalog": [
+    "getResidentPets",
+    "activate_voice_command",
+    "billboard_hot_100",
+    "powershell",
+    "gstin",
+    "monitor_vibration_levels",
+    "run_cmd",
+    "run_shell_command"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_022",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-dnsclientcache | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-dnsclientcache | where-object {$_.entry -like \"*acme*\"} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "shell",
+    "season_wins_leaderboard_mw_2",
+    "markets_equities_groups",
+    "analyze_market_data",
+    "search_vehicles",
+    "terminal",
+    "update_item_location",
+    "gamesdata",
+    "check_inventory",
+    "get_username_by_user_id",
+    "get_recipes_details",
+    "powershell"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_023",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000quser"
+    },
+    {
+     "golden_key": "powershell\u0000quser | measure-object -line | select-object -expandproperty lines"
+    }
+   ],
+   "catalog": [
+    "python_interpreter",
+    "tournament_fixture",
+    "powershell",
+    "getWeatherAlerts",
+    "remove_duplicate_records",
+    "execute_python",
+    "generate_restock_alerts",
+    "business_reviews",
+    "stochrsi",
+    "albums_get_related_artist",
+    "language_by_id",
+    "billboard_hot_100",
+    "get_artist_s_albums",
+    "airplanes_by_brand",
+    "check_word_count"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_024",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "R-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\""
+    },
+    {
+     "golden_key": "powershell\u0000start-service -name \"spooler\"; get-service -name \"spooler\""
+    }
+   ],
+   "catalog": [
+    "run_shell_command",
+    "update_patient_record",
+    "search_wikipedia",
+    "check_expiration_dates",
+    "is_rotation",
+    "domain_name",
+    "find_language_learning_app",
+    "powershell",
+    "draw_cards",
+    "run_cmd"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_025",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "R-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000w32tm /query /status"
+    },
+    {
+     "golden_key": "powershell\u0000w32tm /resync"
+    }
+   ],
+   "catalog": [
+    "powershell",
+    "categorytournaments",
+    "execute_python",
+    "classification",
+    "geocode",
+    "run_cmd",
+    "stock_news",
+    "icecream_ingredient"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_026",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "M-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:temp/g6ps10/logs/archive -itemtype directory -force"
+    },
+    {
+     "golden_key": "powershell\u0000new-item -path $env:temp/g6ps01 -itemtype directory"
+    }
+   ],
+   "catalog": [
+    "execute_python",
+    "find_optimal_meeting_time",
+    "countries_detail",
+    "search_b",
+    "summary",
+    "optimize_healthcare_routes",
+    "powershell",
+    "get_user_favorite_list",
+    "estimate_migration_effort",
+    "charts_track",
+    "terminal",
+    "get_articles"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_027",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "bash\u0000ls /tmp"
+    },
+    {
+     "golden_key": "bash\u0000ls /tmp | wc -l"
+    }
+   ],
+   "catalog": [
+    "python_interpreter",
+    "terminal",
+    "kanji_stroke_number",
+    "news_v2_list_trending",
+    "update_contact_list",
+    "cli",
+    "predict_energy_demand",
+    "bash",
+    "open_file_in_editor",
+    "find_missing_number",
+    "actors_get_all_images",
+    "addLeaseInformation",
+    "enroll_direct_deposit",
+    "draw_cards",
+    "initiate_backup"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_028",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "bash\u0000cat /etc/hostname"
+    },
+    {
+     "golden_key": "bash\u0000stat -c \"%s\" /etc/hostname"
+    }
+   ],
+   "catalog": [
+    "check_inventory",
+    "predict_forest_area",
+    "get_random_number",
+    "get_medication_list",
+    "bash",
+    "execute_command",
+    "title_get_sound_tracks",
+    "run_shell_command",
+    "getcountrybynumber",
+    "basketball_match_statistics"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_029",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "bash\u0000head -n 3 /etc/hosts"
+    },
+    {
+     "golden_key": "bash\u0000tail -n 3 /etc/hosts"
+    }
+   ],
+   "catalog": [
+    "balance_sheet",
+    "get_5_year_historical_quarterly_prices",
+    "market_capitalization",
+    "bash",
+    "sort_array",
+    "execute_python",
+    "python_interpreter",
+    "summarize_dataset"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_030",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "bash\u0000grep -c localhost /etc/hosts"
+    },
+    {
+     "golden_key": "bash\u0000wc -l /etc/hosts"
+    }
+   ],
+   "catalog": [
+    "get_item_by_id",
+    "assetbyid",
+    "get_employee_assigned_projects",
+    "optimize_delivery_schedule",
+    "shell",
+    "flatten_list",
+    "youtube_topviews_year",
+    "bash",
+    "run_cmd",
+    "check_expiration_dates",
+    "analyze_website_traffic",
+    "create_histogram"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_031",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "bash\u0000df -h /tmp"
+    },
+    {
+     "golden_key": "bash\u0000du -sh /tmp"
+    }
+   ],
+   "catalog": [
+    "get_the_current_stock_by_exchange_code_and_stock_code",
+    "teammedia",
+    "web_exchanges",
+    "fresh_potential_gems",
+    "bash",
+    "recognize_products",
+    "create_todo",
+    "get_post_data_download_video_photo",
+    "run_cmd",
+    "generate_invoice",
+    "load_game_level",
+    "execute_python",
+    "custom_dice_rolls",
+    "list_by_equipment",
+    "get_travel_insurance_plans"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_032",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "M+R-ind",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/g6sh05; echo \"build ok\" | tee /tmp/g6sh05/out.txt"
+    },
+    {
+     "golden_key": "bash\u0000du -sh /tmp"
+    }
+   ],
+   "catalog": [
+    "extract_tableau_data",
+    "analyze_customer_feedback",
+    "get_play_by_play",
+    "run_cmd",
+    "bash",
+    "conversion",
+    "newlyregistereddomains",
+    "terminal",
+    "forecast_distribution_impact",
+    "image_to_text_ocr"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_033",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-nettcpconnection -remoteport 443 | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-nettcpconnection -localport 3389 -erroraction silentlycontinue | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "latest",
+    "feeds_auto_complete",
+    "get_train_schedule",
+    "stock_get_net_income",
+    "terminal",
+    "event",
+    "powershell",
+    "python_interpreter"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_034",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-appxpackage -allusers | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-appxpackage -allusers | select-object name -first 3"
+    }
+   ],
+   "catalog": [
+    "execute_command",
+    "convert_lead_to_opportunity",
+    "powershell",
+    "flag",
+    "predict_inventory_needs",
+    "get_field_sensor_data",
+    "data",
+    "run_cmd",
+    "triggerPurchaseOrder",
+    "get_mars_rover_data",
+    "compute_checksum",
+    "get_stations"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_035",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-counter \"/memory/available mbytes\" | select-object -expandproperty countersamples | select-object -expandproperty cookedvalue"
+    },
+    {
+     "golden_key": "powershell\u0000get-counter \"/processor(_total)/% processor time\" -sampleinterval 1 -maxsamples 5 | select-object -expandproperty countersamples | measure-object cookedvalue -average | select-object -expandproperty average"
+    }
+   ],
+   "catalog": [
+    "get_lab_results",
+    "stock_insider_holders_stock",
+    "get_personalized_places",
+    "image_to_text_ocr",
+    "powershell",
+    "search_single_postcode",
+    "vin_decoder",
+    "python_interpreter",
+    "get_horoscope_multilingual",
+    "companies_id_data",
+    "run_cmd",
+    "count_words",
+    "light_preset",
+    "calculate_berth_utilization",
+    "schedule_recurring_task"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_036",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service"
+    },
+    {
+     "golden_key": "powershell\u0000get-service | where-object {$_.starttype -eq \"automatic\" -and $_.status -ne \"running\"} | select-object name"
+    },
+    {
+     "golden_key": "powershell\u0000get-service | where-object {$_.starttype -eq \"automatic\" -and $_.status -ne \"running\"} | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "execute_python",
+    "getallcountry",
+    "get_manga",
+    "updateMaintenanceRequest",
+    "get_campaign_lead_from_id",
+    "get_sudoku_solution",
+    "get_contractors_list",
+    "powershell",
+    "run_cmd",
+    "gettalks"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_037",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "R-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-dnsclientcache | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000clear-dnsclientcache; get-dnsclientcache | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "get_all_family_by_brand_name",
+    "send_chat_message",
+    "python_interpreter",
+    "powershell",
+    "run_shell_command",
+    "get_cities",
+    "greatest_common_divisor",
+    "calculate_portfolio_performance_metrics"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_038",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "M-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:temp/g6ps05 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:temp/g6ps05/hosts.bak"
+    },
+    {
+     "golden_key": "powershell\u0000new-item -path $env:temp/g6ps12 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:temp/g6ps12/hosts.copy"
+    }
+   ],
+   "catalog": [
+    "powershell",
+    "simulate_quantum_optimization",
+    "commit_all_files",
+    "billboard_global_200",
+    "execute_python",
+    "shareFileWithUser",
+    "run_shell_command",
+    "estimated_salary",
+    "chat",
+    "channel_details",
+    "get_breed_information",
+    "players_at_position"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_039",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "R-R-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-dnsclientcache | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000get-dnsclientcache | where-object {$_.entry -like \"*acme*\"} | measure-object | select-object -expandproperty count"
+    },
+    {
+     "golden_key": "powershell\u0000clear-dnsclientcache; get-dnsclientcache | measure-object | select-object -expandproperty count"
+    }
+   ],
+   "catalog": [
+    "getchannelplaylists",
+    "calculate_body_fat_percentage",
+    "nearest_airport_from_postal_code",
+    "powershell",
+    "music_metadata",
+    "get_order_details",
+    "stock_earnings",
+    "getrandom",
+    "calculate_crypto_swap_rate",
+    "automate_invoice_approval",
+    "execute_command",
+    "analyze_sales_data",
+    "vehicle_attributes",
+    "create_roadmap",
+    "run_cmd"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_040",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "R-R-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000w32tm /query /status"
+    },
+    {
+     "golden_key": "powershell\u0000w32tm /query /status | select-string -pattern \"stratum\" | select-object -first 1"
+    },
+    {
+     "golden_key": "powershell\u0000w32tm /resync"
+    }
+   ],
+   "catalog": [
+    "getcompetitionsid",
+    "adjust_streaming_quality",
+    "prematch_event",
+    "spac_price_targets",
+    "terminal",
+    "bmi",
+    "powershell",
+    "execute_python",
+    "suggest_risk_mitigation_strategies",
+    "calculate_quarterly_dividend"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_041",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "R-R-M",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\" | select-object status"
+    },
+    {
+     "golden_key": "powershell\u0000get-service -name \"spooler\" | select-object -expandproperty starttype"
+    },
+    {
+     "golden_key": "powershell\u0000start-service -name \"spooler\"; get-service -name \"spooler\""
+    }
+   ],
+   "catalog": [
+    "generate_invoice",
+    "run_shell_command",
+    "calculate_percentage",
+    "monitor_progress",
+    "powershell",
+    "find_user_id_by_name_zip",
+    "terminal",
+    "manage_inventory_levels"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_042",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b01; ls -ld /tmp/s8b01",
+     "s8b_uuid": "s8b_ba_01",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000test -d /tmp/s8b01 && echo dir-ok",
+     "s8b_uuid": "s8b_ba_01",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "add_to_shopping_cart",
+    "convert_celsius_to_fahrenheit",
+    "monitor_compliance",
+    "onpage_seo_analyze",
+    "average",
+    "bash",
+    "search_restaurants",
+    "timezone_by_id",
+    "fedora_image_fedora_get",
+    "stock_quotes",
+    "terminal",
+    "run_shell_command"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_043",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b02; touch /tmp/s8b02/marker; ls -l /tmp/s8b02/marker",
+     "s8b_uuid": "s8b_ba_02f",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000test -f /tmp/s8b02/marker && echo file-ok",
+     "s8b_uuid": "s8b_ba_02f",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "monitor_equipment_temperature",
+    "get_total_sales",
+    "displacement",
+    "get_ios_app",
+    "get_lyrics",
+    "run_cmd",
+    "get_company_financials",
+    "bash",
+    "teammedia",
+    "structural_analysis",
+    "terminal",
+    "get_user_playlists",
+    "get_genetic_markers",
+    "calculateBMI",
+    "ln"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_044",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b03; cp /etc/hostname /tmp/s8b03/hostname.bak; cat /tmp/s8b03/hostname.bak",
+     "s8b_uuid": "s8b_ba_03",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000stat -c %s /tmp/s8b03/hostname.bak",
+     "s8b_uuid": "s8b_ba_03",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "run_cmd",
+    "categorytournaments",
+    "get_awesome_product_details",
+    "bash",
+    "terminal",
+    "tournament_list_wta",
+    "get_employee_assigned_projects",
+    "financial_balance_sheet",
+    "get_recipes_details",
+    "captcha_generator"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_045",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b04; printf 's8b ' > /tmp/s8b04/manifest.txt; cat /tmp/s8b04/manifest.txt",
+     "s8b_uuid": "s8b_ba_04",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000stat -c %s /tmp/s8b04/manifest.txt",
+     "s8b_uuid": "s8b_ba_04",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "translate",
+    "execute_command",
+    "run_shell_command",
+    "business_search",
+    "audit_model_for_bias",
+    "bash",
+    "get_country_details",
+    "estimate_restoration_time"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_046",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b05; echo start > /tmp/s8b05/run.log; echo step2 >> /tmp/s8b05/run.log; cat /tmp/s8b05/run.log",
+     "s8b_uuid": "s8b_ba_05",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000grep -c step2 /tmp/s8b05/run.log",
+     "s8b_uuid": "s8b_ba_05",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "matchmanagers",
+    "generate_password",
+    "python_interpreter",
+    "run_cmd",
+    "getResidentPets",
+    "domain_information",
+    "update_inventory_stock",
+    "ticker",
+    "chat",
+    "verify_the_existence_of_email",
+    "games_by_category_or_tag",
+    "bash"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_047",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b06/a/b/c; find /tmp/s8b06 -type d",
+     "s8b_uuid": "s8b_ba_06",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000ls /tmp/s8b06/a/b",
+     "s8b_uuid": "s8b_ba_06",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "bash",
+    "get_videos_by_channel",
+    "distance",
+    "average",
+    "getallcountry",
+    "run_shell_command",
+    "gettraderpositions",
+    "predict_price_movements",
+    "skill_rating_mw_2_ranked",
+    "switch_plug",
+    "schedule_smart_plug",
+    "python_interpreter",
+    "get_all_motivational_pictures",
+    "generate_invoices",
+    "music_info"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_048",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b07; touch /tmp/s8b07/a /tmp/s8b07/b /tmp/s8b07/c; ls /tmp/s8b07 | wc -l",
+     "s8b_uuid": "s8b_ba_07",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000ls /tmp/s8b07",
+     "s8b_uuid": "s8b_ba_07",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "get_coin_price",
+    "short_ticker",
+    "bash",
+    "share_presentation",
+    "run_cmd",
+    "get_vessels_by_ship_name",
+    "sign",
+    "findplacesnearby",
+    "shell",
+    "list_by_equipment"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_049",
+   "pillar": "terminal_linux",
+   "subpillar": "bash",
+   "pattern": "multi",
+   "tool": "bash",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "bash\u0000mkdir -p /tmp/s8b09; ln -sf /etc/hostname /tmp/s8b09/hostlink; ls -l /tmp/s8b09/hostlink",
+     "s8b_uuid": "s8b_ba_08",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "bash\u0000cat /tmp/s8b09/hostlink",
+     "s8b_uuid": "s8b_ba_08",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "fetch_vehicle_specifications",
+    "get_customer_segments",
+    "bash",
+    "v1_music_posts_music_id",
+    "shell",
+    "execute_command",
+    "convert_weight",
+    "search_title"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_050",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b01 -itemtype directory",
+     "s8b_uuid": "s8b_ps_01",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-item -path $env:TEMP\\s8b01 | select-object -expandproperty name",
+     "s8b_uuid": "s8b_ps_01",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "record_inspection_outcome",
+    "gas_price",
+    "predict_price_movements",
+    "assess_portfolio_risk",
+    "user_friends_list",
+    "generate_invoice_number",
+    "execute_python",
+    "run_cmd",
+    "air_quality_forecast",
+    "stock_cashflow_statement",
+    "powershell",
+    "title_get_technical"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_051",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000set-content -path $env:TEMP\\s8b02.txt -value s8b-alpha; get-content -path $env:TEMP\\s8b02.txt",
+     "s8b_uuid": "s8b_ps_02f",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-content -path $env:TEMP\\s8b02.txt -totalcount 1",
+     "s8b_uuid": "s8b_ps_02f",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "analyze_customer_interactions",
+    "getpopulationbycountrycode",
+    "user_search",
+    "run_cmd",
+    "get_php",
+    "search_hotel",
+    "search_social_links",
+    "get_specific_player",
+    "getlistings",
+    "track_progress",
+    "analyze_media_for_accessibility",
+    "powershell",
+    "execute_python",
+    "get_horoscope",
+    "nhl_box_score"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_052",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000add-content -path $env:TEMP\\s8b03.log -value line-one; get-content -path $env:TEMP\\s8b03.log",
+     "s8b_uuid": "s8b_ps_03f",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000add-content -path $env:TEMP\\s8b03.log -value line-two; get-content -path $env:TEMP\\s8b03.log | measure-object -line | select-object -expandproperty lines",
+     "s8b_uuid": "s8b_ps_03f",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "execute_python",
+    "terminal",
+    "resort_view",
+    "powershell",
+    "matchstreakodds",
+    "getwebsite",
+    "product_offers",
+    "send_chat_message",
+    "summary_details",
+    "user_videos"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_053",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000set-content -path $env:TEMP\\s8b04.csv -value header-AB; add-content -path $env:TEMP\\s8b04.csv -value row-11; get-content -path $env:TEMP\\s8b04.csv",
+     "s8b_uuid": "s8b_ps_04f",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-content -path $env:TEMP\\s8b04.csv | measure-object -line | select-object -expandproperty lines",
+     "s8b_uuid": "s8b_ps_04f",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "shell",
+    "run_cmd",
+    "compare_stock_movements",
+    "add_to_shopping_cart",
+    "powershell",
+    "predict_price_movements",
+    "ticker",
+    "addProductToCart"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_054",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b05 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:TEMP\\s8b05\\hosts.bak",
+     "s8b_uuid": "s8b_ps_05",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-item -path $env:TEMP\\s8b05\\hosts.bak | select-object -expandproperty length",
+     "s8b_uuid": "s8b_ps_05",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "execute_python",
+    "get_invite_data",
+    "extract_tableau_data",
+    "artist_overview",
+    "powershell",
+    "search_job",
+    "get_gifs_by_id",
+    "monitor_compliance",
+    "python_interpreter",
+    "merge_dictionaries",
+    "generate_financial_terms_schema",
+    "view_wishlist"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_055",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b06 -itemtype directory -force; get-item -path $env:TEMP\\s8b06",
+     "s8b_uuid": "s8b_ps_06",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b06\\inner.txt -itemtype file -force; get-childitem -path $env:TEMP\\s8b06",
+     "s8b_uuid": "s8b_ps_06",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "generate_order_history_report",
+    "get_ios_app",
+    "balance_energy_load",
+    "remove_duplicate_records",
+    "powershell",
+    "shell",
+    "dribbble",
+    "onyomi_reading",
+    "execute_python",
+    "schedule_asset_inspection",
+    "initiateInventoryCheck",
+    "search_jokes",
+    "get_host_language_filters",
+    "update_incident_status",
+    "stock_get_stock_earnings_data"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_056",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b07 -itemtype directory",
+     "s8b_uuid": "s8b_ps_07",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000test-path -path $env:TEMP\\s8b07",
+     "s8b_uuid": "s8b_ps_07",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "powershell",
+    "python_interpreter",
+    "api_tracking",
+    "get_personalized_places",
+    "downloadmovie",
+    "getchannelplaylists",
+    "generate_invoice",
+    "enable_real_time_collaboration",
+    "create_targeted_ad_campaign",
+    "execute_python"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_057",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b08 -itemtype directory -force; ping 127.0.0.1 -n 1 | out-file $env:TEMP\\s8b08\\ping.txt; get-item -path $env:TEMP\\s8b08\\ping.txt",
+     "s8b_uuid": "s8b_ps_08",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-content -path $env:TEMP\\s8b08\\ping.txt | measure-object -line | select-object -expandproperty lines",
+     "s8b_uuid": "s8b_ps_08",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "shell",
+    "detect_and_respond_to_outages",
+    "email_qr_code",
+    "schedule_smart_plug",
+    "powershell",
+    "assess_deal_risk_profile",
+    "terminal",
+    "calculate_production_efficiency"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_058",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b09 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:TEMP\\s8b09\\h1",
+     "s8b_uuid": "s8b_ps_09",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000copy-item -path $env:TEMP\\s8b09\\h1 -destination $env:TEMP\\s8b09\\h2; get-item -path $env:TEMP\\s8b09\\h2 | select-object -expandproperty length",
+     "s8b_uuid": "s8b_ps_09",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "get_a_conversation_turn",
+    "analyze_supplier_performance",
+    "find_missing_number",
+    "run_cmd",
+    "get_timetable",
+    "get_a_specific_game",
+    "matchmanagers",
+    "execute_python",
+    "powershell",
+    "assess_s3_bucket_security",
+    "search_product",
+    "linecount_linecount"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_059",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b10 -itemtype directory -force; echo s8b-build-ok > $env:TEMP\\s8b10\\t.txt; get-content -path $env:TEMP\\s8b10\\t.txt",
+     "s8b_uuid": "s8b_ps_10f",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-content -path $env:TEMP\\s8b10\\t.txt | measure-object -character | select-object -expandproperty characters",
+     "s8b_uuid": "s8b_ps_10f",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "options",
+    "align_production_schedules",
+    "suggest_risk_mitigation_strategies",
+    "automate_task_creation_for_follow_up",
+    "lines_line_abs",
+    "terminal",
+    "calculate_grade",
+    "fedora_image_fedora_get",
+    "powershell",
+    "geocode_city",
+    "run_cmd",
+    "getResidentPets",
+    "find_user_id_by_email",
+    "distance_between_airports",
+    "get_company_financials"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_060",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b11A -itemtype directory -force; get-item -path $env:TEMP\\s8b11A",
+     "s8b_uuid": "s8b_ps_11",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b11B -itemtype directory -force; get-childitem -path $env:TEMP | where-object {$_.name -like 's8b11*'} | select-object -expandproperty name",
+     "s8b_uuid": "s8b_ps_11",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "run_shell_command",
+    "get_sector_performance",
+    "shareFileWithUser",
+    "execute_python",
+    "add_to_wishlist",
+    "get_direct_deposit_form",
+    "send_reminder",
+    "api_nutrition_data",
+    "powershell",
+    "approve_loan_application"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_061",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000set-content -path $env:TEMP\\s8b12.log -value \"v1\"; get-content -path $env:TEMP\\s8b12.log",
+     "s8b_uuid": "s8b_ps_12",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000add-content -path $env:TEMP\\s8b12.log -value \"v2\"; get-content -path $env:TEMP\\s8b12.log",
+     "s8b_uuid": "s8b_ps_12",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "execute_python",
+    "analyze_risk_factors",
+    "powershell",
+    "generate_financial_review_schema",
+    "execute_command",
+    "tweet_favoriters",
+    "get_facts",
+    "pastry_ingredient"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_062",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000set-content -path $env:TEMP\\s8b13.txt -value build=114; get-content -path $env:TEMP\\s8b13.txt -raw",
+     "s8b_uuid": "s8b_ps_13f",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-item -path $env:TEMP\\s8b13.txt | select-object -expandproperty length",
+     "s8b_uuid": "s8b_ps_13f",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "ayah_recitations",
+    "shell",
+    "update_lead_status",
+    "terminal",
+    "get_video",
+    "powershell",
+    "domain_name",
+    "search_movie",
+    "gas_price",
+    "player_statistics_seasons",
+    "analyze_network_traffic",
+    "captcha_generator"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_063",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-2",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b14 -itemtype directory -force; copy-item -path c:/windows/system32/drivers/etc/hosts -destination $env:TEMP\\s8b14\\hosts.bak",
+     "s8b_uuid": "s8b_ps_14",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000get-content -path $env:TEMP\\s8b14\\hosts.bak | measure-object -line | select-object -expandproperty lines",
+     "s8b_uuid": "s8b_ps_14",
+     "s8b_idx": 1
+    }
+   ],
+   "catalog": [
+    "camelizer_get_price_chart",
+    "allocate_resources",
+    "optimize_healthcare_routes",
+    "menudetails",
+    "predict_future_demand",
+    "converter",
+    "venuedetails",
+    "powershell",
+    "generateAndSendInvoice",
+    "get_airport_details",
+    "get_id",
+    "main_endpoint",
+    "shell",
+    "execute_command",
+    "aggregate_customer_spending"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_064",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-3",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b15 -itemtype directory",
+     "s8b_uuid": "s8b_ps_15",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000new-item -path $env:TEMP\\s8b15\\a.txt -itemtype file -force; get-childitem -path $env:TEMP\\s8b15",
+     "s8b_uuid": "s8b_ps_15",
+     "s8b_idx": 1
+    },
+    {
+     "golden_key": "powershell\u0000test-path -path $env:TEMP\\s8b15\\a.txt",
+     "s8b_uuid": "s8b_ps_15",
+     "s8b_idx": 2
+    }
+   ],
+   "catalog": [
+    "shell",
+    "top_posts_by_subreddit",
+    "assess_deal_risk_profile",
+    "test_release_version",
+    "powershell",
+    "execute_python",
+    "search_restaurants",
+    "update_inventory_levels",
+    "calculate_route_distance",
+    "v1_passwordgenerator"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_065",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "mutating",
+   "shape": "S8b-seq-3",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000set-content -path $env:TEMP\\s8b16.txt -value \"one\"; get-content -path $env:TEMP\\s8b16.txt",
+     "s8b_uuid": "s8b_ps_16",
+     "s8b_idx": 0
+    },
+    {
+     "golden_key": "powershell\u0000add-content -path $env:TEMP\\s8b16.txt -value \"two\"; get-content -path $env:TEMP\\s8b16.txt",
+     "s8b_uuid": "s8b_ps_16",
+     "s8b_idx": 1
+    },
+    {
+     "golden_key": "powershell\u0000get-content -path $env:TEMP\\s8b16.txt | measure-object -line | select-object -expandproperty lines",
+     "s8b_uuid": "s8b_ps_16",
+     "s8b_idx": 2
+    }
+   ],
+   "catalog": [
+    "execute_command",
+    "execute_python",
+    "set_blinds_schedule",
+    "get_genetic_markers",
+    "powershell",
+    "align_production_schedules",
+    "calculate_repayment_schedule",
+    "find_peak_element"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_066",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000qwinsta | select-string active"
+    },
+    {
+     "golden_key": "powershell\u0000qwinsta | select-string console"
+    }
+   ],
+   "catalog": [
+    "get_recipe_by_id",
+    "breweries",
+    "user_friends_list",
+    "get_user_dialog_string",
+    "get_range",
+    "serie_a_standings",
+    "get_video",
+    "earnings_history",
+    "terminal",
+    "powershell",
+    "run_shell_command",
+    "extract_invoice_data"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_067",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000net accounts | select-string \"maximum password age\""
+    },
+    {
+     "golden_key": "powershell\u0000net accounts | select-string \"minimum password length\""
+    }
+   ],
+   "catalog": [
+    "getforecastweather",
+    "is_valid_palindrome",
+    "feeds_list_similarities",
+    "fights",
+    "convert_timestamps",
+    "historical_weather_record",
+    "navigate_to_url",
+    "execute_python",
+    "verify_crypto_gas_price",
+    "getlearningresources",
+    "powershell",
+    "automateComplianceChecks",
+    "calculate_quarterly_dividend",
+    "is_palindrome",
+    "execute_command"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_068",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000reagentc /info | select-string -pattern \"windows re status\""
+    },
+    {
+     "golden_key": "powershell\u0000reagentc /info | select-string -pattern \"recovery image location\""
+    }
+   ],
+   "catalog": [
+    "execute_python",
+    "leaguelastmatches",
+    "powershell",
+    "search_vacation_packages",
+    "average",
+    "optimizeBaggageHandling",
+    "optimize_port_scheduling",
+    "terminal",
+    "initialize_browser",
+    "v1_search_enterprise"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_069",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-winevent -listlog application | select-object recordcount"
+    },
+    {
+     "golden_key": "powershell\u0000get-winevent -logname application -maxevents 50 | where-object {$_.leveldisplayname -eq \"error\"} | select-object -first 3"
+    }
+   ],
+   "catalog": [
+    "generate_bar_chart",
+    "run_cmd",
+    "execute_python",
+    "veiculo_tipo",
+    "analyst_ratings_us_equities",
+    "image_to_text_ocr",
+    "powershell",
+    "getproductsku"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  },
+  {
+   "slot_id": "s8_070",
+   "pillar": "windows_powershell",
+   "subpillar": "powershell",
+   "pattern": "multi",
+   "tool": "powershell",
+   "effect": "read_only",
+   "shape": "R-R",
+   "steps": [
+    {
+     "golden_key": "powershell\u0000get-timezone"
+    },
+    {
+     "golden_key": "powershell\u0000get-timezone | select-object id"
+    }
+   ],
+   "catalog": [
+    "execute_command",
+    "powershell",
+    "least_common_multiple",
+    "calculate_percentage",
+    "agencies_list",
+    "get_misinformation_score_account_twitter_account_get",
+    "getmatchesbyteam",
+    "open_multiple_windows",
+    "createWorkOrderManagementSystem",
+    "all_coins_ticker",
+    "shell",
+    "search_jokes"
+   ],
+   "user_draft": null,
+   "assistant_draft": null
+  }
+ ]
+}

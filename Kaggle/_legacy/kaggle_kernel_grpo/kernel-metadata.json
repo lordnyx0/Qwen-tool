@@ -1,0 +1,17 @@
+{
+ "id": "lordnyx0/qwen3loop-tool-grpo-v3-train",
+ "title": "qwen3loop-tool-grpo-v3-train",
+ "code_file": "qwen3loop_tool_grpo_v3.ipynb",
+ "language": "python",
+ "kernel_type": "notebook",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_tpu": false,
+ "enable_internet": true,
+ "dataset_sources": [
+  "lordnyx0/qwen3loop-tool-grpo-v3"
+ ],
+ "competition_sources": [],
+ "kernel_sources": [],
+ "model_sources": []
+}

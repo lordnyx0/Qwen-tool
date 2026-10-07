@@ -1,0 +1,17 @@
+# Core Deep Learning & Modeling
+torch>=2.4.0
+transformers>=4.48.0
+accelerate>=0.34.0
+bitsandbytes>=0.43.0
+safetensors>=0.4.5
+
+# Datasets & Utilities
+datasets>=2.20.0
+numpy>=1.26.0
+tqdm>=4.66.0
+
+# Inference & Quantization
+llama-cpp-python>=0.3.0
+
+# Kaggle Cloud Sync
+kaggle>=1.6.0

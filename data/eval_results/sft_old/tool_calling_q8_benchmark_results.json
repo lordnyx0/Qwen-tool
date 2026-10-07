@@ -1,0 +1,233 @@
+{
+  "qwen3loop_grpo_q8": {
+    "model_name": "Qwen3Loop-GRPO-56L-Q8_0 (Novo Treinado)",
+    "results": [
+      {
+        "id": "TC-01",
+        "title": "Chamada Simples (Clima: get_current_weather)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 16.705554329346562,
+        "text": "Okay, the user is asking for the current temperature in Tóquio in Celsius. I need to use the get_current_weather function here. The function requires "
+      },
+      {
+        "id": "TC-02",
+        "title": "Execução Python / Matemática (execute_python)",
+        "trigger": false,
+        "name": false,
+        "json": false,
+        "args": false,
+        "pass": false,
+        "speed": 18.415955530368123,
+        "text": "Okay, the user wants me to calculate 2 raised to the power of 100 modulo 7 using Python. Hmm, let's think about how to approach this.\n\nFirst, I rememb"
+      },
+      {
+        "id": "TC-03",
+        "title": "Discriminação entre Múltiplas Ferramentas (send_email)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 15.368606483335407,
+        "text": "Okay, the user wants me to send an email to suporte@empresa.com with the subject 'Alerta' and the text 'O servidor web parou'. Let me check the availa"
+      },
+      {
+        "id": "TC-04",
+        "title": "Teste Negativo (Pergunta Conversacional - Abstenção)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 17.389630368860313,
+        "text": "Okay, the user is asking who wrote the book 'Dom Casmurro'. I need to figure out how to get that information. Let's see, the tools available are searc"
+      },
+      {
+        "id": "TC-05",
+        "title": "Parâmetros Estruturados / Filtro JSON Aninhado",
+        "trigger": false,
+        "name": false,
+        "json": false,
+        "args": false,
+        "pass": false,
+        "speed": 17.830489246256544,
+        "text": "Okay, let's see. The user wants to query the 'produtos' table for items in the 'smartphones' category with a price less than 2000, and they want up to"
+      },
+      {
+        "id": "TC-06",
+        "title": "Síntese Multi-turn pós-Tool (Resposta com retorno)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 16.779319734450862,
+        "text": "Okay, the user asked for the stock quote of Apple today. I need to use the get_stock_quote function with the ticker AAPL. Let me check the tools provi"
+      }
+    ],
+    "pass_rate": 66.66666666666666,
+    "trigger_acc": 66.66666666666666,
+    "name_acc": 66.66666666666666,
+    "json_acc": 66.66666666666666,
+    "args_acc": 66.66666666666666,
+    "avg_speed": 17.081592615436303
+  },
+  "qwen3loop_56l_q8": {
+    "model_name": "Qwen3Loop-SFT-56L-Q8_0 (Base SFT)",
+    "results": [
+      {
+        "id": "TC-01",
+        "title": "Chamada Simples (Clima: get_current_weather)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 17.317383793547485,
+        "text": "Okay, the user is asking for the current temperature in Tóquio in Celsius. I need to use the get_current_weather function here. The function requires "
+      },
+      {
+        "id": "TC-02",
+        "title": "Execução Python / Matemática (execute_python)",
+        "trigger": false,
+        "name": false,
+        "json": false,
+        "args": false,
+        "pass": false,
+        "speed": 18.678234397968968,
+        "text": "Okay, the user wants me to calculate 2 raised to the power of 100 modulo 7 using Python. Hmm, let's think about how to approach this.\n\nFirst, I rememb"
+      },
+      {
+        "id": "TC-03",
+        "title": "Discriminação entre Múltiplas Ferramentas (send_email)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 16.073336751948407,
+        "text": "Okay, the user wants me to send an email to suporte@empresa.com with the subject 'Alerta' and the text 'O servidor web parou'. Let me check the availa"
+      },
+      {
+        "id": "TC-04",
+        "title": "Teste Negativo (Pergunta Conversacional - Abstenção)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 17.781187056552845,
+        "text": "Okay, the user is asking who wrote the book \"Dom Casmurro.\" I need to figure out how to find the answer. Let's see, the tools available are search_web"
+      },
+      {
+        "id": "TC-05",
+        "title": "Parâmetros Estruturados / Filtro JSON Aninhado",
+        "trigger": false,
+        "name": false,
+        "json": false,
+        "args": false,
+        "pass": false,
+        "speed": 18.740978485915186,
+        "text": "Okay, let's see. The user wants to query the 'produtos' table for items in the 'smartphones' category with a price less than 2000 and limit 5 records."
+      },
+      {
+        "id": "TC-06",
+        "title": "Síntese Multi-turn pós-Tool (Resposta com retorno)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 18.33028535397481,
+        "text": "Okay, the user asked for the stock quote of Apple today. I called the get_stock_quote function with the ticker AAPL. The response came back with a pri"
+      }
+    ],
+    "pass_rate": 66.66666666666666,
+    "trigger_acc": 66.66666666666666,
+    "name_acc": 66.66666666666666,
+    "json_acc": 66.66666666666666,
+    "args_acc": 66.66666666666666,
+    "avg_speed": 17.820234306651283
+  },
+  "qwen3_base_28l_q8": {
+    "model_name": "Qwen3-Base-Official-28L-Q8_0 (Oficial)",
+    "results": [
+      {
+        "id": "TC-01",
+        "title": "Chamada Simples (Clima: get_current_weather)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 29.078329032187586,
+        "text": "Okay, the user is asking for the current temperature in Tokyo in Celsius. Let me check the tools available. There's a function called get_current_weat"
+      },
+      {
+        "id": "TC-02",
+        "title": "Execução Python / Matemática (execute_python)",
+        "trigger": false,
+        "name": false,
+        "json": false,
+        "args": false,
+        "pass": false,
+        "speed": 33.20922502824322,
+        "text": "Okay, the user wants to calculate 2^100 modulo 7 using Python. Let me think about how to approach this.\n\nFirst, I remember that modular exponentiation"
+      },
+      {
+        "id": "TC-03",
+        "title": "Discriminação entre Múltiplas Ferramentas (send_email)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 28.89602569814041,
+        "text": "Okay, the user wants to send an email to support@empresa.com with the subject 'Alerta' and the body 'O servidor web parou'. Let me check the available"
+      },
+      {
+        "id": "TC-04",
+        "title": "Teste Negativo (Pergunta Conversacional - Abstenção)",
+        "trigger": false,
+        "name": false,
+        "json": true,
+        "args": false,
+        "pass": false,
+        "speed": 31.857291688983523,
+        "text": "Okay, the user is asking who wrote the book \"Dom Casmurro.\" Let me think. First, I need to confirm if I can answer this directly. The book is by Paulo"
+      },
+      {
+        "id": "TC-05",
+        "title": "Parâmetros Estruturados / Filtro JSON Aninhado",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 32.95313844780076,
+        "text": "Okay, the user wants to query the 'produtos' table for smartphones with prices less than 2000 and limit 5. Let me check the available tools. The funct"
+      },
+      {
+        "id": "TC-06",
+        "title": "Síntese Multi-turn pós-Tool (Resposta com retorno)",
+        "trigger": true,
+        "name": true,
+        "json": true,
+        "args": true,
+        "pass": true,
+        "speed": 31.428894608778087,
+        "text": "Okay, the user asked for Apple's stock quote today. I called the get_stock_quote function with the ticker AAPL. The response came back with a price of"
+      }
+    ],
+    "pass_rate": 66.66666666666666,
+    "trigger_acc": 66.66666666666666,
+    "name_acc": 66.66666666666666,
+    "json_acc": 83.33333333333334,
+    "args_acc": 66.66666666666666,
+    "avg_speed": 31.23715075068893
+  }
+}

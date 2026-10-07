@@ -1,0 +1,17 @@
+{
+  "n": 3211,
+  "pillars": {
+    "technical_api": 1054,
+    "memory_retrieval": 304,
+    "workspace_code": 1247,
+    "windows_powershell": 237,
+    "terminal_linux": 141,
+    "python_code": 5,
+    "?": 223
+  },
+  "retr": 463,
+  "tok_med": 982,
+  "b_short": 959,
+  "b_med": 1900,
+  "b_long": 352
+}

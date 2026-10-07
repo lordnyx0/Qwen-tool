@@ -1,0 +1,44 @@
+[
+  {
+    "step": 1,
+    "phase": 1,
+    "reward": 2.225,
+    "hits": 0,
+    "excluded": 0,
+    "vetoed": 0,
+    "ppl_loop2": 1.134765625,
+    "ppl_loop1": 2544972.0,
+    "nocall_frac": 0.25,
+    "peak_vram_gb": 3.462608814239502,
+    "step_time_sec": 65.92830228805542,
+    "eta_min": 4.395220152537028
+  },
+  {
+    "step": 2,
+    "phase": 2,
+    "reward": 1.35,
+    "hits": 2,
+    "excluded": 0,
+    "vetoed": 0,
+    "ppl_loop2": 1.181640625,
+    "ppl_loop1": 22258.0,
+    "nocall_frac": 0.5,
+    "peak_vram_gb": 3.5458898544311523,
+    "step_time_sec": 56.29465126991272,
+    "eta_min": 3.0555738389492033
+  },
+  {
+    "step": 3,
+    "phase": 2,
+    "reward": 1.35,
+    "hits": 0,
+    "excluded": 0,
+    "vetoed": 0,
+    "ppl_loop2": 1.1875,
+    "ppl_loop1": 39872.75,
+    "nocall_frac": 0.5,
+    "peak_vram_gb": 3.748159885406494,
+    "step_time_sec": 57.126715421676636,
+    "eta_min": 1.992774099773831
+  }
+]

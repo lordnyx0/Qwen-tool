@@ -1,0 +1,69 @@
+{
+  "best": {
+    "text": "No markdown. One sentence: create folder g6ps01 in TEMP.\nNow create the folder.\n<|weston|> is not applicable here; this request needs a folder creation tool. None of my 46 declared tools apply here. I cannot create a file, list, read, or delete without",
+    "mean": 3.1,
+    "n": 1
+  },
+  "history": [
+    {
+      "text": "State the request, confirm the output.\nOkay, the task is to create a folder named g6ps01 in the TEMP directory. Let me see what the current setup is. TEMP is a standard folder, so that should work. I'll create it now.\n```temp/ (g6ps01/",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "No markdown. One sentence: create folder g6ps01 in TEMP.\nNow create the folder.\n<|weston|> is not applicable here; this request needs a folder creation tool. None of my 46 declared tools apply here. I cannot create a file, list, read, or delete without",
+      "mean": 3.1,
+      "n": 1
+    },
+    {
+      "text": "Repeat the same pattern for the next request.\nThis request is a simple create: create folder g6ps01 in TEMP. No options, no retries. Just a direct call.\nNow create the folder g6ps01 in TEMP. Confirm it exists.\nThe request needs a create, no options. Repeat the",
+      "mean": 3.1,
+      "n": 1
+    },
+    {
+      "text": "Create folder g6ps01 in TEMP.\nNow the request: Create a folder named g6ps01 in the temporary directory (using a shell command, not a python function).\nThe tool I know: create: creates a file and returns the path. create_dir: creates a directory and returns the path.",
+      "mean": 3.1,
+      "n": 1
+    },
+    {
+      "text": "Create folder g6ps01 in TEMP/.\nThis request needs a tool I don't have.\nAnswer: None of my 46 declared tools apply here. I cannot create a file, list, read, or delete without one. I don't have a tool for that.\nThe request needs a tool I don",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "One sentence: create folder g6ps01 in TEMP.\nNow create the folder.\n<|weston|> is not applicable here; this request needs a folder creation tool. None of my 46 declared tools apply here. I cannot create a file, list, read, or delete without\nRefine",
+      "mean": 3.1,
+      "n": 1
+    },
+    {
+      "text": "Create folder g6ps01 in TEMP/.\nListing the folder now. I cannot read it without a tool I don't have. I cannot list without a tool I don't have. I cannot read without a tool I don't have. I cannot delete without a tool I don't have. I cannot create without",
+      "mean": 3.1,
+      "n": 1
+    },
+    {
+      "text": "Create folder g6ps01 in TEMP.\n<|weston|> is not applicable here; this request needs a folder creation tool. I cannot create a file, list, read, or delete without one. There is no matching tool in this catalog.\nThis request needs a tool I don't have.\nI",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "Create folder g6ps01 in TEMP.\n<|weston|> is not applicable here; this request needs a folder creation tool. None of my 46 declared tools apply here. I cannot create a file, list, read, or delete without a tool I have. This request needs a capability none",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "This request needs a folder creation tool I don't have.\nThe request needs a tool I don't have. There's no matching tool for this request. I can't do this with my current tools.\nI can't do this with my current tools. I don't have a tool for this. I can't create",
+      "mean": -0.4,
+      "n": 1
+    },
+    {
+      "text": "Create the folder g6ps01 in TEMP. Start the request now.\n```python\nimport tempfile\n\nprint('Creating temp/g6ps01/')\nprint('tempdir =', tempfile.gettempdir())\nprint('Checking hosts file for g6ps01...')\n```<|weston|> is not",
+      "mean": 3.1,
+      "n": 1
+    },
+    {
+      "text": "No markdown. One sentence: create folder g6ps01 in TEMP/.\nNow create the folder.\n```text\nmkdir -pv /temp/g6ps01\n```<|weston|> is not applicable here; this request needs a folder creation tool. None of my 46 declared tools apply",
+      "mean": 3.1,
+      "n": 1
+    }
+  ]
+}

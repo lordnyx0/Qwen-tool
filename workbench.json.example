@@ -1,0 +1,27 @@
+{
+  "project_name": "SVG Generator Workbench",
+  "dataset_path": "data/svg_samples.jsonl",
+  "manifest_path": "data/manifest.jsonl",
+  "id_field": "uuid",
+  "content_field": "messages",
+  "taxonomy": {
+    "auto_discover": true,
+    "group_fields": ["pillar", "subpillar", "executor", "effect"]
+  },
+  "jobs": {
+    "Treino SVG LoRA (Local)": {
+      "cmd": "python scripts/train_svg.py --dataset {dataset} --output_dir {tmp}/svg_lora",
+      "log": "train_svg.log"
+    },
+    "Validação do Dataset": {
+      "cmd": "python scripts/validate_svg.py",
+      "log": "validate_svg.log"
+    }
+  },
+  "evals": {
+    "Bateria de Render SVG": {
+      "cmd": "python scripts/eval_svg.py --output_file {output_dir}/eval_svg.json",
+      "log": "eval_svg.log"
+    }
+  }
+}

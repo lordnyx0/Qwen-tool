@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and ML build artifacts
+unsloth_compiled_cache/
+.cache/
+*.tmp
+
+# Virtual Environments
+env/
+venv/
+.venv/
+ENV/
+
+# Large checkpoints, archive bundles & weights (keep repo lightweight)
+*.zip
+*.tar.gz
+*.bin
+*.safetensors
+*.gguf
+checkpoints/**/model.safetensors
+checkpoints/**/model-*.safetensors
+models/gguf/*.gguf
+Kaggle/kaggle_kernel_output/
+
+# Dataset backups numerados (AGENTS.md: nunca commitar .bak/caches)
+*.bak*
+data/cleaned/backup/
+
+# Execution logs and telemetry streams
+logs/kaggle_runs/
+*.log
+
+# Compiled .NET monitor artifacts
+*.exe
+monitor/bin/
+monitor/obj/
+monitor/publish/
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# CodeGraph DB cache
+.codegraph/*.db

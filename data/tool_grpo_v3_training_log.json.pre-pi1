@@ -1,0 +1,82 @@
+[
+  {
+    "step": 1,
+    "phase": 1,
+    "reward": 6.4,
+    "ppl_loop2": 2.091796875,
+    "ppl_loop1": 3395.375,
+    "peak_vram_gb": 2.679286479949951,
+    "step_time_sec": 40.89543867111206,
+    "eta_min": 4.77113451162974
+  },
+  {
+    "step": 2,
+    "phase": 1,
+    "reward": 0.4,
+    "ppl_loop2": 1.2578125,
+    "ppl_loop1": 749.25,
+    "peak_vram_gb": 2.780522346496582,
+    "step_time_sec": 22.010845184326172,
+    "eta_min": 3.1453141927719117
+  },
+  {
+    "step": 3,
+    "phase": 2,
+    "reward": 10.4,
+    "ppl_loop2": 1.150390625,
+    "ppl_loop1": 72.71875,
+    "peak_vram_gb": 2.9153246879577637,
+    "step_time_sec": 34.516000509262085,
+    "eta_min": 2.7061745656861196
+  },
+  {
+    "step": 4,
+    "phase": 2,
+    "reward": 0.4,
+    "ppl_loop2": 1.244140625,
+    "ppl_loop1": 347.5,
+    "peak_vram_gb": 2.8721280097961426,
+    "step_time_sec": 27.530155181884766,
+    "eta_min": 2.0825406591097515
+  },
+  {
+    "step": 5,
+    "phase": 2,
+    "reward": 17.4,
+    "ppl_loop2": 1.302734375,
+    "ppl_loop1": 1167.875,
+    "peak_vram_gb": 2.800706386566162,
+    "step_time_sec": 37.08713722229004,
+    "eta_min": 1.6203957676887513
+  },
+  {
+    "step": 6,
+    "phase": 3,
+    "reward": 9.4,
+    "ppl_loop2": 1.734375,
+    "ppl_loop1": 76040.875,
+    "peak_vram_gb": 2.98507022857666,
+    "step_time_sec": 25.50452470779419,
+    "eta_min": 1.0419116748703852
+  },
+  {
+    "step": 7,
+    "phase": 3,
+    "reward": 12.4,
+    "ppl_loop2": 1.921875,
+    "ppl_loop1": 3694.75,
+    "peak_vram_gb": 2.899965286254883,
+    "step_time_sec": 25.074713945388794,
+    "eta_min": 0.5062352748144241
+  },
+  {
+    "step": 8,
+    "phase": 3,
+    "reward": 16.15,
+    "ppl_loop2": 2.689453125,
+    "ppl_loop1": 11010.625,
+    "peak_vram_gb": 2.8099288940429688,
+    "step_time_sec": 21.910776376724243,
+    "eta_min": 0.0
+  }
+]

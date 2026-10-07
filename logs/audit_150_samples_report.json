@@ -1,0 +1,1119 @@
+{
+  "summary": {
+    "l1": {
+      "total": 50,
+      "valid_template": 50,
+      "no_leak": 50,
+      "abstentions": 25,
+      "single_calls": 25,
+      "valid_args": 25,
+      "issues": []
+    },
+    "l2": {
+      "total": 50,
+      "valid_template": 50,
+      "no_leak": 50,
+      "multi_tools_present": 44,
+      "valid_calls": 50,
+      "valid_args": 50,
+      "issues": []
+    },
+    "l3": {
+      "total": 50,
+      "valid_template": 50,
+      "no_leak": 50,
+      "valid_code_compile": 50,
+      "valid_code_exec": 50,
+      "valid_args": 50,
+      "issues": []
+    }
+  },
+  "sample_preview": {
+    "l1": [
+      {
+        "id": "l1_abstain_333",
+        "category": "negative_abstention",
+        "difficulty": 1,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "convert_currency",
+              "description": "Converte um valor monetário de uma moeda para outra.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "number",
+                    "description": "Quantia a converter"
+                  },
+                  "from_currency": {
+                    "type": "string",
+                    "description": "Código ISO da moeda de origem"
+                  },
+                  "to_currency": {
+                    "type": "string",
+                    "description": "Código ISO da moeda de destino"
+                  }
+                },
+                "required": [
+                  "amount",
+                  "from_currency",
+                  "to_currency"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "get_current_weather",
+              "description": "Obtém as condições meteorológicas atuais para uma cidade.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "city": {
+                    "type": "string",
+                    "description": "Nome da cidade"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "celsius",
+                      "fahrenheit"
+                    ]
+                  }
+                },
+                "required": [
+                  "city"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Qual a importância e significado de a teoria celular, apontando suas características essenciais?"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "O usuário pergunta: 'Qual a importância e significado de a teoria celular, aponta...'. As ferramentas disponíveis não são aplicáveis para responder este conceito teórico. Devo responder diretamente sem emitir tool_calls.",
+            "content": "Princípio biológico que afirma que todos os seres vivos são compostos por células, a unidade fundamental da vida.",
+            "tool_calls": []
+          }
+        ]
+      },
+      {
+        "id": "l1_abstain_25",
+        "category": "negative_abstention",
+        "difficulty": 1,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "convert_units",
+              "description": "Realiza conversão entre unidades físicas de comprimento, peso ou volume.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number",
+                    "description": "Valor numérico"
+                  },
+                  "from_unit": {
+                    "type": "string",
+                    "description": "Unidade de origem"
+                  },
+                  "to_unit": {
+                    "type": "string",
+                    "description": "Unidade de destino"
+                  }
+                },
+                "required": [
+                  "value",
+                  "from_unit",
+                  "to_unit"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Em termos conceituais, o que define a Magna Carta de 1215, com foco nos princípios básicos?"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "O usuário pergunta: 'Em termos conceituais, o que define a Magna Carta de 1215, c...'. As ferramentas disponíveis não são aplicáveis para responder este conceito teórico. Devo responder diretamente sem emitir tool_calls.",
+            "content": "Documento histórico inglês que limitou o poder absoluto da monarquia e estabeleceu os fundamentos do devido processo legal.",
+            "tool_calls": []
+          }
+        ]
+      },
+      {
+        "id": "l1_abstain_246",
+        "category": "negative_abstention",
+        "difficulty": 1,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_current_weather",
+              "description": "Obtém as condições meteorológicas atuais para uma cidade.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "city": {
+                    "type": "string",
+                    "description": "Nome da cidade"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "celsius",
+                      "fahrenheit"
+                    ]
+                  }
+                },
+                "required": [
+                  "city"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "search_knowledge_base",
+              "description": "Consulta a documentação técnica ou base de conhecimento interna.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Termo de busca"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "De forma didática, como funciona o sistema linfático humano, sem jargões desnecessários? (visão conceitual)"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "O usuário pergunta: 'De forma didática, como funciona o sistema linfático humano,...'. As ferramentas disponíveis não são aplicáveis para responder este conceito teórico. Devo responder diretamente sem emitir tool_calls.",
+            "content": "Rede de vasos, linfonodos e órgãos que drena o excesso de líquido intersticial e participa ativamente da resposta imunológica.",
+            "tool_calls": []
+          }
+        ]
+      },
+      {
+        "id": "l1_single_370",
+        "category": "single_tool_simple",
+        "difficulty": 1,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "convert_currency",
+              "description": "Converte um valor monetário de uma moeda para outra.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "number",
+                    "description": "Quantia a converter"
+                  },
+                  "from_currency": {
+                    "type": "string",
+                    "description": "Código ISO da moeda de origem"
+                  },
+                  "to_currency": {
+                    "type": "string",
+                    "description": "Código ISO da moeda de destino"
+                  }
+                },
+                "required": [
+                  "amount",
+                  "from_currency",
+                  "to_currency"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Qual é o valor exato de 74858 GBP expresso em BRL?"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "Conversão de moedas 74858 GBP -> BRL. Chamarei 'convert_currency'.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "convert_currency",
+                  "arguments": "{\"amount\": 74858, \"from_currency\": \"GBP\", \"to_currency\": \"BRL\"}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "l1_abstain_215",
+        "category": "negative_abstention",
+        "difficulty": 1,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_timezone_time",
+              "description": "Retorna o horário corrente em um fuso horário especificado.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "timezone": {
+                    "type": "string",
+                    "description": "Identificador IANA de fuso (ex: America/Sao_Paulo)"
+                  }
+                },
+                "required": [
+                  "timezone"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "search_knowledge_base",
+              "description": "Consulta a documentação técnica ou base de conhecimento interna.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Termo de busca"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "convert_currency",
+              "description": "Converte um valor monetário de uma moeda para outra.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "number",
+                    "description": "Quantia a converter"
+                  },
+                  "from_currency": {
+                    "type": "string",
+                    "description": "Código ISO da moeda de origem"
+                  },
+                  "to_currency": {
+                    "type": "string",
+                    "description": "Código ISO da moeda de destino"
+                  }
+                },
+                "required": [
+                  "amount",
+                  "from_currency",
+                  "to_currency"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Qual é o conceito fundamental de a fotossíntese vegetal, com foco nos princípios básicos?"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "O usuário pergunta: 'Qual é o conceito fundamental de a fotossíntese vegetal, com...'. As ferramentas disponíveis não são aplicáveis para responder este conceito teórico. Devo responder diretamente sem emitir tool_calls.",
+            "content": "É a reação bioquímica nos cloroplastos que utiliza água, CO2 e luz solar para produzir glicose e liberar gás oxigênio.",
+            "tool_calls": []
+          }
+        ]
+      }
+    ],
+    "l2": [
+      {
+        "id": "hermes_00907",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "getNearbyAttractions",
+              "description": "Retrieves a list of nearby tourist attractions based on the user's current location.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "latitude": {
+                    "type": "number",
+                    "description": "The latitude of the user's current location."
+                  },
+                  "longitude": {
+                    "type": "number",
+                    "description": "The longitude of the user's current location."
+                  },
+                  "radius": {
+                    "type": "integer",
+                    "description": "The search radius in meters."
+                  }
+                },
+                "required": [
+                  "latitude",
+                  "longitude",
+                  "radius"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "I am developing a mobile application feature that helps travelers easily find tourist attractions close to their current location. For users currently in New York, I want to use their location to query nearby points of interest within a 5 kilometer radius. The user's coordinates are: latitude 40.7128 and longitude -74.0060. Could you please call the relevant function to provide a list of attractions within this distance from the given coordinates?\n\nHere's the JSON object for the function call arguments to use:\n\n```json\n{\n  \"latitude\": 40.7128,\n  \"longitude\": -74.0060,\n  \"radius\": 5000\n}\n```\n\nThis function call should return attractions such as the Statue of Liberty, Central Park, and the Empire State Building along with their respective distances from the user's location."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "The user request requires tool calling: 'I am developing a mobile application feature that helps trav...'. I will invoke 'getNearbyAttractions' with the appropriate arguments.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "getNearbyAttractions",
+                  "arguments": "{\"latitude\": 40.7128, \"longitude\": -74.006, \"radius\": 5000}"
+                }
+              }
+            ]
+          }
+        ],
+        "expected_call": {
+          "name": "getNearbyAttractions",
+          "arguments": {
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "radius": 5000
+          }
+        },
+        "category": "tool_discrimination",
+        "difficulty": 2
+      },
+      {
+        "id": "hermes_00844",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "getMovieDetails",
+              "description": "Retrieves detailed information about a specific movie by title and release year.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "movie_title": {
+                    "type": "string",
+                    "description": "The title of the movie to retrieve information for."
+                  },
+                  "release_year": {
+                    "type": "integer",
+                    "description": "The release year of the movie."
+                  }
+                },
+                "required": [
+                  "movie_title",
+                  "release_year"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "I would like to gather comprehensive information on the film titled 'Inception', which was released in the year 2010. Specifically, I am interested in obtaining the full list of cast members, the name of the director, the genre classification of the film, and its overall viewer rating. Please use the getMovieDetails function with the following parameters to retrieve this data:\n\n- **Movie Title:** Inception\n- **Release Year:** 2010\n\nThis information will assist me in gaining a better understanding of the film and its reception.\n"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "The user request requires tool calling: 'I would like to gather comprehensive information on the film...'. I will invoke 'getMovieDetails' with the appropriate arguments.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "getMovieDetails",
+                  "arguments": "{\"movie_title\": \"Inception\", \"release_year\": 2010}"
+                }
+              }
+            ]
+          }
+        ],
+        "expected_call": {
+          "name": "getMovieDetails",
+          "arguments": {
+            "movie_title": "Inception",
+            "release_year": 2010
+          }
+        },
+        "category": "tool_discrimination",
+        "difficulty": 2
+      },
+      {
+        "id": "hermes_00814",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "assess_claim_validity",
+              "description": "Assesses the validity of reinsurance claims based on predefined criteria.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "claims_list": {
+                    "type": "string",
+                    "description": "Data containing the batch of reinsurance claims to be assessed."
+                  }
+                },
+                "required": [
+                  "claims_list"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "categorize_claims_by_event",
+              "description": "Categorizes valid reinsurance claims by the type of natural disaster event.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "valid_claims": {
+                    "type": "string",
+                    "description": "Data containing the valid reinsurance claims to be categorized."
+                  }
+                },
+                "required": [
+                  "valid_claims"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "calculate_reimbursement_amounts",
+              "description": "Calculates the reimbursement amounts for categorized reinsurance claims based on the terms of the reinsurance treaties.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "categorized_claims": {
+                    "type": "string",
+                    "description": "Data containing the categorized reinsurance claims."
+                  },
+                  "treaty_details": {
+                    "type": "string",
+                    "description": "Data containing the details of the reinsurance treaties."
+                  }
+                },
+                "required": [
+                  "categorized_claims",
+                  "treaty_details"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "generate_claims_reports",
+              "description": "Generates detailed reports for processed reinsurance claims.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "processed_claims": {
+                    "type": "string",
+                    "description": "Data containing the reinsurance claims with calculated reimbursements."
+                  }
+                },
+                "required": [
+                  "processed_claims"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Our reinsurance company has received a batch of claims following a recent spate of natural disasters. We need to ensure these claims are processed accurately and efficiently. The first step is to assess the validity of these claims. Here's a detailed list of the current claims batch that includes dates, amounts requested, policy numbers, claimant details, and incident descriptions:\n\n```\nClaim ID,Date,Amount Requested,Policy Number,Claimant,Incident Description\nCLM001,2023-04-01,$10,000,POL-00982,John Doe,Flood damage to property\nCLM002,2023-04-03,$25,000,POL-02411,Jane Smith,Earthquake resulting in structural damage\nCLM003,2023-04-02,$6,500,POL-01567,Alice Johnson,Hurricane damage to vehicle\n...\n```\n\nAfter validation, the claims should be categorized by the type of natural disaster event (flood, earthquake, hurricane, etc.). Following that, the reimbursement amounts need to be calculated based on the terms specified in our reinsurance treaties. For reference, here are the treaty details:\n\n```\nTreaty ID,Type of Event,Coverage Limit,Deductible,Reinsurance Rate\nTRT-456,Flood,$100,000,$5,000,80%\nTRT-789,Earthquake,$200,000,$10,000,75%\nTRT-123,Hurricane,$150,000,$7,500,78%\n...\n```\n\nOnce the reimbursements are calculated, we need detailed reports generated for each valid claim processed. These reports should provide the claim details, the event category, the approved reimbursement amount, and any applicable notes about the claim decision.\n\nCould you please initiate the necessary function calls to assess claim validity, categorize validated claims, calculate reimbursement amounts, and generate detailed claims reports using the data provided?"
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "The user request requires tool calling: 'Our reinsurance company has received a batch of claims follo...'. I will invoke 'assess_claim_validity' with the appropriate arguments.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "assess_claim_validity",
+                  "arguments": "{\"claims_list\": \"Claim ID,Date,Amount Requested,Policy Number,Claimant,Incident Description\\nCLM001,2023-04-01,$10,000,POL-00982,John Doe,Flood damage to property\\nCLM002,2023-04-03,$25,000,POL-02411,Jane Smith,Earthquake resulting in structural damage\\nCLM003,2023-04-02,$6,500,POL-01567,Alice Johnson,Hurricane damage to vehicle\\n...\"}"
+                }
+              }
+            ]
+          }
+        ],
+        "expected_call": {
+          "name": "assess_claim_validity",
+          "arguments": {
+            "claims_list": "Claim ID,Date,Amount Requested,Policy Number,Claimant,Incident Description\nCLM001,2023-04-01,$10,000,POL-00982,John Doe,Flood damage to property\nCLM002,2023-04-03,$25,000,POL-02411,Jane Smith,Earthquake resulting in structural damage\nCLM003,2023-04-02,$6,500,POL-01567,Alice Johnson,Hurricane damage to vehicle\n..."
+          }
+        },
+        "category": "tool_discrimination",
+        "difficulty": 2
+      },
+      {
+        "id": "hermes_00267",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "analyze_market_sentiment",
+              "description": "Analyzes the market sentiment for specified cryptocurrencies on a given exchange using data from social media and news sources.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "exchange": {
+                    "type": "string",
+                    "description": "The name of the cryptocurrency exchange."
+                  },
+                  "symbols": {
+                    "type": "array",
+                    "description": "List of cryptocurrency symbols to analyze sentiment for.",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "sources": {
+                    "type": "array",
+                    "description": "List of sources to gather sentiment data from.",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "exchange",
+                  "symbols",
+                  "sources"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "predict_price_movements",
+              "description": "Predicts future price movements for specified cryptocurrencies on a given exchange using a machine learning model.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "exchange": {
+                    "type": "string",
+                    "description": "The name of the cryptocurrency exchange."
+                  },
+                  "symbols": {
+                    "type": "array",
+                    "description": "List of cryptocurrency symbols to predict price movements for.",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "model": {
+                    "type": "string",
+                    "description": "The machine learning model to use for prediction."
+                  },
+                  "data_period": {
+                    "type": "string",
+                    "description": "The historical data period to use for training the model."
+                  }
+                },
+                "required": [
+                  "exchange",
+                  "symbols",
+                  "model",
+                  "data_period"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "execute_trades",
+              "description": "Executes trades on a given exchange based on a specified trading strategy and risk tolerance.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "exchange": {
+                    "type": "string",
+                    "description": "The name of the cryptocurrency exchange."
+                  },
+                  "trading_strategy": {
+                    "type": "string",
+                    "description": "The trading strategy to base trade execution on."
+                  },
+                  "risk_tolerance": {
+                    "type": "string",
+                    "description": "The risk tolerance level for executing trades.",
+                    "enum": [
+                      "low",
+                      "moderate",
+                      "high"
+                    ]
+                  }
+                },
+                "required": [
+                  "exchange",
+                  "trading_strategy",
+                  "risk_tolerance"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "rebalance_portfolio",
+              "description": "Rebalances the asset allocation of a cryptocurrency portfolio on a given exchange based on a specified frequency and target allocation.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "exchange": {
+                    "type": "string",
+                    "description": "The name of the cryptocurrency exchange."
+                  },
+                  "portfolio_id": {
+                    "type": "string",
+                    "description": "The unique identifier for the cryptocurrency portfolio."
+                  },
+                  "rebalance_frequency": {
+                    "type": "string",
+                    "description": "The frequency at which the portfolio should be rebalanced."
+                  },
+                  "target_allocation": {
+                    "type": "object",
+                    "description": "The target asset allocation percentages for the portfolio.",
+                    "additionalProperties": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "required": [
+                  "exchange",
+                  "portfolio_id",
+                  "rebalance_frequency",
+                  "target_allocation"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "I am actively trading cryptocurrencies on the Binance exchange and need assistance with implementing algorithmic trading algorithms for my portfolio, which includes Bitcoin (BTC) and Ethereum (ETH). I would like to automate the following tasks:\n \n1. Analyze the market sentiment for BTC and ETH using data from key sources: Twitter, Reddit, and various Crypto News Websites.\n2. Employ an LSTM Neural Network model to predict price movements of BTC and ETH based on the last 6-month historical data period.\n3. For trade execution, I require the execution of trades with a moderate risk tolerance, using insights gathered from the market sentiment analysis and LSTM model predictions.\n4. My cryptocurrency portfolio, identified as \"my_crypto_portfolio,\" needs to be rebalanced monthly with the target asset allocation of 50% BTC and 50% ETH.\n\nPlease call the respective functions with these specific parameters to automate these tasks."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "The user request requires tool calling: 'I am actively trading cryptocurrencies on the Binance exchan...'. I will invoke 'analyze_market_sentiment' with the appropriate arguments.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "analyze_market_sentiment",
+                  "arguments": "{\"exchange\": \"Binance\", \"symbols\": [\"BTC\", \"ETH\"], \"sources\": [\"Twitter\", \"Reddit\", \"Crypto News Websites\"]}"
+                }
+              }
+            ]
+          }
+        ],
+        "expected_call": {
+          "name": "analyze_market_sentiment",
+          "arguments": {
+            "exchange": "Binance",
+            "symbols": [
+              "BTC",
+              "ETH"
+            ],
+            "sources": [
+              "Twitter",
+              "Reddit",
+              "Crypto News Websites"
+            ]
+          }
+        },
+        "category": "tool_discrimination",
+        "difficulty": 2
+      },
+      {
+        "id": "hermes_00908",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "getCurrentGeomagneticStormConditions",
+              "description": "Retrieve the current geomagnetic storm conditions for a specified location.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "latitude": {
+                    "type": "number",
+                    "description": "The latitude of the location."
+                  },
+                  "longitude": {
+                    "type": "number",
+                    "description": "The longitude of the location."
+                  }
+                },
+                "required": [
+                  "latitude",
+                  "longitude"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "getSolarWindParameters",
+              "description": "Get the current solar wind parameters for a specified location.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "latitude": {
+                    "type": "number",
+                    "description": "The latitude of the location."
+                  },
+                  "longitude": {
+                    "type": "number",
+                    "description": "The longitude of the location."
+                  }
+                },
+                "required": [
+                  "latitude",
+                  "longitude"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "getSolarActivityForecast",
+              "description": "Provides a forecast of solar activity, including solar flares and coronal mass ejections, for a specified duration.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "forecast_duration": {
+                    "type": "integer",
+                    "description": "The duration (in hours) for which the solar activity forecast is requested."
+                  }
+                },
+                "required": [
+                  "forecast_duration"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "I'm planning an astronomy event in New York City and need detailed information on space weather conditions to anticipate any potential disruptions to the night sky visibility. Specifically, I require up-to-date data on current geomagnetic storm conditions and solar wind parameters at the coordinates 40.7128° N, 74.0060° W. In addition, it is crucial to be informed about any solar activity, such as solar flares and coronal mass ejections expected within the next 48 hours, as these may impact our event. \n\nPlease call the relevant functions to provide me with:\n1. The current geomagnetic storm conditions for the specified coordinates (latitude: 40.7128, longitude: -74.0060).\n2. The solar wind parameters at the same coordinates (latitude: 40.7128, longitude: -74.0060).\n3. A solar activity forecast for the upcoming 48 hours.\n\nI request this information to be returned in a structured format that can be easily shared with event participants. Thank you for your assistance."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "The user request requires tool calling: 'I'm planning an astronomy event in New York City and need de...'. I will invoke 'getCurrentGeomagneticStormConditions' with the appropriate arguments.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "getCurrentGeomagneticStormConditions",
+                  "arguments": "{\"latitude\": 40.7128, \"longitude\": -74.006}"
+                }
+              }
+            ]
+          }
+        ],
+        "expected_call": {
+          "name": "getCurrentGeomagneticStormConditions",
+          "arguments": {
+            "latitude": 40.7128,
+            "longitude": -74.006
+          }
+        },
+        "category": "tool_discrimination",
+        "difficulty": 2
+      }
+    ],
+    "l3": [
+      {
+        "id": "l3_curated_610",
+        "category": "python_math_execution",
+        "difficulty": 3,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "execute_python",
+              "description": "Executa código Python em ambiente isolado e retorna o valor de saída padrão (stdout) ou resultado.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": "Código Python válido a ser executado."
+                  }
+                },
+                "required": [
+                  "code"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Escreva um código em Python para calcular a fatoração prima completa de 544057."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "Fatoração em primos do número 544057 através de divisões sucessivas em Python.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "execute_python",
+                  "arguments": "{\"code\": \"def factors(n):\\n    d = 2\\n    f = []\\n    while d * d <= n:\\n        while n % d == 0:\\n            f.append(d)\\n            n //= d\\n        d += 1\\n    if n > 1:\\n        f.append(n)\\n    return f\\nprint(factors(544057))\"}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "l3_curated_683",
+        "category": "python_math_execution",
+        "difficulty": 3,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "execute_python",
+              "description": "Executa código Python em ambiente isolado e retorna o valor de saída padrão (stdout) ou resultado.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": "Código Python válido a ser executado."
+                  }
+                },
+                "required": [
+                  "code"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Decomponha o número 295464 em seus fatores primos utilizando Python."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "Fatoração em primos do número 295464 através de divisões sucessivas em Python.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "execute_python",
+                  "arguments": "{\"code\": \"def factors(n):\\n    d = 2\\n    f = []\\n    while d * d <= n:\\n        while n % d == 0:\\n            f.append(d)\\n            n //= d\\n        d += 1\\n    if n > 1:\\n        f.append(n)\\n    return f\\nprint(factors(295464))\"}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "l3_curated_384",
+        "category": "python_math_execution",
+        "difficulty": 3,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "execute_python",
+              "description": "Executa código Python em ambiente isolado e retorna o valor de saída padrão (stdout) ou resultado.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": "Código Python válido a ser executado."
+                  }
+                },
+                "required": [
+                  "code"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Calcule o determinante da matriz 3x3 [[7, -4, -2], [1, -2, -7], [-7, 2, -7]] usando Python."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "Cálculo de determinante 3x3 pela regra de Laplace.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "execute_python",
+                  "arguments": "{\"code\": \"A = [[7, -4, -2], [1, -2, -7], [-7, 2, -7]]\\ndet = (A[0][0]*(A[1][1]*A[2][2] - A[1][2]*A[2][1])\\n     - A[0][1]*(A[1][0]*A[2][2] - A[1][2]*A[2][0])\\n     + A[0][2]*(A[1][0]*A[2][1] - A[1][1]*A[2][0]))\\nprint(det)\"}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "l3_curated_407",
+        "category": "python_math_execution",
+        "difficulty": 3,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "execute_python",
+              "description": "Executa código Python em ambiente isolado e retorna o valor de saída padrão (stdout) ou resultado.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": "Código Python válido a ser executado."
+                  }
+                },
+                "required": [
+                  "code"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Qual é o resto da divisão de 26^2505 por 97? Calcule em Python."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "Cálculo de exponenciação modular com inteiros grandes (26^2505 mod 97) via pow() em Python.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "execute_python",
+                  "arguments": "{\"code\": \"print(pow(26, 2505, 97))\"}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "l3_curated_462",
+        "category": "python_math_execution",
+        "difficulty": 3,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "execute_python",
+              "description": "Executa código Python em ambiente isolado e retorna o valor de saída padrão (stdout) ou resultado.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": "Código Python válido a ser executado."
+                  }
+                },
+                "required": [
+                  "code"
+                ]
+              }
+            }
+          }
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "Calcule o determinante da matriz 3x3 [[3, 6, -4], [5, -3, 8], [0, 7, 6]] usando Python."
+          },
+          {
+            "role": "assistant",
+            "reasoning_content": "Cálculo de determinante 3x3 pela regra de Laplace.",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "execute_python",
+                  "arguments": "{\"code\": \"A = [[3, 6, -4], [5, -3, 8], [0, 7, 6]]\\ndet = (A[0][0]*(A[1][1]*A[2][2] - A[1][2]*A[2][1])\\n     - A[0][1]*(A[1][0]*A[2][2] - A[1][2]*A[2][0])\\n     + A[0][2]*(A[1][0]*A[2][1] - A[1][1]*A[2][0]))\\nprint(det)\"}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

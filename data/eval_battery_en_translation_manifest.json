@@ -1,0 +1,1663 @@
+{
+ "mt": "manual(humano, sem API)",
+ "allow_args": [
+  "Alinhamento Q4",
+  "Deploy v2.4 concluído com sucesso",
+  "Enviamos a proposta anexa.",
+  "Falha na autenticação OAuth2",
+  "O servidor passará por manutenção às 23h",
+  "Proposta Comercial",
+  "Review de Sprint",
+  "como configurar o VPN corporativo",
+  "inteligência artificial em semicondutores",
+  "milhas",
+  "política de reembolso de viagens"
+ ],
+ "translations": [
+  {
+   "orig": "Você é um assistente inteligente com acesso a ferramentas. Utilize as ferramentas fornecidas quando necessário.",
+   "en": "You are an intelligent assistant with access to tools. Use the tools provided when necessary.",
+   "usos": 121
+  },
+  {
+   "orig": "Por favor, reinicie o container docker 'postgres-prod'.",
+   "en": "Please restart the 'postgres-prod' docker container.",
+   "usos": 1
+  },
+  {
+   "orig": "Executa uma ação de ciclo de vida em um container Docker local ou remoto.",
+   "en": "Performs a lifecycle action on a local or remote Docker container.",
+   "usos": 7
+  },
+  {
+   "orig": "Nome ou hash SHA do container (ex: redis-cache, a1b2c3d4)",
+   "en": "Container name or SHA hash (e.g., redis-cache, a1b2c3d4)",
+   "usos": 7
+  },
+  {
+   "orig": "Comando de controle do container",
+   "en": "Container control command",
+   "usos": 7
+  },
+  {
+   "orig": "Consulte o status dos pods no namespace 'staging'.",
+   "en": "Check the status of the pods in the 'staging' namespace.",
+   "usos": 1
+  },
+  {
+   "orig": "Consulta o status operacional, réplicas e eventos de pods em um namespace Kubernetes.",
+   "en": "Queries the operational status, replicas, and events of pods in a Kubernetes namespace.",
+   "usos": 4
+  },
+  {
+   "orig": "Namespace no cluster K8s (ex: production, staging, default)",
+   "en": "Namespace in the K8s cluster (e.g., production, staging, default)",
+   "usos": 4
+  },
+  {
+   "orig": "Seletor de label (ex: app=payment-api)",
+   "en": "Label selector (e.g., app=payment-api)",
+   "usos": 4
+  },
+  {
+   "orig": "Verifique se a URL https://api.empresa.com.br/healthz está respondendo.",
+   "en": "Check whether the URL https://api.empresa.com.br/healthz is responding.",
+   "usos": 1
+  },
+  {
+   "orig": "Envia requisições de probe HTTP/HTTPS para validar o uptime, tempo de resposta e status code de uma API.",
+   "en": "Sends HTTP/HTTPS probe requests to validate an API's uptime, response time, and status code.",
+   "usos": 8
+  },
+  {
+   "orig": "URL completa do endpoint a verificar (ex: https://api.empresa.com/healthz)",
+   "en": "Full URL of the endpoint to check (e.g., https://api.empresa.com/healthz)",
+   "usos": 8
+  },
+  {
+   "orig": "Tempo limite de resposta em segundos",
+   "en": "Response timeout in seconds",
+   "usos": 8
+  },
+  {
+   "orig": "Consulte os registros MX do domínio 'acme-corp.org'.",
+   "en": "Look up the MX records of the 'acme-corp.org' domain.",
+   "usos": 1
+  },
+  {
+   "orig": "Consulta registros de DNS de um domínio na internet (A, AAAA, MX, CNAME, TXT).",
+   "en": "Queries DNS records of an internet domain (A, AAAA, MX, CNAME, TXT).",
+   "usos": 5
+  },
+  {
+   "orig": "Nome de domínio (ex: google.com, github.com)",
+   "en": "Domain name (e.g., google.com, github.com)",
+   "usos": 5
+  },
+  {
+   "orig": "Tipo de registro DNS",
+   "en": "DNS record type",
+   "usos": 5
+  },
+  {
+   "orig": "Execute a query 'SELECT count(*) FROM users WHERE active = 1' no banco 'analytics_db'.",
+   "en": "Run the query 'SELECT count(*) FROM users WHERE active = 1' on the 'analytics_db' database.",
+   "usos": 1
+  },
+  {
+   "orig": "Executa uma consulta SQL somente-leitura (SELECT) em um banco de dados relacional.",
+   "en": "Runs a read-only SQL query (SELECT) on a relational database.",
+   "usos": 2
+  },
+  {
+   "orig": "Nome do banco de dados (ex: analytics_db, users_dw)",
+   "en": "Database name (e.g., analytics_db, users_dw)",
+   "usos": 2
+  },
+  {
+   "orig": "Comando SQL SELECT válido",
+   "en": "Valid SQL SELECT statement",
+   "usos": 2
+  },
+  {
+   "orig": "Ajuste o termostato do quarto_suite para 22 graus no modo cool.",
+   "en": "Set the quarto_suite thermostat to 22 degrees in cool mode.",
+   "usos": 1
+  },
+  {
+   "orig": "Ajusta a temperatura alvo e o modo operacional do termostato inteligente de um cômodo.",
+   "en": "Adjusts the target temperature and operating mode of a room's smart thermostat.",
+   "usos": 4
+  },
+  {
+   "orig": "Cômodo da residência (ex: sala, quarto_suite, escritorio)",
+   "en": "Room of the house (e.g., sala, quarto_suite, escritorio)",
+   "usos": 4
+  },
+  {
+   "orig": "Temperatura desejada em graus Celsius",
+   "en": "Desired temperature in degrees Celsius",
+   "usos": 4
+  },
+  {
+   "orig": "Modo de climatização",
+   "en": "Climate control mode",
+   "usos": 4
+  },
+  {
+   "orig": "Desligue a tomada inteligente do 'ventilador'.",
+   "en": "Turn off the smart plug of the 'ventilador'.",
+   "usos": 1
+  },
+  {
+   "orig": "Liga ou desliga a alimentação elétrica de uma tomada inteligente conectada.",
+   "en": "Turns the power of a connected smart plug on or off.",
+   "usos": 5
+  },
+  {
+   "orig": "Identificador da tomada (ex: cafeteira, ventilador, computador)",
+   "en": "Plug identifier (e.g., cafeteira, ventilador, computador)",
+   "usos": 5
+  },
+  {
+   "orig": "Estado desejado da energia",
+   "en": "Desired power state",
+   "usos": 5
+  },
+  {
+   "orig": "Tranque a fechadura da 'garagem'.",
+   "en": "Lock the 'garagem' door lock.",
+   "usos": 1
+  },
+  {
+   "orig": "Controla fechaduras eletrônicas inteligentes e sensores de portas/janelas.",
+   "en": "Controls smart electronic locks and door/window sensors.",
+   "usos": 5
+  },
+  {
+   "orig": "Localização da porta ou portão (ex: porta_principal, garagem, fundos)",
+   "en": "Door or gate location (e.g., porta_principal, garagem, fundos)",
+   "usos": 5
+  },
+  {
+   "orig": "Ação na fechadura",
+   "en": "Lock action",
+   "usos": 5
+  },
+  {
+   "orig": "Configure a iluminação da 'sala_de_estar' para 70% com a predefinição 'sunset'.",
+   "en": "Set the 'sala_de_estar' lighting to 70% with the 'sunset' preset.",
+   "usos": 1
+  },
+  {
+   "orig": "Define cores, intensidade luminosa e perfis de iluminação LED em áreas da residência.",
+   "en": "Sets colors, brightness, and LED lighting profiles in areas of the house.",
+   "usos": 7
+  },
+  {
+   "orig": "Zona ou cômodo (ex: sala_de_estar, varanda, cinema)",
+   "en": "Zone or room (e.g., sala_de_estar, varanda, cinema)",
+   "usos": 7
+  },
+  {
+   "orig": "Brilho de 0 a 100 por cento",
+   "en": "Brightness from 0 to 100 percent",
+   "usos": 7
+  },
+  {
+   "orig": "Predefinição cromática",
+   "en": "Color preset",
+   "usos": 7
+  },
+  {
+   "orig": "Abra o portão da garagem agora.",
+   "en": "Open the garage gate now.",
+   "usos": 1
+  },
+  {
+   "orig": "Aciona a abertura ou fechamento do portão automatizado da garagem.",
+   "en": "Triggers the opening or closing of the automated garage gate.",
+   "usos": 5
+  },
+  {
+   "orig": "Ação desejada",
+   "en": "Desired action",
+   "usos": 5
+  },
+  {
+   "orig": "Se verdadeiro, ignora aviso de sensor de presença",
+   "en": "If true, ignores the presence sensor warning",
+   "usos": 5
+  },
+  {
+   "orig": "Agende a reunião 'Alinhamento Q4' para 2026-11-03T10:00:00 com duração de 45 minutos.",
+   "en": "Schedule the 'Q4 Alignment' meeting for 2026-11-03T10:00:00 with a duration of 45 minutes.",
+   "usos": 1
+  },
+  {
+   "orig": "Agenda uma reunião ou compromisso no calendário com data, horário e participantes.",
+   "en": "Schedules a calendar meeting or appointment with date, time, and attendees.",
+   "usos": 4
+  },
+  {
+   "orig": "Título ou assunto da reunião",
+   "en": "Meeting title or subject",
+   "usos": 4
+  },
+  {
+   "orig": "Horário de início em formato ISO-8601 (ex: 2026-10-15T14:30:00)",
+   "en": "Start time in ISO-8601 format (e.g., 2026-10-15T14:30:00)",
+   "usos": 4
+  },
+  {
+   "orig": "Duração do evento em minutos",
+   "en": "Event duration in minutes",
+   "usos": 4
+  },
+  {
+   "orig": "Lista de emails dos convidados",
+   "en": "Guest email list",
+   "usos": 4
+  },
+  {
+   "orig": "Alinhamento Q4",
+   "en": "Q4 Alignment",
+   "usos": 1
+  },
+  {
+   "orig": "Envie um alerta no canal '#deploy-alerts' com a mensagem 'Deploy v2.4 concluído com sucesso'.",
+   "en": "Send an alert in the '#deploy-alerts' channel with the message 'Deploy v2.4 completed successfully'.",
+   "usos": 1
+  },
+  {
+   "orig": "Publica uma mensagem ou alerta em um canal ou mensagem direta no Slack/Discord.",
+   "en": "Posts a message or alert in a Slack/Discord channel or direct message.",
+   "usos": 7
+  },
+  {
+   "orig": "Nome do canal (ex: #engenharia, #alertas-urgentes, @diretoria)",
+   "en": "Channel name (e.g., #engenharia, #alertas-urgentes, @diretoria)",
+   "usos": 7
+  },
+  {
+   "orig": "Texto da mensagem em markdown",
+   "en": "Message text in markdown",
+   "usos": 7
+  },
+  {
+   "orig": "Nível de urgência da notificação",
+   "en": "Notification urgency level",
+   "usos": 7
+  },
+  {
+   "orig": "Deploy v2.4 concluído com sucesso",
+   "en": "Deploy v2.4 completed successfully",
+   "usos": 1
+  },
+  {
+   "orig": "Abra um chamado no projeto 'PROD' do tipo 'Bug' com o resumo 'Falha na autenticação OAuth2'.",
+   "en": "Open a ticket in the 'PROD' project of type 'Bug' with the summary 'OAuth2 authentication failure'.",
+   "usos": 1
+  },
+  {
+   "orig": "Abre um novo chamado, bug report ou tarefa no quadro ágil Jira.",
+   "en": "Opens a new ticket, bug report, or task on the Jira agile board.",
+   "usos": 5
+  },
+  {
+   "orig": "Chave do projeto (ex: PROD, DEV, SEC)",
+   "en": "Project key (e.g., PROD, DEV, SEC)",
+   "usos": 5
+  },
+  {
+   "orig": "Tipo do chamado",
+   "en": "Ticket type",
+   "usos": 5
+  },
+  {
+   "orig": "Título resumido do problema ou tarefa",
+   "en": "Brief title of the problem or task",
+   "usos": 5
+  },
+  {
+   "orig": "Prioridade",
+   "en": "Priority",
+   "usos": 5
+  },
+  {
+   "orig": "Falha na autenticação OAuth2",
+   "en": "OAuth2 authentication failure",
+   "usos": 1
+  },
+  {
+   "orig": "Pesquise na base interna corporativa sobre a 'política de reembolso de viagens'.",
+   "en": "Search the corporate internal knowledge base for the 'travel reimbursement policy'.",
+   "usos": 1
+  },
+  {
+   "orig": "Executa busca semântica em base de conhecimento corporativa (Notion, Confluence, Wiki).",
+   "en": "Runs semantic search over the corporate knowledge base (Notion, Confluence, Wiki).",
+   "usos": 4
+  },
+  {
+   "orig": "Termo ou pergunta de busca textual",
+   "en": "Text search term or question",
+   "usos": 4
+  },
+  {
+   "orig": "Filtro de categoria documental",
+   "en": "Document category filter",
+   "usos": 4
+  },
+  {
+   "orig": "política de reembolso de viagens",
+   "en": "travel reimbursement policy",
+   "usos": 1
+  },
+  {
+   "orig": "Traduza o texto 'Hello team, the quarterly report is ready.' para o português (pt).",
+   "en": "Translate the text 'Hello team, the quarterly report is ready.' to Portuguese (pt).",
+   "usos": 1
+  },
+  {
+   "orig": "Traduz um bloco de texto corporativo ou documento entre dois idiomas.",
+   "en": "Translates a corporate text block or document between two languages.",
+   "usos": 4
+  },
+  {
+   "orig": "Código do idioma de origem (ex: en, pt, es)",
+   "en": "Source language code (e.g., en, pt, es)",
+   "usos": 4
+  },
+  {
+   "orig": "Código do idioma de destino (ex: pt, fr, de)",
+   "en": "Target language code (e.g., pt, fr, de)",
+   "usos": 4
+  },
+  {
+   "orig": "Texto a traduzir",
+   "en": "Text to translate",
+   "usos": 4
+  },
+  {
+   "orig": "Qual a cotação atual da ação 'VALE3.SA'?",
+   "en": "What is the current price of the 'VALE3.SA' stock?",
+   "usos": 1
+  },
+  {
+   "orig": "Consulta cotação em tempo real, variação diária e volume financeiro de uma ação na bolsa.",
+   "en": "Queries real-time quote, daily change, and traded volume of a listed stock.",
+   "usos": 8
+  },
+  {
+   "orig": "Símbolo da ação (ex: PETR4.SA, AAPL, NVDA, VALE3.SA)",
+   "en": "Stock symbol (e.g., PETR4.SA, AAPL, NVDA, VALE3.SA)",
+   "usos": 8
+  },
+  {
+   "orig": "Verifique o gas price atual na rede 'polygon' com velocidade 'fast'.",
+   "en": "Check the current gas price on the 'polygon' network with 'fast' speed.",
+   "usos": 1
+  },
+  {
+   "orig": "Verifica a taxa estimada de transação (Gas em Gwei) em redes blockchain (Ethereum, Polygon, Arbitrum).",
+   "en": "Checks the estimated transaction fee (gas in Gwei) on blockchain networks (Ethereum, Polygon, Arbitrum).",
+   "usos": 4
+  },
+  {
+   "orig": "Rede blockchain",
+   "en": "Blockchain network",
+   "usos": 4
+  },
+  {
+   "orig": "Velocidade de confirmação desejada",
+   "en": "Desired confirmation speed",
+   "usos": 4
+  },
+  {
+   "orig": "Simule um financiamento de R$ 50000 em 24 meses com taxa mensal de 1.8% no sistema 'PRICE'.",
+   "en": "Simulate a R$ 50000 loan over 24 months at a 1.8% monthly rate under the 'PRICE' system.",
+   "usos": 1
+  },
+  {
+   "orig": "Simula tabela de parcelas, amortização e saldo devedor de um financiamento (Tabela Price ou SAC).",
+   "en": "Simulates the installment schedule, amortization, and outstanding balance of a loan (Price or SAC system).",
+   "usos": 4
+  },
+  {
+   "orig": "Valor total emprestado/financiado",
+   "en": "Total amount borrowed/financed",
+   "usos": 4
+  },
+  {
+   "orig": "Quantidade total de parcelas mensais",
+   "en": "Total number of monthly installments",
+   "usos": 4
+  },
+  {
+   "orig": "Taxa de juros mensal em porcentagem",
+   "en": "Monthly interest rate in percent",
+   "usos": 4
+  },
+  {
+   "orig": "Sistema de amortização",
+   "en": "Amortization system",
+   "usos": 4
+  },
+  {
+   "orig": "Calcule o montante de um investimento de R$ 10000 a 11.5% ao ano durante 5 anos.",
+   "en": "Calculate the total of a R$ 10000 investment at 11.5% per year over 5 years.",
+   "usos": 1
+  },
+  {
+   "orig": "Calcula o montante acumulado e juros totais de um investimento com aportes recorrentes.",
+   "en": "Calculates the accumulated total and total interest of an investment with recurring contributions.",
+   "usos": 8
+  },
+  {
+   "orig": "Capital inicial investido",
+   "en": "Initial capital invested",
+   "usos": 8
+  },
+  {
+   "orig": "Taxa de juros anual em porcentagem (ex: 12.5)",
+   "en": "Annual interest rate in percent (e.g., 12.5)",
+   "usos": 8
+  },
+  {
+   "orig": "Prazo do investimento em anos",
+   "en": "Investment term in years",
+   "usos": 8
+  },
+  {
+   "orig": "Aporte mensal adicional (opcional)",
+   "en": "Additional monthly contribution (optional)",
+   "usos": 8
+  },
+  {
+   "orig": "Simule a troca de 2.5 ETH para USDC em DEX.",
+   "en": "Simulate swapping 2.5 ETH to USDC on a DEX.",
+   "usos": 1
+  },
+  {
+   "orig": "Simula o valor de conversão e taxa de slippage para troca entre dois tokens de criptomoeda em DEX.",
+   "en": "Simulates the conversion value and slippage rate for swapping between two cryptocurrency tokens on a DEX.",
+   "usos": 4
+  },
+  {
+   "orig": "Símbolo do token entregue (ex: ETH, SOL, WBTC)",
+   "en": "Symbol of the token given (e.g., ETH, SOL, WBTC)",
+   "usos": 4
+  },
+  {
+   "orig": "Símbolo do token recebido (ex: USDC, USDT)",
+   "en": "Symbol of the token received (e.g., USDC, USDT)",
+   "usos": 4
+  },
+  {
+   "orig": "Quantidade do token de entrada",
+   "en": "Amount of the input token",
+   "usos": 4
+  },
+  {
+   "orig": "Rastreie a encomenda com código 'NL987654321BR'.",
+   "en": "Track the parcel with code 'NL987654321BR'.",
+   "usos": 1
+  },
+  {
+   "orig": "Rastreia o status de entrega e histórico de eventos de uma encomenda postal ou transportadora.",
+   "en": "Tracks the delivery status and event history of a postal or carrier parcel.",
+   "usos": 5
+  },
+  {
+   "orig": "Código de rastreamento do pacote (ex: BR123456789JJ, 1Z999999)",
+   "en": "Package tracking code (e.g., BR123456789JJ, 1Z999999)",
+   "usos": 5
+  },
+  {
+   "orig": "Nome da transportadora (ex: correios, jadlog, dhl, fedex)",
+   "en": "Carrier name (e.g., correios, jadlog, dhl, fedex)",
+   "usos": 5
+  },
+  {
+   "orig": "Consulte a quantidade em estoque do SKU 'NOTE-DELL-15' no centro 'CD_SP'.",
+   "en": "Check the stock quantity of SKU 'NOTE-DELL-15' at the 'CD_SP' center.",
+   "usos": 1
+  },
+  {
+   "orig": "Verifica a quantidade de itens físicos disponíveis no estoque em centros de distribuição.",
+   "en": "Checks the quantity of physical items available in stock at distribution centers.",
+   "usos": 7
+  },
+  {
+   "orig": "Código SKU ou identificador do produto",
+   "en": "Product SKU code or identifier",
+   "usos": 7
+  },
+  {
+   "orig": "Código ou cidade do armazém (ex: CD_SP, CD_MG, ALL)",
+   "en": "Warehouse code or city (e.g., CD_SP, CD_MG, ALL)",
+   "usos": 7
+  },
+  {
+   "orig": "Aplique o cupom 'DESCONTO15' no carrinho 'cart_88412'.",
+   "en": "Apply coupon 'DESCONTO15' to cart 'cart_88412'.",
+   "usos": 1
+  },
+  {
+   "orig": "Valida e aplica um cupom promocional de desconto a um carrinho de compras ativo.",
+   "en": "Validates and applies a promotional discount coupon to an active shopping cart.",
+   "usos": 4
+  },
+  {
+   "orig": "Identificador único do carrinho",
+   "en": "Unique cart identifier",
+   "usos": 4
+  },
+  {
+   "orig": "Código alfanumérico do cupom (ex: PROMO10, BLACKFRIDAY)",
+   "en": "Alphanumeric coupon code (e.g., PROMO10, BLACKFRIDAY)",
+   "usos": 4
+  },
+  {
+   "orig": "Solicite o reembolso do pedido 'PED-9901' pelo motivo 'damaged_item'.",
+   "en": "Request a refund for order 'PED-9901' for reason 'damaged_item'.",
+   "usos": 1
+  },
+  {
+   "orig": "Inicia um processo de reembolso ou devolução para um pedido de compra finalizado.",
+   "en": "Starts a refund or return process for a finalized purchase order.",
+   "usos": 2
+  },
+  {
+   "orig": "Número do pedido de compra",
+   "en": "Purchase order number",
+   "usos": 2
+  },
+  {
+   "orig": "Motivo da devolução",
+   "en": "Return reason",
+   "usos": 2
+  },
+  {
+   "orig": "Valor monetário a reembolsar",
+   "en": "Monetary amount to refund",
+   "usos": 2
+  },
+  {
+   "orig": "Atualize o preço do SKU 'MOUSE-LOGI-G' para 189.90.",
+   "en": "Update the price of SKU 'MOUSE-LOGI-G' to 189.90.",
+   "usos": 1
+  },
+  {
+   "orig": "Atualiza o preço de venda de um item no catálogo da loja virtual.",
+   "en": "Updates the sale price of an item in the online store catalog.",
+   "usos": 4
+  },
+  {
+   "orig": "Código SKU do produto",
+   "en": "Product SKU code",
+   "usos": 4
+  },
+  {
+   "orig": "Novo preço unitário em moeda local",
+   "en": "New unit price in local currency",
+   "usos": 4
+  },
+  {
+   "orig": "Data de início da vigência do preço (YYYY-MM-DD)",
+   "en": "Price effective start date (YYYY-MM-DD)",
+   "usos": 4
+  },
+  {
+   "orig": "Gere um QR Code para o link 'https://meupagamento.com.br/pix/1234'.",
+   "en": "Generate a QR Code for the link 'https://meupagamento.com.br/pix/1234'.",
+   "usos": 1
+  },
+  {
+   "orig": "Gera um código visual QR Code com payload de texto, URL ou chave de pagamento Pix.",
+   "en": "Generates a visual QR Code with a text payload, URL, or Pix payment key.",
+   "usos": 3
+  },
+  {
+   "orig": "Conteúdo codificado no QR Code (URL, texto, payload pix)",
+   "en": "Content encoded in the QR Code (URL, text, pix payload)",
+   "usos": 3
+  },
+  {
+   "orig": "Nível de redundância para correção de erros",
+   "en": "Redundancy level for error correction",
+   "usos": 3
+  },
+  {
+   "orig": "Calcule o hash sha256 do arquivo '/var/data/dataset.parquet'.",
+   "en": "Compute the sha256 hash of the file '/var/data/dataset.parquet'.",
+   "usos": 1
+  },
+  {
+   "orig": "Calcula o hash criptográfico de integridade de um arquivo no disco.",
+   "en": "Computes the cryptographic integrity hash of a file on disk.",
+   "usos": 7
+  },
+  {
+   "orig": "Caminho absoluto ou relativo do arquivo",
+   "en": "Absolute or relative file path",
+   "usos": 7
+  },
+  {
+   "orig": "Algoritmo de hash",
+   "en": "Hash algorithm",
+   "usos": 7
+  },
+  {
+   "orig": "Transcreva o arquivo de áudio '/audios/entrevista_01.mp3' no idioma 'pt'.",
+   "en": "Transcribe the audio file '/audios/entrevista_01.mp3' in the 'pt' language.",
+   "usos": 1
+  },
+  {
+   "orig": "Transcreve a fala contida em um arquivo de áudio para texto formatado usando modelos ASR.",
+   "en": "Transcribes speech contained in an audio file into formatted text using ASR models.",
+   "usos": 2
+  },
+  {
+   "orig": "URI ou caminho local do arquivo de áudio (ex: /tmp/rec_01.mp3)",
+   "en": "URI or local path of the audio file (e.g., /tmp/rec_01.mp3)",
+   "usos": 2
+  },
+  {
+   "orig": "Código de idioma do áudio (ex: pt, en, es)",
+   "en": "Audio language code (e.g., pt, en, es)",
+   "usos": 2
+  },
+  {
+   "orig": "Compacte os arquivos ['relatorio.pdf', 'dados.csv'] no arquivo 'relatorio_final.zip' formato zip.",
+   "en": "Compress the files ['relatorio.pdf', 'dados.csv'] into the 'relatorio_final.zip' file, zip format.",
+   "usos": 1
+  },
+  {
+   "orig": "Compacta múltiplos arquivos ou diretórios em um arquivo compactado (ZIP, TAR.GZ).",
+   "en": "Compresses multiple files or directories into an archive file (ZIP, TAR.GZ).",
+   "usos": 5
+  },
+  {
+   "orig": "Lista de arquivos/pastas de origem",
+   "en": "List of source files/folders",
+   "usos": 5
+  },
+  {
+   "orig": "Nome do arquivo resultante (ex: backup.zip)",
+   "en": "Resulting file name (e.g., backup.zip)",
+   "usos": 5
+  },
+  {
+   "orig": "Formato de compressão",
+   "en": "Compression format",
+   "usos": 5
+  },
+  {
+   "orig": "Extraia as páginas '1-3' do arquivo 'manual_completo.pdf' para 'manual_resumo.pdf'.",
+   "en": "Extract pages '1-3' from the 'manual_completo.pdf' file into 'manual_resumo.pdf'.",
+   "usos": 1
+  },
+  {
+   "orig": "Extrai páginas específicas de um arquivo PDF e salva como um novo arquivo separado.",
+   "en": "Extracts specific pages from a PDF file and saves them as a new separate file.",
+   "usos": 5
+  },
+  {
+   "orig": "Caminho do arquivo PDF original",
+   "en": "Original PDF file path",
+   "usos": 5
+  },
+  {
+   "orig": "Intervalo de páginas (ex: '1-5', '3,7,9')",
+   "en": "Page range (e.g., '1-5', '3,7,9')",
+   "usos": 5
+  },
+  {
+   "orig": "Caminho do novo arquivo",
+   "en": "New file path",
+   "usos": 5
+  },
+  {
+   "orig": "Quanto está a taxa de câmbio de 1 USD para BRL hoje?",
+   "en": "What is today's exchange rate of 1 USD to BRL?",
+   "usos": 1
+  },
+  {
+   "orig": "Retorna apenas o valor unitário da taxa de câmbio entre duas moedas (ex: quanto vale 1 USD em BRL), sem multiplicar montante.",
+   "en": "Returns only the unit exchange rate between two currencies (e.g., how much 1 USD is worth in BRL), without multiplying any amount.",
+   "usos": 3
+  },
+  {
+   "orig": "Código ISO da moeda de origem",
+   "en": "Source currency ISO code",
+   "usos": 3
+  },
+  {
+   "orig": "Código ISO da moeda de destino",
+   "en": "Target currency ISO code",
+   "usos": 3
+  },
+  {
+   "orig": "Calcula a conversão de um montante financeiro específico de uma moeda para outra com cotação atual.",
+   "en": "Converts a specific monetary amount from one currency to another at the current rate.",
+   "usos": 8
+  },
+  {
+   "orig": "Valor monetário a ser convertido",
+   "en": "Monetary amount to convert",
+   "usos": 8
+  },
+  {
+   "orig": "Código ISO da moeda de origem (ex: USD, BRL, EUR, JPY)",
+   "en": "Source currency ISO code (e.g., USD, BRL, EUR, JPY)",
+   "usos": 8
+  },
+  {
+   "orig": "Código ISO da moeda de destino (ex: BRL, USD, GBP)",
+   "en": "Target currency ISO code (e.g., BRL, USD, GBP)",
+   "usos": 8
+  },
+  {
+   "orig": "Converta 350 dólares para reais com a cotação de hoje.",
+   "en": "Convert 350 dollars to reais at today's rate.",
+   "usos": 1
+  },
+  {
+   "orig": "Redimensione o banner 'assets/topo.png' para 1200x400 pixels.",
+   "en": "Resize the 'assets/topo.png' banner to 1200x400 pixels.",
+   "usos": 1
+  },
+  {
+   "orig": "Redimensiona uma imagem mantendo ou ajustando proporção e qualidade gráfica.",
+   "en": "Resizes an image while keeping or adjusting aspect ratio and graphic quality.",
+   "usos": 4
+  },
+  {
+   "orig": "Caminho do arquivo de imagem (ex: assets/banner.png)",
+   "en": "Image file path (e.g., assets/banner.png)",
+   "usos": 4
+  },
+  {
+   "orig": "Nova largura em pixels",
+   "en": "New width in pixels",
+   "usos": 4
+  },
+  {
+   "orig": "Nova altura em pixels",
+   "en": "New height in pixels",
+   "usos": 4
+  },
+  {
+   "orig": "Se verdadeiro, preserva o aspect ratio original",
+   "en": "If true, preserves the original aspect ratio",
+   "usos": 4
+  },
+  {
+   "orig": "Converte o formato de codificação de uma imagem (ex: PNG para WEBP, JPEG para AVIF).",
+   "en": "Converts an image's encoding format (e.g., PNG to WEBP, JPEG to AVIF).",
+   "usos": 3
+  },
+  {
+   "orig": "Caminho do arquivo original",
+   "en": "Original file path",
+   "usos": 3
+  },
+  {
+   "orig": "Formato desejado",
+   "en": "Desired format",
+   "usos": 3
+  },
+  {
+   "orig": "Qualidade da compressão de 1 a 100",
+   "en": "Compression quality from 1 to 100",
+   "usos": 3
+  },
+  {
+   "orig": "Converta a foto 'fotos/perfil.png' para o formato webp com qualidade 90.",
+   "en": "Convert the 'fotos/perfil.png' photo to webp format with quality 90.",
+   "usos": 1
+  },
+  {
+   "orig": "Onde está a minha encomenda com o código 'BR445566778SP'?",
+   "en": "Where is my parcel with code 'BR445566778SP'?",
+   "usos": 1
+  },
+  {
+   "orig": "Calcula prazos e custos de frete entre dois CEPs com base no peso e dimensões da embalagem.",
+   "en": "Calculates shipping times and costs between two ZIP codes based on package weight and dimensions.",
+   "usos": 3
+  },
+  {
+   "orig": "CEP de origem (apenas dígitos)",
+   "en": "Origin ZIP code (digits only)",
+   "usos": 3
+  },
+  {
+   "orig": "CEP de destino (apenas dígitos)",
+   "en": "Destination ZIP code (digits only)",
+   "usos": 3
+  },
+  {
+   "orig": "Peso total da carga em quilogramas",
+   "en": "Total cargo weight in kilograms",
+   "usos": 3
+  },
+  {
+   "orig": "Modalidade de envio",
+   "en": "Shipping method",
+   "usos": 3
+  },
+  {
+   "orig": "Calcule quanto custa o frete para enviar um pacote de 3.5 kg do CEP 01310100 para o CEP 20040002.",
+   "en": "Calculate how much shipping costs to send a 3.5 kg package from ZIP code 01310100 to ZIP code 20040002.",
+   "usos": 1
+  },
+  {
+   "orig": "Pare imediatamente o container Docker 'api-worker-3'.",
+   "en": "Immediately stop the 'api-worker-3' Docker container.",
+   "usos": 1
+  },
+  {
+   "orig": "Verifique a saúde e status dos pods do Kubernetes no namespace 'production'.",
+   "en": "Check the health and status of the Kubernetes pods in the 'production' namespace.",
+   "usos": 1
+  },
+  {
+   "orig": "Avise o time no canal '#backend' que o servidor passará por manutenção às 23h.",
+   "en": "Tell the team in the '#backend' channel that the server will undergo maintenance at 11pm.",
+   "usos": 1
+  },
+  {
+   "orig": "Cria um rascunho de resposta de email com destinatários e corpo estruturado.",
+   "en": "Creates an email reply draft with recipients and a structured body.",
+   "usos": 5
+  },
+  {
+   "orig": "Endereço de email do destinatário",
+   "en": "Recipient email address",
+   "usos": 5
+  },
+  {
+   "orig": "Assunto do email",
+   "en": "Email subject",
+   "usos": 5
+  },
+  {
+   "orig": "Conteúdo textual da resposta",
+   "en": "Textual content of the reply",
+   "usos": 5
+  },
+  {
+   "orig": "O servidor passará por manutenção às 23h",
+   "en": "The server will undergo maintenance at 11pm",
+   "usos": 1
+  },
+  {
+   "orig": "Redija uma resposta de email para 'cliente@acme.com' com o assunto 'Proposta Comercial' dizendo que enviamos a proposta anexa.",
+   "en": "Draft an email reply to 'cliente@acme.com' with subject 'Commercial Proposal' saying that we are sending the proposal attached.",
+   "usos": 1
+  },
+  {
+   "orig": "Proposta Comercial",
+   "en": "Commercial Proposal",
+   "usos": 1
+  },
+  {
+   "orig": "Enviamos a proposta anexa.",
+   "en": "We are sending the proposal attached.",
+   "usos": 1
+  },
+  {
+   "orig": "Veja o preço atual de negociação das ações da 'AAPL'.",
+   "en": "Check the current trading price of 'AAPL' shares.",
+   "usos": 1
+  },
+  {
+   "orig": "Recupera demonstrativos contábeis fundamentais de uma empresa de capital aberto (Receita Líquida, EBITDA, Dívida).",
+   "en": "Retrieves core financial statements of a publicly traded company (Net Revenue, EBITDA, Debt).",
+   "usos": 3
+  },
+  {
+   "orig": "Símbolo da ação da empresa",
+   "en": "Company stock symbol",
+   "usos": 3
+  },
+  {
+   "orig": "Tipo de demonstrativo financeiro",
+   "en": "Financial statement type",
+   "usos": 3
+  },
+  {
+   "orig": "Ano fiscal de referência (ex: 2025, 2026)",
+   "en": "Reference fiscal year (e.g., 2025, 2026)",
+   "usos": 3
+  },
+  {
+   "orig": "Consulte o demonstrativo de resultado 'income_statement' da empresa 'PETR4.SA' para o ano 2025.",
+   "en": "Look up the 'income_statement' statement of company 'PETR4.SA' for year 2025.",
+   "usos": 1
+  },
+  {
+   "orig": "Que horas são exatamente agora no fuso horário 'America/New_York'?",
+   "en": "What time is it right now in the 'America/New_York' timezone?",
+   "usos": 1
+  },
+  {
+   "orig": "Retorna o horário civil oficial corrente em uma localidade ou fuso horário IANA.",
+   "en": "Returns the current official civil time in a locality or IANA timezone.",
+   "usos": 3
+  },
+  {
+   "orig": "Identificador IANA de fuso (ex: America/Sao_Paulo, Europe/London)",
+   "en": "IANA timezone identifier (e.g., America/Sao_Paulo, Europe/London)",
+   "usos": 3
+  },
+  {
+   "orig": "Marque uma reunião no calendário chamada 'Review de Sprint' em 2026-10-20T15:00:00 com 60 minutos.",
+   "en": "Schedule a calendar meeting called 'Sprint Review' on 2026-10-20T15:00:00 lasting 60 minutes.",
+   "usos": 1
+  },
+  {
+   "orig": "Review de Sprint",
+   "en": "Sprint Review",
+   "usos": 1
+  },
+  {
+   "orig": "Converta uma distância de 42 km para milhas.",
+   "en": "Convert a distance of 42 km to miles.",
+   "usos": 1
+  },
+  {
+   "orig": "Converte grandezas físicas de física pura (comprimento, massa, volume, velocidade).",
+   "en": "Converts pure-physics quantities (length, mass, volume, speed).",
+   "usos": 4
+  },
+  {
+   "orig": "Valor numérico",
+   "en": "Numeric value",
+   "usos": 4
+  },
+  {
+   "orig": "Unidade original (ex: km, milhas, kg, libras)",
+   "en": "Source unit (e.g., km, miles, kg, pounds)",
+   "usos": 4
+  },
+  {
+   "orig": "Unidade de destino",
+   "en": "Target unit",
+   "usos": 4
+  },
+  {
+   "orig": "milhas",
+   "en": "miles",
+   "usos": 1
+  },
+  {
+   "orig": "Converta 1200 euros para dólares (EUR para USD).",
+   "en": "Convert 1200 euros to dollars (EUR to USD).",
+   "usos": 1
+  },
+  {
+   "orig": "Consulte o histórico de uso de CPU do serviço AWS 'AWS/RDS' nos últimos 30 minutos.",
+   "en": "Check the CPU usage history of the AWS 'AWS/RDS' service over the last 30 minutes.",
+   "usos": 1
+  },
+  {
+   "orig": "Obtém séries temporais de métricas de telemetria da AWS (CPU, Memória, IOPS, Latência).",
+   "en": "Fetches time series of AWS telemetry metrics (CPU, Memory, IOPS, Latency).",
+   "usos": 3
+  },
+  {
+   "orig": "Identificador do serviço AWS (ex: AWS/EC2, AWS/RDS, AWS/Lambda)",
+   "en": "AWS service identifier (e.g., AWS/EC2, AWS/RDS, AWS/Lambda)",
+   "usos": 3
+  },
+  {
+   "orig": "Nome exato da métrica",
+   "en": "Exact metric name",
+   "usos": 3
+  },
+  {
+   "orig": "Janela temporal de agregação em minutos",
+   "en": "Aggregation time window in minutes",
+   "usos": 3
+  },
+  {
+   "orig": "Faça um teste de healthcheck para ver se 'https://checkout.loja.com' está online.",
+   "en": "Run a healthcheck test to see if 'https://checkout.loja.com' is online.",
+   "usos": 1
+  },
+  {
+   "orig": "Verifique o registro IP tipo 'A' do domínio 'cloudflare.com'.",
+   "en": "Check the 'A' type IP record of the 'cloudflare.com' domain.",
+   "usos": 1
+  },
+  {
+   "orig": "Mude a temperatura do termostato da 'sala' para 23 graus no modo 'eco'.",
+   "en": "Change the 'sala' thermostat temperature to 23 degrees in 'eco' mode.",
+   "usos": 1
+  },
+  {
+   "orig": "Obtém condições climáticas atuais de temperatura e precipitação para uma cidade geográfica.",
+   "en": "Fetches current temperature and precipitation conditions for a geographic city.",
+   "usos": 3
+  },
+  {
+   "orig": "Nome da cidade",
+   "en": "City name",
+   "usos": 3
+  },
+  {
+   "orig": "Unidade termométrica",
+   "en": "Temperature unit",
+   "usos": 3
+  },
+  {
+   "orig": "Como está o clima e a temperatura atual lá fora na cidade de 'Curitiba' em celsius?",
+   "en": "What is the current weather and temperature outside in the city of 'Curitiba' in Celsius?",
+   "usos": 1
+  },
+  {
+   "orig": "Quantas unidades da placa de vídeo 'GPU-RTX-4080' temos no armazém 'CD_MG'?",
+   "en": "How many units of the 'GPU-RTX-4080' graphics card do we have in the 'CD_MG' warehouse?",
+   "usos": 1
+  },
+  {
+   "orig": "Altere o preço de tabela do item 'TECLADO-MEC' para 320.00.",
+   "en": "Change the list price of item 'TECLADO-MEC' to 320.00.",
+   "usos": 1
+  },
+  {
+   "orig": "Se eu aplicar 20000 reais a 10% ao ano por 3 anos com aporte mensal de 500 reais, qual será o montante?",
+   "en": "If I invest 20000 reais at 10% per year for 3 years with a monthly contribution of 500 reais, what will the total be?",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a tabela SAC para um empréstimo de 80000 reais parcelado em 36 meses com taxa de 1.5% ao mês.",
+   "en": "Calculate the SAC table for a 80000 reais loan in 36 monthly installments at 1.5% per month.",
+   "usos": 1
+  },
+  {
+   "orig": "Como está a taxa de gas na rede 'ethereum' para transações em velocidade 'standard'?",
+   "en": "What is the gas rate on the 'ethereum' network for 'standard' speed transactions?",
+   "usos": 1
+  },
+  {
+   "orig": "Estime o retorno ao trocar 500 USDT por SOL em exchange descentralizada.",
+   "en": "Estimate the return of swapping 500 USDT for SOL on a decentralized exchange.",
+   "usos": 1
+  },
+  {
+   "orig": "Gere o hash md5 de verificação do instalador '/downloads/setup.exe'.",
+   "en": "Generate the md5 verification hash of the '/downloads/setup.exe' installer.",
+   "usos": 1
+  },
+  {
+   "orig": "Extraia as páginas '4-8' do documento '/docs/relatorio.pdf' para '/docs/capitulo2.pdf'.",
+   "en": "Extract pages '4-8' from the '/docs/relatorio.pdf' document into '/docs/capitulo2.pdf'.",
+   "usos": 1
+  },
+  {
+   "orig": "Compacte a pasta ['/logs/app1', '/logs/app2'] no arquivo de saída 'logs_backup.tar.gz' formato tar.gz.",
+   "en": "Compress the folder ['/logs/app1', '/logs/app2'] into the output file 'logs_backup.tar.gz', tar.gz format.",
+   "usos": 1
+  },
+  {
+   "orig": "Abra o portão eletrônico da garagem para a entrega.",
+   "en": "Open the electronic garage gate for the delivery.",
+   "usos": 1
+  },
+  {
+   "orig": "Captura um quadro estático recente ou link de stream de uma câmera de segurança interna/externa.",
+   "en": "Captures a recent still frame or stream link from an indoor/outdoor security camera.",
+   "usos": 4
+  },
+  {
+   "orig": "Identificador da câmera (ex: cam_hall_entrada, cam_quintal)",
+   "en": "Camera identifier (e.g., cam_hall_entrada, cam_quintal)",
+   "usos": 4
+  },
+  {
+   "orig": "Se verdadeiro, executa inferência de detecção de pessoas/veículos",
+   "en": "If true, runs people/vehicle detection inference",
+   "usos": 4
+  },
+  {
+   "orig": "Destranque a fechadura eletrônica da 'porta_principal'.",
+   "en": "Unlock the electronic lock of the 'porta_principal'.",
+   "usos": 1
+  },
+  {
+   "orig": "Veja a imagem atual da câmera 'cam_quintal' com detecção de pessoas ativada.",
+   "en": "Show the current image of the 'cam_quintal' camera with people detection enabled.",
+   "usos": 1
+  },
+  {
+   "orig": "Ligue a tomada inteligente da 'cafeteira'.",
+   "en": "Turn on the smart plug of the 'cafeteira'.",
+   "usos": 1
+  },
+  {
+   "orig": "Mede o consumo acumulado de energia elétrica em quilowatt-hora de aparelhos conectados.",
+   "en": "Measures the accumulated electric energy consumption in kilowatt-hours of connected appliances.",
+   "usos": 3
+  },
+  {
+   "orig": "Nome do circuito ou eletrodoméstico monitorado",
+   "en": "Monitored circuit or appliance name",
+   "usos": 3
+  },
+  {
+   "orig": "Período de leitura do medidor",
+   "en": "Meter reading period",
+   "usos": 3
+  },
+  {
+   "orig": "Qual foi o consumo em kWh do circuito 'ar_condicionado' no período 'current_month'?",
+   "en": "What was the kWh consumption of the 'ar_condicionado' circuit in the 'current_month' period?",
+   "usos": 1
+  },
+  {
+   "orig": "Inicie a execução da pipeline de CI no repositório 'empresa/pagamentos' na branch 'develop'.",
+   "en": "Start the CI pipeline run in the 'empresa/pagamentos' repository on the 'develop' branch.",
+   "usos": 1
+  },
+  {
+   "orig": "Dispara um pipeline de integração contínua (CI/CD) no GitHub Actions ou GitLab CI.",
+   "en": "Triggers a continuous integration (CI/CD) pipeline on GitHub Actions or GitLab CI.",
+   "usos": 3
+  },
+  {
+   "orig": "Repositório no formato org/repo (ex: acme/core-engine)",
+   "en": "Repository in org/repo format (e.g., acme/core-engine)",
+   "usos": 3
+  },
+  {
+   "orig": "Branch de destino da execução (ex: main, develop, hotfix-auth)",
+   "en": "Target branch of the run (e.g., main, develop, hotfix-auth)",
+   "usos": 3
+  },
+  {
+   "orig": "Nome ou ID do workflow (ex: deploy-staging.yml)",
+   "en": "Workflow name or ID (e.g., deploy-staging.yml)",
+   "usos": 3
+  },
+  {
+   "orig": "Gerencia arquivos e permissões em buckets de armazenamento de objetos S3.",
+   "en": "Manages files and permissions in S3 object storage buckets.",
+   "usos": 3
+  },
+  {
+   "orig": "Nome do bucket S3",
+   "en": "S3 bucket name",
+   "usos": 3
+  },
+  {
+   "orig": "Operação de armazenamento",
+   "en": "Storage operation",
+   "usos": 3
+  },
+  {
+   "orig": "Caminho do objeto (chave do arquivo)",
+   "en": "Object path (file key)",
+   "usos": 3
+  },
+  {
+   "orig": "Liste os objetos armazenados dentro do bucket S3 'empresa-backups-2026'.",
+   "en": "List the objects stored inside the 'empresa-backups-2026' S3 bucket.",
+   "usos": 1
+  },
+  {
+   "orig": "Busque notícias recentes na web aberta sobre 'inteligência artificial em semicondutores'.",
+   "en": "Search the open web for recent news about 'artificial intelligence in semiconductors'.",
+   "usos": 1
+  },
+  {
+   "orig": "Busca artigos jornalísticos e notícias públicas recentes na internet aberta.",
+   "en": "Searches recent journalistic articles and public news on the open internet.",
+   "usos": 3
+  },
+  {
+   "orig": "Termo de busca jornalística",
+   "en": "News search term",
+   "usos": 3
+  },
+  {
+   "orig": "Limite de artigos a retornar",
+   "en": "Maximum articles to return",
+   "usos": 3
+  },
+  {
+   "orig": "Recupera e condensa os principais tópicos e decisões tomadas em uma conversa de email.",
+   "en": "Retrieves and condenses the main topics and decisions made in an email conversation.",
+   "usos": 5
+  },
+  {
+   "orig": "ID exclusivo da thread ou assunto aproximado",
+   "en": "Unique thread ID or approximate subject",
+   "usos": 5
+  },
+  {
+   "orig": "Número máximo de emails recentes a incluir",
+   "en": "Maximum number of recent emails to include",
+   "usos": 5
+  },
+  {
+   "orig": "inteligência artificial em semicondutores",
+   "en": "artificial intelligence in semiconductors",
+   "usos": 1
+  },
+  {
+   "orig": "Procure na nossa documentação interna da empresa sobre 'como configurar o VPN corporativo'.",
+   "en": "Search our internal company documentation for 'how to set up the corporate VPN'.",
+   "usos": 1
+  },
+  {
+   "orig": "como configurar o VPN corporativo",
+   "en": "how to set up the corporate VPN",
+   "usos": 1
+  },
+  {
+   "orig": "Traduza a frase 'The system architecture has been updated.' para francês (fr).",
+   "en": "Translate the sentence 'The system architecture has been updated.' to French (fr).",
+   "usos": 1
+  },
+  {
+   "orig": "Resuma os principais pontos discutidos na thread de email com id 'thread_projeto_alfa_99'.",
+   "en": "Summarize the main points discussed in the email thread with id 'thread_projeto_alfa_99'.",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a soma dos quadrados dos primeiros 25 números inteiros positivos.",
+   "en": "Calculate the sum of the squares of the first 25 positive integers.",
+   "usos": 1
+  },
+  {
+   "orig": "Executa código Python autônomo em ambiente sandbox e retorna a saída padrão impressa (stdout). Usado para resolver problemas matemáticos, algoritmos, simulações e análise de dados.",
+   "en": "Runs standalone Python code in a sandbox environment and returns the printed standard output (stdout). Used to solve math problems, algorithms, simulations, and data analysis.",
+   "usos": 30
+  },
+  {
+   "orig": "Código Python válido contendo print() para exibir o resultado final.",
+   "en": "Valid Python code containing print() to display the final result.",
+   "usos": 30
+  },
+  {
+   "orig": "Determine a soma de todos os múltiplos de 7 ou 11 estritamente menores que 500.",
+   "en": "Find the sum of all multiples of 7 or 11 strictly less than 500.",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é o 35º termo da sequência de Fibonacci (onde F(1)=1, F(2)=1)?",
+   "en": "What is the 35th term of the Fibonacci sequence (where F(1)=1, F(2)=1)?",
+   "usos": 1
+  },
+  {
+   "orig": "Quantos números primos existem no intervalo fechado de 100 a 300?",
+   "en": "How many prime numbers are there in the closed interval from 100 to 300?",
+   "usos": 1
+  },
+  {
+   "orig": "Encontre a soma de todos os divisores próprios positivos de 2520.",
+   "en": "Find the sum of all positive proper divisors of 2520.",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é o resto da divisão de 3^2025 por 1000?",
+   "en": "What is the remainder of 3^2025 divided by 1000?",
+   "usos": 1
+  },
+  {
+   "orig": "Determine o Máximo Divisor Comum (MDC) entre os números 4824 e 3564.",
+   "en": "Find the Greatest Common Divisor (GCD) of the numbers 4824 and 3564.",
+   "usos": 1
+  },
+  {
+   "orig": "Determine o Mínimo Múltiplo Comum (MMC) entre 84, 126 e 210.",
+   "en": "Find the Least Common Multiple (LCM) of 84, 126, and 210.",
+   "usos": 1
+  },
+  {
+   "orig": "De quantas maneiras distintas podemos formar uma comissão de 5 pessoas a partir de um grupo de 14 pessoas?",
+   "en": "In how many distinct ways can a 5-person committee be formed from a group of 14 people?",
+   "usos": 1
+  },
+  {
+   "orig": "Quantos anagramas distintos podem ser formados com as letras da palavra 'PARALELEPIPEDO'?",
+   "en": "How many distinct anagrams can be formed with the letters of the word 'PARALELEPIPEDO'?",
+   "usos": 1
+  },
+  {
+   "orig": "Quantos números de 4 dígitos distintos podem ser formados usando apenas os algarismos {1, 2, 3, 4, 5, 6, 7}?",
+   "en": "How many distinct 4-digit numbers can be formed using only the digits {1, 2, 3, 4, 5, 6, 7}?",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a hipotenusa de um triângulo retângulo com catetos de comprimento 45 e 60.",
+   "en": "Calculate the hypotenuse of a right triangle with legs of length 45 and 60.",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a área exata de um trapézio com bases de comprimento 24 e 16, e altura medindo 11.5.",
+   "en": "Calculate the exact area of a trapezoid with bases of length 24 and 16, and height measuring 11.5.",
+   "usos": 1
+  },
+  {
+   "orig": "Um corpo é lançado verticalmente com velocidade inicial de 49 m/s. Considerando g = 9.8 m/s^2, qual a altura máxima atingida?",
+   "en": "A body is launched vertically with an initial velocity of 49 m/s. Considering g = 9.8 m/s^2, what is the maximum height reached?",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a variância amostral dos seguintes dados: [14, 18, 22, 25, 29, 31, 35, 42].",
+   "en": "Calculate the sample variance of the following data: [14, 18, 22, 25, 29, 31, 35, 42].",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a média geométrica dos valores [2, 4, 8, 16, 32, 64].",
+   "en": "Calculate the geometric mean of the values [2, 4, 8, 16, 32, 64].",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule o produto escalar (dot product) entre os vetores u = [3, -2, 5, 4] e v = [7, 6, -1, 3].",
+   "en": "Calculate the dot product between vectors u = [3, -2, 5, 4] and v = [7, 6, -1, 3].",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule o determinante da matriz 3x3: [[4, 2, -1], [3, 0, 5], [-2, 1, 2]].",
+   "en": "Calculate the determinant of the 3x3 matrix: [[4, 2, -1], [3, 0, 5], [-2, 1, 2]].",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule o traço (soma da diagonal principal) da matriz: [[12, 5, 3], [8, 19, -4], [0, 7, 31]].",
+   "en": "Calculate the trace (sum of the main diagonal) of the matrix: [[12, 5, 3], [8, 19, -4], [0, 7, 31]].",
+   "usos": 1
+  },
+  {
+   "orig": "Uma loja dá 20% de desconto em um produto de R$ 450,00 e depois cobra 8% de imposto sobre o valor com desconto. Qual o preço final?",
+   "en": "A store gives a 20% discount on a R$ 450.00 product and then charges 8% tax on the discounted value. What is the final price?",
+   "usos": 1
+  },
+  {
+   "orig": "Em uma sala de aula, a razão entre meninas e meninos é de 4 para 3. Se há 28 meninas, quantos alunos há no total na sala?",
+   "en": "In a classroom, the ratio of girls to boys is 4 to 3. If there are 28 girls, how many students are there in total in the classroom?",
+   "usos": 1
+  },
+  {
+   "orig": "Um ciclista percorre 75 km em 2 horas e 30 minutos. Qual é a sua velocidade média em km/h?",
+   "en": "A cyclist rides 75 km in 2 hours and 30 minutes. What is their average speed in km/h?",
+   "usos": 1
+  },
+  {
+   "orig": "Quantas vogais (a, e, i, o, u) existem no texto: 'Supercomputadores realizam calculos cientificos complexos em paralelo'?",
+   "en": "How many vowels (a, e, i, o, u) are in the text: 'Supercomputadores realizam calculos cientificos complexos em paralelo'?",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é o valor em base 10 do número binário '110101101'?",
+   "en": "What is the base-10 value of the binary number '110101101'?",
+   "usos": 1
+  },
+  {
+   "orig": "Converta o número decimal 1459 para sua representação hexadecimal.",
+   "en": "Convert the decimal number 1459 to its hexadecimal representation.",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule o valor de (17^3) + (19^3) - (13^3).",
+   "en": "Calculate the value of (17^3) + (19^3) - (13^3).",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é o valor inteiro mais próximo da raiz cúbica de 100000?",
+   "en": "What is the nearest integer to the cube root of 100000?",
+   "usos": 1
+  },
+  {
+   "orig": "Calcule a soma de todos os dígitos do número 2^100.",
+   "en": "Calculate the sum of all digits of the number 2^100.",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é o menor número inteiro positivo divisível por todos os números de 1 a 12?",
+   "en": "What is the smallest positive integer divisible by all numbers from 1 to 12?",
+   "usos": 1
+  },
+  {
+   "orig": "Encontre o 100º número par positivo.",
+   "en": "Find the 100th positive even number.",
+   "usos": 1
+  },
+  {
+   "orig": "O que é uma variável de ambiente em sistemas operacionais e para que ela serve?",
+   "en": "What is an environment variable in operating systems and what is it for?",
+   "usos": 1
+  },
+  {
+   "orig": "Uma variável de ambiente é um valor dinâmico que o sistema operacional disponibiliza para processos e programas em execução.",
+   "en": "An environment variable is a dynamic value that the operating system makes available to running processes and programs.",
+   "usos": 1
+  },
+  {
+   "orig": "Quem pintou a Mona Lisa e em qual museu ela está exposta?",
+   "en": "Who painted the Mona Lisa and in which museum is it displayed?",
+   "usos": 1
+  },
+  {
+   "orig": "A Mona Lisa foi pintada por Leonardo da Vinci e está exposta no Museu do Louvre, em Paris.",
+   "en": "The Mona Lisa was painted by Leonardo da Vinci and is displayed at the Louvre Museum in Paris.",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é a diferença entre a metodologia Ágil Scrum e o método Kanban?",
+   "en": "What is the difference between the Agile Scrum methodology and the Kanban method?",
+   "usos": 1
+  },
+  {
+   "orig": "O Scrum trabalha com sprints fixas de tempo e papéis bem definidos, enquanto o Kanban é um fluxo contínuo focado em limitar o trabalho em progresso (WIP).",
+   "en": "Scrum works with fixed-length sprints and well-defined roles, while Kanban is a continuous flow focused on limiting work in progress (WIP).",
+   "usos": 1
+  },
+  {
+   "orig": "O que significa o conceito de 'Custo de Oportunidade' na economia?",
+   "en": "What does the concept of 'Opportunity Cost' mean in economics?",
+   "usos": 1
+  },
+  {
+   "orig": "Custo de oportunidade é o benefício ou valor que se abre mão ao escolher uma alternativa em detrimento de outra.",
+   "en": "Opportunity cost is the benefit or value given up when choosing one alternative over another.",
+   "usos": 1
+  },
+  {
+   "orig": "Explique brevemente a teoria da relatividade geral de Albert Einstein.",
+   "en": "Briefly explain Albert Einstein's theory of general relativity.",
+   "usos": 1
+  },
+  {
+   "orig": "A relatividade geral postula que a gravidade não é uma força tradicional, mas sim a curvatura do espaço-tempo provocada pela presença de massa e energia.",
+   "en": "General relativity postulates that gravity is not a traditional force, but rather the curvature of spacetime caused by the presence of mass and energy.",
+   "usos": 1
+  },
+  {
+   "orig": "Como funciona o algoritmo de busca binária e qual a sua complexidade de tempo?",
+   "en": "How does the binary search algorithm work and what is its time complexity?",
+   "usos": 1
+  },
+  {
+   "orig": "A busca binária divide um array ordenado repetidamente pela metade, alcançando complexidade de tempo logarítmica O(log n).",
+   "en": "Binary search repeatedly halves a sorted array, achieving logarithmic O(log n) time complexity.",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é a capital do Canadá?",
+   "en": "What is the capital of Canada?",
+   "usos": 1
+  },
+  {
+   "orig": "A capital do Canadá é Ottawa.",
+   "en": "The capital of Canada is Ottawa.",
+   "usos": 1
+  },
+  {
+   "orig": "Quais são os quatro pilares da Programação Orientada a Objetos?",
+   "en": "What are the four pillars of Object-Oriented Programming?",
+   "usos": 1
+  },
+  {
+   "orig": "Os quatro pilares da POO são: Abstração, Encapsulamento, Herança e Polimorfismo.",
+   "en": "The four pillars of OOP are: Abstraction, Encapsulation, Inheritance, and Polymorphism.",
+   "usos": 1
+  },
+  {
+   "orig": "Como ocorre o processo de fotossíntese nas plantas?",
+   "en": "How does photosynthesis occur in plants?",
+   "usos": 1
+  },
+  {
+   "orig": "A fotossíntese converte energia solar, água e dióxido de carbono em glicose e oxigênio por meio da clorofila nas células vegetais.",
+   "en": "Photosynthesis converts solar energy, water, and carbon dioxide into glucose and oxygen through chlorophyll in plant cells.",
+   "usos": 1
+  },
+  {
+   "orig": "Quem escreveu a obra 'Dom Casmurro' e em que ano foi publicada?",
+   "en": "Who wrote 'Dom Casmurro' and in what year was it published?",
+   "usos": 1
+  },
+  {
+   "orig": "Dom Casmurro foi escrito por Machado de Assis e publicado no ano de 1899.",
+   "en": "Dom Casmurro was written by Machado de Assis and published in 1899.",
+   "usos": 1
+  },
+  {
+   "orig": "O que é uma 'Árvore Binária de Busca' (BST)?",
+   "en": "What is a 'Binary Search Tree' (BST)?",
+   "usos": 1
+  },
+  {
+   "orig": "Uma BST é uma estrutura de dados em árvore onde cada nó possui no máximo dois filhos, com os nós à esquerda menores e à direita maiores que o nó raiz.",
+   "en": "A BST is a tree data structure where each node has at most two children, with nodes to the left smaller and to the right larger than the root node.",
+   "usos": 1
+  },
+  {
+   "orig": "Qual é o rio mais longo do mundo em extensão territorial?",
+   "en": "What is the longest river in the world by territorial extension?",
+   "usos": 1
+  },
+  {
+   "orig": "Emite a nota fiscal eletrônica e gera o link de download do PDF do comprovante fiscal.",
+   "en": "Issues the electronic invoice and generates the download link for the fiscal receipt PDF.",
+   "usos": 1
+  },
+  {
+   "orig": "Identificador do pedido",
+   "en": "Order identifier",
+   "usos": 1
+  },
+  {
+   "orig": "CPF ou CNPJ do comprador",
+   "en": "Buyer's CPF or CNPJ",
+   "usos": 1
+  },
+  {
+   "orig": "O Rio Amazonas é considerado o rio mais longo e com maior volume de água do mundo.",
+   "en": "The Amazon River is considered the longest river with the largest water volume in the world.",
+   "usos": 1
+  },
+  {
+   "orig": "O que são números primos gêmeos na matemática?",
+   "en": "What are twin primes in mathematics?",
+   "usos": 1
+  },
+  {
+   "orig": "Primos gêmeos são pares de números primos que possuem uma diferença de exatamente dois valores entre si (como 3 e 5, ou 11 e 13).",
+   "en": "Twin primes are pairs of prime numbers that differ by exactly two (like 3 and 5, or 11 and 13).",
+   "usos": 1
+  },
+  {
+   "orig": "Qual a diferença conceitual entre TCP e UDP em redes de computadores?",
+   "en": "What is the conceptual difference between TCP and UDP in computer networks?",
+   "usos": 1
+  },
+  {
+   "orig": "O TCP é orientado a conexão e garante a entrega ordenada de pacotes, enquanto o UDP é não orientado a conexão, priorizando velocidade sem garantia de retransmissão.",
+   "en": "TCP is connection-oriented and guarantees ordered packet delivery, while UDP is connectionless, prioritizing speed with no retransmission guarantee.",
+   "usos": 1
+  },
+  {
+   "orig": "Em que ano o ser humano pisou pela primeira vez na Lua?",
+   "en": "In what year did humans first set foot on the Moon?",
+   "usos": 1
+  },
+  {
+   "orig": "O ser humano pisou na Lua em 20 de julho de 1969, na missão Apollo 11.",
+   "en": "Humans first set foot on the Moon on July 20, 1969, on the Apollo 11 mission.",
+   "usos": 1
+  },
+  {
+   "orig": "O que caracteriza o princípio da navalha de Occam?",
+   "en": "What characterizes Occam's razor principle?",
+   "usos": 1
+  },
+  {
+   "orig": "A navalha de Occam diz que, entre hipóteses concorrentes que explicam o mesmo fenômeno, a mais simples (com menos suposições) tende a ser a mais correta.",
+   "en": "Occam's razor says that, among competing hypotheses explaining the same phenomenon, the simplest one (with the fewest assumptions) tends to be correct.",
+   "usos": 1
+  },
+  {
+   "orig": "Explique o que é a inflação e quais suas causas primárias.",
+   "en": "Explain what inflation is and what its primary causes are.",
+   "usos": 1
+  },
+  {
+   "orig": "Inflação é o aumento generalizado e contínuo dos preços de bens e serviços em uma economia, geralmente causada por aumento de demanda ou expansão da oferta monetária.",
+   "en": "Inflation is the generalized and continuous rise in the prices of goods and services in an economy, usually caused by increased demand or expansion of the money supply.",
+   "usos": 1
+  },
+  {
+   "orig": "Quais são as três leis do movimento de Isaac Newton?",
+   "en": "What are Isaac Newton's three laws of motion?",
+   "usos": 1
+  },
+  {
+   "orig": "As três leis são: Lei da Inércia, Princípio Fundamental da Dinâmica (F = m*a) e Lei da Ação e Reação.",
+   "en": "The three laws are: Law of Inertia, Fundamental Principle of Dynamics (F = m*a), and Law of Action and Reaction.",
+   "usos": 1
+  },
+  {
+   "orig": "O que é a Tabela Periódica dos Elementos Químicos e quem a organizou inicialmente?",
+   "en": "What is the Periodic Table of Chemical Elements and who first organized it?",
+   "usos": 1
+  },
+  {
+   "orig": "A Tabela Periódica organiza os elementos químicos por número atômico e propriedades periódicas, proposta inicialmente por Dmitri Mendeleev em 1869.",
+   "en": "The Periodic Table organizes chemical elements by atomic number and periodic properties, initially proposed by Dmitri Mendeleev in 1869.",
+   "usos": 1
+  },
+  {
+   "orig": "Por que o céu é azul durante o dia?",
+   "en": "Why is the sky blue during the day?",
+   "usos": 1
+  },
+  {
+   "orig": "Calcula tempo de voo e distância geográfica entre aeroportos internacionais por código IATA.",
+   "en": "Calculates flight time and geographic distance between international airports by IATA code.",
+   "usos": 1
+  },
+  {
+   "orig": "Código IATA de 3 letras de origem (ex: GRU)",
+   "en": "3-letter origin IATA code (e.g., GRU)",
+   "usos": 1
+  },
+  {
+   "orig": "Código IATA de 3 letras de destino (ex: LHR)",
+   "en": "3-letter destination IATA code (e.g., LHR)",
+   "usos": 1
+  },
+  {
+   "orig": "O céu é azul devido ao espalhamento Rayleigh, onde as moléculas da atmosfera espalham comprimentos de onda curtos (luz azul) em maior intensidade.",
+   "en": "The sky is blue due to Rayleigh scattering, where atmospheric molecules scatter short wavelengths (blue light) more intensely.",
+   "usos": 1
+  }
+ ]
+}
