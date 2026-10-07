@@ -29,6 +29,9 @@ Kaggle/kaggle_kernel_output/
 *.bak*
 data/cleaned/backup/
 
+# Agent session state (churn local, nao versionar)
+.pi/
+
 # Execution logs and telemetry streams
 logs/kaggle_runs/
 *.log
